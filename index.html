@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CertLab – Laboratorio Catamarca</title>
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0f1117;--panel:#1a1d27;--card:#22263a;--border:#2e3250;
+  --accent:#4f8ef7;--accent2:#7c5cbf;--green:#22c55e;--yellow:#f59e0b;
+  --red:#ef4444;--text:#e2e8f0;--muted:#8892b0;--radius:10px;
+  --shadow:0 4px 24px rgba(0,0,0,.45);
+}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}
+header{background:linear-gradient(135deg,#1a1d27,#22263a);border-bottom:1px solid var(--border);
+  padding:18px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+header h1{font-size:1.3rem;font-weight:700;display:flex;align-items:center;gap:10px}
+.subtitle{font-size:.8rem;color:var(--muted)}
+.stats-bar{display:flex;gap:10px;flex-wrap:wrap}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:8px;
+  padding:6px 14px;font-size:.8rem;display:flex;align-items:center;gap:6px}
+.stat b{font-size:1.05rem}
+.app{display:flex;height:calc(100vh - 68px)}
+.sidebar{width:230px;min-width:230px;background:var(--panel);border-right:1px solid var(--border);
+  overflow-y:auto;display:flex;flex-direction:column;padding:16px 0}
+.sidebar-title{font-size:.7rem;font-weight:700;color:var(--muted);letter-spacing:.08em;
+  padding:0 16px 8px;text-transform:uppercase}
+.floor-btn{display:flex;align-items:center;gap:10px;padding:10px 16px;cursor:pointer;
+  border:none;background:transparent;color:var(--text);font-size:.9rem;width:100%;
+  text-align:left;border-left:3px solid transparent;transition:all .15s}
+.floor-btn:hover{background:var(--card)}
+.floor-btn.active{background:var(--card);border-left-color:var(--accent);color:var(--accent)}
+.floor-btn .count{margin-left:auto;background:var(--border);border-radius:999px;
+  padding:1px 8px;font-size:.72rem;color:var(--muted)}
+.sidebar-sep{height:1px;background:var(--border);margin:10px 16px}
+.sidebar-btn{margin:6px 16px 0;border:none;border-radius:var(--radius);
+  padding:9px 0;font-size:.85rem;font-weight:600;cursor:pointer;width:calc(100% - 32px);transition:opacity .15s}
+.sidebar-btn:hover{opacity:.85}
+.main{flex:1;overflow-y:auto;padding:24px}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:18px}
+.search-box{flex:1;min-width:180px;background:var(--card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:8px 14px;color:var(--text);font-size:.88rem;outline:none}
+.search-box:focus{border-color:var(--accent)}
+select.filter-sel{background:var(--card);border:1px solid var(--border);color:var(--text);
+  border-radius:var(--radius);padding:8px 12px;font-size:.85rem;outline:none;cursor:pointer}
+.btn-tool{background:var(--card);border:1px solid var(--border);color:var(--text);
+  border-radius:var(--radius);padding:8px 14px;font-size:.85rem;cursor:pointer;
+  display:flex;align-items:center;gap:6px;transition:border-color .15s;white-space:nowrap}
+.btn-tool:hover{border-color:var(--accent);color:var(--accent)}
+.btn-tool.green{border-color:var(--green);color:var(--green)}
+.btn-tool.green.active{background:rgba(34,197,94,.15)}
+.btn-tool.blue{border-color:var(--accent);color:var(--accent)}
+.btn-tool.purple{border-color:var(--accent2);color:var(--accent2)}
+.section-title{font-size:1rem;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:8px;
+  border-bottom:1px solid var(--border);padding-bottom:10px}
+.equipo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
+.equipo-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:16px;display:flex;flex-direction:column;gap:10px;transition:border-color .2s,transform .15s}
+.equipo-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.equipo-header{display:flex;align-items:flex-start;gap:10px}
+.equipo-icon{font-size:1.6rem}
+.equipo-info{flex:1}
+.equipo-code{font-weight:700;font-size:.95rem}
+.equipo-name{font-size:.8rem;color:var(--muted);margin-top:2px}
+.equipo-piso{font-size:.72rem;background:var(--border);border-radius:4px;
+  padding:2px 7px;color:var(--muted);display:inline-block;margin-top:4px}
+.badge{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;
+  border-radius:999px;font-size:.75rem;font-weight:600}
+.badge.ok{background:rgba(34,197,94,.15);color:var(--green)}
+.badge.warn{background:rgba(245,158,11,.15);color:var(--yellow)}
+.badge.exp{background:rgba(239,68,68,.15);color:var(--red)}
+.badge.none{background:rgba(136,146,176,.12);color:var(--muted)}
+.equipo-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.btn-action{flex:1;min-width:60px;padding:6px 4px;font-size:.75rem;font-weight:600;
+  border:1px solid var(--border);border-radius:6px;background:transparent;color:var(--muted);
+  cursor:pointer;display:flex;align-items:center;justify-content:center;gap:4px;transition:all .15s}
+.btn-action:hover{border-color:var(--accent);color:var(--accent);background:rgba(79,142,247,.07)}
+.btn-action.danger:hover{border-color:var(--red);color:var(--red);background:rgba(239,68,68,.07)}
+.btn-action.success:hover{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.07)}
+.cert-filename{font-size:.75rem;color:var(--muted);background:var(--bg);border-radius:5px;padding:4px 8px}
+.cert-dot{color:var(--green);font-size:.7rem;vertical-align:middle}
+.note-dot{width:7px;height:7px;border-radius:50%;background:var(--yellow);
+  display:inline-block;margin-left:5px;vertical-align:middle}
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);
+  z-index:100;align-items:center;justify-content:center;padding:20px}
+.overlay.open{display:flex}
+.modal{background:var(--panel);border:1px solid var(--border);border-radius:14px;
+  padding:28px;width:100%;max-width:480px;box-shadow:var(--shadow);max-height:90vh;overflow-y:auto}
+.modal h2{font-size:1.1rem;margin-bottom:18px;display:flex;align-items:center;gap:8px}
+.form-group{margin-bottom:14px}
+label{display:block;font-size:.8rem;color:var(--muted);margin-bottom:5px}
+input[type=text],input[type=date],select.modal-sel,textarea{
+  width:100%;background:var(--card);border:1px solid var(--border);
+  border-radius:8px;padding:9px 12px;color:var(--text);font-size:.9rem;outline:none}
+input[type=text]:focus,input[type=date]:focus,textarea:focus{border-color:var(--accent)}
+textarea{resize:vertical;min-height:60px;font-family:inherit}
+.drop-zone{border:2px dashed var(--border);border-radius:8px;padding:24px;
+  text-align:center;cursor:pointer;color:var(--muted);font-size:.85rem;transition:border-color .2s}
+.drop-zone.over,.drop-zone:hover{border-color:var(--accent);color:var(--accent)}
+input[type=file]{display:none}
+.modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}
+.btn-primary{background:var(--accent);color:#fff;border:none;border-radius:8px;
+  padding:9px 22px;font-size:.9rem;font-weight:600;cursor:pointer}
+.btn-primary:hover{opacity:.87}
+.btn-cancel{background:transparent;border:1px solid var(--border);color:var(--muted);
+  border-radius:8px;padding:9px 22px;font-size:.9rem;cursor:pointer}
+.btn-cancel:hover{border-color:var(--red);color:var(--red)}
+.modal-pdf{max-width:900px;height:88vh;display:flex;flex-direction:column}
+.modal-pdf h2{margin-bottom:8px}
+.pdf-adjuntos{display:none;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.pdf-adj-btn{background:var(--card);border:1px solid var(--border);color:var(--muted);
+  border-radius:6px;padding:5px 10px;font-size:.76rem;cursor:pointer;transition:all .15s;max-width:200px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pdf-adj-btn.active{border-color:var(--accent);color:var(--accent);background:rgba(79,142,247,.1)}
+.pdf-frame{flex:1;border:1px solid var(--border);border-radius:8px;width:100%;min-height:200px}
+.modal-qr{max-width:360px;text-align:center}
+#qr-container{display:inline-block;background:#fff;padding:14px;border-radius:10px;margin:16px 0}
+.qr-info{font-size:.8rem;color:var(--muted);margin-bottom:12px}
+#toast{position:fixed;bottom:28px;right:28px;z-index:200;background:var(--card);
+  border:1px solid var(--border);color:var(--text);padding:12px 20px;border-radius:10px;
+  font-size:.88rem;box-shadow:var(--shadow);opacity:0;transform:translateY(10px);
+  transition:all .3s;pointer-events:none}
+#toast.show{opacity:1;transform:translateY(0)}
+#toast.ok{border-color:var(--green);color:var(--green)}
+#toast.err{border-color:var(--red);color:var(--red)}
+.empty{text-align:center;padding:60px 20px;color:var(--muted)}
+.empty .icon{font-size:3rem;margin-bottom:12px}
+@media(max-width:640px){
+  .sidebar{width:100%;min-width:unset;height:auto;flex-direction:row;overflow-x:auto;
+    border-right:none;border-bottom:1px solid var(--border)}
+  .app{flex-direction:column;height:auto}
+  .floor-btn{white-space:nowrap;border-left:none;border-bottom:3px solid transparent}
+  .floor-btn.active{border-bottom-color:var(--accent);border-left:none}
+  .sidebar-title,.sidebar-sep,.sidebar-btn{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>🔬 CertLab <span style="color:var(--muted);font-weight:400">— Laboratorio Catamarca</span></h1>
+    <div class="subtitle">Gestión de certificados de calibración y preventivos</div>
+  </div>
+  <div class="stats-bar" id="statsBar"></div>
+</header>
+
+<div class="app">
+  <nav class="sidebar">
+    <div class="sidebar-title">Pisos</div>
+    <button class="floor-btn active" onclick="setFloor('all',this)">🏢 Todos <span class="count" id="cnt-all">0</span></button>
+    <button class="floor-btn" onclick="setFloor('1 piso',this)">1️⃣ 1er Piso <span class="count" id="cnt-1">0</span></button>
+    <button class="floor-btn" onclick="setFloor('2 Piso',this)">2️⃣ 2do Piso <span class="count" id="cnt-2">0</span></button>
+    <button class="floor-btn" onclick="setFloor('3 Piso',this)">3️⃣ 3er Piso <span class="count" id="cnt-3">0</span></button>
+    <button class="floor-btn" onclick="setFloor('Sin asignar',this)">📦 Sin asignar <span class="count" id="cnt-sin">0</span></button>
+    <div class="sidebar-sep"></div>
+    <button class="sidebar-btn" style="background:var(--accent);color:#fff" onclick="openAddEquipo()">+ Nuevo equipo</button>
+    <button class="sidebar-btn" style="background:var(--accent2);color:#fff" onclick="confirmReset()">➕ Agregar equipos nuevos</button>
+    <button class="sidebar-btn" style="background:#166534;color:#fff" onclick="importarCarpeta()">📂 Importar carpeta PDFs</button>
+  </nav>
+
+  <main class="main">
+    <div class="toolbar">
+      <input class="search-box" id="searchBox" placeholder="🔍  Buscar por código o nombre…" oninput="renderGrid()" />
+      <select class="filter-sel" id="tipoFilter" onchange="renderGrid()">
+        <option value="">Todos los tipos</option>
+        <option value="CENTRIF">Centrífuga</option>
+        <option value="CEN">Centrifugador</option>
+        <option value="BAÑO">Baño termostático</option>
+        <option value="MIC">Microscopio</option>
+        <option value="AGITADO">Agitador</option>
+        <option value="ANA">Analizador</option>
+        <option value="AUT">Autoclave</option>
+        <option value="BALANZA">Balanza</option>
+        <option value="CAB">Cabina flujo laminar</option>
+        <option value="ESTUFA">Estufa</option>
+        <option value="INC">Incubadora</option>
+        <option value="OTRO">Otro</option>
+      </select>
+      <select class="filter-sel" id="statusFilter" onchange="renderGrid()">
+        <option value="">Todos los estados</option>
+        <option value="ok">✅ Vigente</option>
+        <option value="warn">⚠️ Por vencer</option>
+        <option value="exp">❌ Vencido</option>
+        <option value="none">📭 Sin cert.</option>
+      </select>
+      <select class="filter-sel" id="relevFilter" onchange="renderGrid()">
+        <option value="">Todos los relevamientos</option>
+        <option value="pendiente">⬜ Pendiente</option>
+        <option value="proceso">🔄 En proceso</option>
+        <option value="relevado">✅ Relevado</option>
+      </select>
+      <button class="btn-tool green" id="btnConCert" onclick="toggleConCert()">● Con certificado</button>
+      <button class="btn-tool blue" onclick="exportCSV()">📥 CSV</button>
+      <button class="btn-tool blue" onclick="exportDB()">💾 Exportar DB</button>
+      <label class="btn-tool purple" style="cursor:pointer">
+        📂 Importar DB
+        <input type="file" accept=".certlab" onchange="importDB(this)">
+      </label>
+    </div>
+    <div class="section-title" id="sectionTitle">🏢 Todos los pisos</div>
+    <div class="equipo-grid" id="equipoGrid"></div>
+  </main>
+</div>
+
+<!-- MODAL EQUIPO -->
+<div class="overlay" id="modalEquipo">
+  <div class="modal">
+    <h2 id="modalEquipoTitle">⚙️ Nuevo equipo</h2>
+    <div class="form-group"><label>Código *</label><input type="text" id="fCodigo" placeholder="Ej: CENTRIF-28008" /></div>
+    <div class="form-group"><label>Nombre / Descripción</label><input type="text" id="fNombre" placeholder="Ej: Centrífuga de laboratorio" /></div>
+    <div class="form-group"><label>Piso *</label>
+      <select class="modal-sel" id="fPiso">
+        <option value="1 piso">1er Piso</option>
+        <option value="2 Piso">2do Piso</option>
+        <option value="3 Piso">3er Piso</option>
+        <option value="Sin asignar">Sin asignar</option>
+      </select>
+    </div>
+    <div class="form-group"><label>Tipo</label>
+      <select class="modal-sel" id="fTipo">
+        <option value="CENTRIF">Centrífuga</option><option value="CEN">Centrifugador</option>
+        <option value="BAÑO">Baño termostático</option><option value="MIC">Microscopio</option>
+        <option value="AGITADO">Agitador</option><option value="ANA">Analizador</option>
+        <option value="AUT">Autoclave</option><option value="BALANZA">Balanza</option>
+        <option value="CAB">Cabina flujo laminar</option><option value="ESTUFA">Estufa</option>
+        <option value="INC">Incubadora</option><option value="OTRO">Otro</option>
+      </select>
+    </div>
+    <div class="form-group"><label>Notas</label><textarea id="fNotas" placeholder="Observaciones…"></textarea></div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeModal('modalEquipo')">Cancelar</button>
+      <button class="btn-primary" onclick="saveEquipo()">Guardar</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL CERTIFICADO -->
+<div class="overlay" id="modalCert">
+  <div class="modal">
+    <h2>📄 Agregar certificado</h2>
+    <p style="font-size:.82rem;color:var(--muted);margin-bottom:16px">Equipo: <b id="certEquipoLabel"></b></p>
+    <div class="form-group"><label>Fecha de emisión</label><input type="date" id="fFechaEmision" /></div>
+    <div class="form-group"><label>Fecha de vencimiento</label><input type="date" id="fFechaVenc" /></div>
+    <div class="form-group"><label>Empresa certificadora</label><input type="text" id="fEmpresa" placeholder="Ej: INTI…" /></div>
+    <div class="form-group">
+      <label>Archivos PDF <span style="color:var(--muted)">(podés adjuntar varios)</span></label>
+      <div class="drop-zone" id="dropZone"
+        onclick="document.getElementById('fileInput').click()"
+        ondragover="event.preventDefault();this.classList.add('over')"
+        ondragleave="this.classList.remove('over')"
+        ondrop="handleDrop(event)">
+        <div id="dropLabel">📂 Arrastrá uno o más PDFs aquí o hacé clic</div>
+      </div>
+      <input type="file" id="fileInput" accept=".pdf" multiple onchange="handleFileSelect(this)" />
+      <div id="pendingList" style="display:flex;flex-direction:column;gap:4px;margin-top:8px"></div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeModal('modalCert')">Cancelar</button>
+      <button class="btn-primary" onclick="saveCert()">Guardar certificado</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PDF -->
+<div class="overlay" id="modalPDF">
+  <div class="modal modal-pdf">
+    <h2>📄 <span id="pdfTitle"></span></h2>
+    <div class="pdf-adjuntos" id="pdfAdjuntosList"></div>
+    <object class="pdf-frame" id="pdfFrame" type="application/pdf">
+      <p style="padding:20px;color:var(--muted)">No se puede mostrar el PDF. <a id="pdfFallbackLink" href="#" style="color:var(--accent)">Descargar</a></p>
+    </object>
+    <div class="modal-actions" style="margin-top:12px">
+      <button class="btn-primary" onclick="downloadCurrentPDF()">⬇️ Descargar</button>
+      <button class="btn-cancel" onclick="closePDFModal()">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL QR -->
+<div class="overlay" id="modalQR">
+  <div class="modal modal-qr">
+    <h2 style="justify-content:center">📱 Código QR</h2>
+    <div class="qr-info" id="qrInfo"></div>
+    <div id="qr-container"><div id="qrcode"></div></div>
+    <p style="font-size:.75rem;color:var(--muted)">Escaneá para ver los datos del equipo</p>
+    <div class="modal-actions" style="justify-content:center;margin-top:16px">
+      <button class="btn-primary" onclick="downloadQR()">⬇️ Guardar QR</button>
+      <button class="btn-cancel" onclick="closeModal('modalQR')">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL CONFIRMAR -->
+<div class="overlay" id="modalConfirm">
+  <div class="modal" style="max-width:380px;text-align:center">
+    <div style="font-size:2.5rem;margin-bottom:10px">🗑️</div>
+    <h2 style="justify-content:center" id="confirmTitle">¿Eliminar?</h2>
+    <p style="color:var(--muted);font-size:.88rem;margin:10px 0 20px" id="confirmMsg"></p>
+    <div class="modal-actions" style="justify-content:center">
+      <button class="btn-cancel" onclick="closeModal('modalConfirm')">Cancelar</button>
+      <button class="btn-primary" style="background:var(--red)" id="confirmOkBtn">Eliminar</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL HISTORIAL -->
+<div class="overlay" id="modalHistorial">
+  <div class="modal" style="max-width:620px">
+    <h2>📋 Historial — <span id="histLabel"></span></h2>
+    <div id="histList" style="display:flex;flex-direction:column;gap:10px;margin-top:8px"></div>
+    <div class="modal-actions"><button class="btn-cancel" onclick="closeModal('modalHistorial')">Cerrar</button></div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+// ═══════════════════════════════════════════
+//  INDEXEDDB
+// ═══════════════════════════════════════════
+const DB_NAME = 'CertLabDB', DB_VERSION = 5;
+let db;
+
+function openDB() {
+  return new Promise((res, rej) => {
+    const req = indexedDB.open(DB_NAME, DB_VERSION);
+    req.onupgradeneeded = e => {
+      const d = e.target.result;
+      // borrar stores viejos si existen para migración limpia
+      if (d.objectStoreNames.contains('equipos')) d.deleteObjectStore('equipos');
+      if (d.objectStoreNames.contains('certs'))   d.deleteObjectStore('certs');
+      const st = d.createObjectStore('equipos', { keyPath: 'id', autoIncrement: true });
+      st.createIndex('piso', 'piso', { unique: false });
+      const cs = d.createObjectStore('certs', { keyPath: 'id', autoIncrement: true });
+      cs.createIndex('equipoId', 'equipoId', { unique: false });
+    };
+    req.onsuccess = e => { db = e.target.result; res(db); };
+    req.onerror   = e => rej(e);
+  });
+}
+function dbTx(s, m) { return db.transaction(s, m).objectStore(s); }
+function dbAll(s) { return new Promise((res,rej) => { const r=dbTx(s,'readonly').getAll(); r.onsuccess=()=>res(r.result); r.onerror=()=>rej(r.error); }); }
+function dbGet(s, k) { return new Promise((res,rej) => { const r=dbTx(s,'readonly').get(k); r.onsuccess=()=>res(r.result); r.onerror=()=>rej(r.error); }); }
+function dbPut(s, o) { return new Promise((res,rej) => { const r=dbTx(s,'readwrite').put(o); r.onsuccess=()=>res(r.result); r.onerror=()=>rej(r.error); }); }
+function dbDel(s, k) { return new Promise((res,rej) => { const r=dbTx(s,'readwrite').delete(k); r.onsuccess=()=>res(); r.onerror=()=>rej(r.error); }); }
+function dbByIndex(s, idx, val) { return new Promise((res,rej) => { const r=dbTx(s,'readonly').index(idx).getAll(val); r.onsuccess=()=>res(r.result); r.onerror=()=>rej(r.error); }); }
+
+// ═══════════════════════════════════════════
+//  SEED ÚNICO DE EQUIPOS
+// ═══════════════════════════════════════════
+const SEED_EQUIPOS = [
+  {codigo:'4571',nombre:'Equipo',piso:'Sin asignar',tipo:'OTRO',notas:''},
+  {codigo:'794BR11779',nombre:'Equipo',piso:'Sin asignar',tipo:'OTRO',notas:''},
+  {codigo:'794BR12420',nombre:'Equipo',piso:'Sin asignar',tipo:'OTRO',notas:''},
+  {codigo:'AGI-12961330',nombre:'Agitador',piso:'Sin asignar',tipo:'AGITADO',notas:''},
+  {codigo:'AGI-200102448',nombre:'Agitador',piso:'Sin asignar',tipo:'AGITADO',notas:''},
+  {codigo:'AGI-VB23CBC0003127',nombre:'Agitador Vortex',piso:'3 Piso',tipo:'AGITADO',notas:''},
+  {codigo:'AGITADO-27594',nombre:'Agitador',piso:'2 Piso',tipo:'AGITADO',notas:''},
+  {codigo:'AGITADO-8AS0004975',nombre:'Agitador',piso:'Sin asignar',tipo:'AGITADO',notas:''},
+  {codigo:'AGITADO-SC256AW0000912',nombre:'Agitador',piso:'Sin asignar',tipo:'AGITADO',notas:''},
+  {codigo:'AGITADO-VB255BG0003558',nombre:'Agitador',piso:'Sin asignar',tipo:'AGITADO',notas:''},
+  {codigo:'AGITADO-VB255VG003558',nombre:'Agitador',piso:'Sin asignar',tipo:'AGITADO',notas:''},
+  {codigo:'ANA-2965439',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-36205289',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-393163',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-395235',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-4946A14729',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-7127',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-C1600476',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-C1600957',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-ISR53213',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-ISR53215',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-0000Q0614',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-022101490',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-0807',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-10614',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-12500108',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-1445',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-15W6-03',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-25078501',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-251250',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-2842-18',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-36102139',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-421016',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-450209P',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-52421',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-54270',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-5438',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-5649A45430',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-578',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-5938',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-C107042089',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-CJ07042089',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-HQ00382',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-HQ00386',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-HQ00387',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-HS00177',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-ISR53823',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-ISR62129',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-Q0614',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-SU0500522',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-SU0802495',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-SV0500256',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-SV0901885',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'ANA-LAB-VN06057',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+  {codigo:'Arch d Aud',nombre:'Archivo de Auditoría',piso:'Sin asignar',tipo:'OTRO',notas:''},
+  {codigo:'AUT-336',nombre:'Autoclave',piso:'Sin asignar',tipo:'AUT',notas:''},
+  {codigo:'AUT-C801336',nombre:'Autoclave',piso:'Sin asignar',tipo:'AUT',notas:''},
+  {codigo:'AUTO-12965104',nombre:'Autoclave',piso:'Sin asignar',tipo:'AUT',notas:''},
+  {codigo:'BALANZA-733793',nombre:'Balanza',piso:'Sin asignar',tipo:'BALANZA',notas:''},
+  {codigo:'BAN-26355',nombre:'Baño termostático',piso:'2 Piso',tipo:'BAÑO',notas:''},
+  {codigo:'BANO-27143',nombre:'Baño termostático',piso:'1 piso',tipo:'BAÑO',notas:''},
+  {codigo:'BANO-28544',nombre:'Baño termostático',piso:'3 Piso',tipo:'BAÑO',notas:''},
+  {codigo:'CAB-201386154 20.08.25',nombre:'Cabina de flujo laminar',piso:'Sin asignar',tipo:'CAB',notas:''},
+  {codigo:'CABINA-74 20.08.25',nombre:'Cabina de flujo laminar',piso:'Sin asignar',tipo:'CAB',notas:''},
+  {codigo:'CALENTA-170605019',nombre:'Calentador',piso:'Sin asignar',tipo:'OTRO',notas:''},
+  {codigo:'CEN-24083',nombre:'Centrifugador',piso:'1 piso',tipo:'CEN',notas:''},
+  {codigo:'CEN-24084',nombre:'Centrifugador',piso:'2 Piso',tipo:'CEN',notas:''},
+  {codigo:'CEN-25089',nombre:'Centrifugador',piso:'2 Piso',tipo:'CEN',notas:''},
+  {codigo:'CEN-28009',nombre:'Centrifugador',piso:'Sin asignar',tipo:'CEN',notas:''},
+  {codigo:'CEN-50212022',nombre:'Centrifugador',piso:'1 piso',tipo:'CEN',notas:''},
+  {codigo:'CEN-53602',nombre:'Centrifugador',piso:'Sin asignar',tipo:'CEN',notas:''},
+  {codigo:'CEN-61974610',nombre:'Centrifugador',piso:'Sin asignar',tipo:'CEN',notas:''},
+  {codigo:'CEN-MON-LABCAT',nombre:'Centrifugador Monitor',piso:'Sin asignar',tipo:'CEN',notas:''},
+  {codigo:'CENTRIF-28008',nombre:'Centrífuga',piso:'1 piso',tipo:'CENTRIF',notas:''},
+  {codigo:'CENTRIF-30766',nombre:'Centrífuga',piso:'3 Piso',tipo:'CENTRIF',notas:''},
+  {codigo:'DIS-FLC00015370',nombre:'Dispensador',piso:'Sin asignar',tipo:'OTRO',notas:''},
+  {codigo:'EST-01543',nombre:'Estufa',piso:'Sin asignar',tipo:'ESTUFA',notas:''},
+  {codigo:'EST-AGU-0071491',nombre:'Estufa',piso:'Sin asignar',tipo:'ESTUFA',notas:''},
+  {codigo:'EST-AGU-MIC0001562',nombre:'Estufa',piso:'Sin asignar',tipo:'ESTUFA',notas:''},
+  {codigo:'EST-AGU-MP00005085',nombre:'Estufa',piso:'Sin asignar',tipo:'ESTUFA',notas:''},
+  {codigo:'EST-MP00003507',nombre:'Estufa',piso:'Sin asignar',tipo:'ESTUFA',notas:''},
+  {codigo:'EST-MR120H2732252 1',nombre:'Estufa',piso:'Sin asignar',tipo:'ESTUFA',notas:''},
+  {codigo:'ESTUFA-32533',nombre:'Estufa',piso:'Sin asignar',tipo:'ESTUFA',notas:''},
+  {codigo:'INC-27500',nombre:'Incubadora',piso:'Sin asignar',tipo:'INC',notas:''},
+  {codigo:'Lector-640003359P',nombre:'Lector',piso:'Sin asignar',tipo:'OTRO',notas:''},
+  {codigo:'MIC-1F09479',nombre:'Microscopio',piso:'Sin asignar',tipo:'MIC',notas:''},
+  {codigo:'MIC-207840',nombre:'Microscopio',piso:'Sin asignar',tipo:'MIC',notas:''},
+  {codigo:'MIC-7G00807',nombre:'Microscopio',piso:'2 Piso',tipo:'MIC',notas:''},
+  {codigo:'MICROSC-086228',nombre:'Microscopio',piso:'Sin asignar',tipo:'MIC',notas:''},
+  {codigo:'MICROSC-20B0571',nombre:'Microscopio',piso:'Sin asignar',tipo:'MIC',notas:''},
+  {codigo:'MICROSC-3134033303',nombre:'Microscopio',piso:'Sin asignar',tipo:'MIC',notas:''},
+  {codigo:'OTRO EQUIPOS DESMONTADOS',nombre:'Equipos desmontados',piso:'Sin asignar',tipo:'OTRO',notas:''},
+  {codigo:'08020006',nombre:'Equipo',piso:'2 Piso',tipo:'OTRO',notas:''},
+  {codigo:'19771',nombre:'Equipo',piso:'2 Piso',tipo:'OTRO',notas:''},
+  {codigo:'24622',nombre:'Equipo',piso:'2 Piso',tipo:'OTRO',notas:''},
+  {codigo:'34150',nombre:'Equipo',piso:'2 Piso',tipo:'OTRO',notas:''},
+  {codigo:'CEN-00053602',nombre:'Centrifugador',piso:'2 Piso',tipo:'CEN',notas:''},
+  {codigo:'CENTRIF-28009',nombre:'Centrífuga',piso:'2 Piso',tipo:'CENTRIF',notas:''},
+  {codigo:'EZ-37114186',nombre:'Equipo',piso:'2 Piso',tipo:'OTRO',notas:''},
+];
+
+// ═══════════════════════════════════════════
+//  ESTADO GLOBAL
+// ═══════════════════════════════════════════
+let currentFloor = 'all';
+let allEquipos = [], allCerts = [];
+let editingId = null, certEquipoId = null;
+let pendingPDFs = [];
+let currentPDFBlob = null, currentPDFName = '';
+let currentCertArchivos = [];
+let soloConCert = false;
+
+// ═══════════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════════
+async function init() {
+  await openDB();
+  allEquipos = await dbAll('equipos');
+  if (allEquipos.length === 0) {
+    for (const eq of SEED_EQUIPOS) await dbPut('equipos', eq);
+    allEquipos = await dbAll('equipos');
+  }
+  allCerts = await dbAll('certs');
+  renderSidebar();
+  renderGrid();
+  renderStats();
+}
+
+// ═══════════════════════════════════════════
+//  HELPERS
+// ═══════════════════════════════════════════
+const ICONS = {CENTRIF:'⚗️',CEN:'🔄',BAÑO:'🌡️',BANO:'🌡️',MIC:'🔬',AGITADO:'🌀',ANA:'🧪',AUT:'♨️',BALANZA:'⚖️',CAB:'🗄️',ESTUFA:'🔥',INC:'🧫',OTRO:'🔧'};
+function equipoIcon(t) { return ICONS[t] || '🔧'; }
+
+function certStatus(equipoId) {
+  const list = allCerts.filter(c => c.equipoId === equipoId);
+  if (!list.length) return {label:'Sin certificado', cls:'none'};
+  const last = list.sort((a,b) => b.id - a.id)[0];
+  if (!last.vencimiento) return {label:'Sin vencimiento', cls:'none'};
+  const diff = (new Date(last.vencimiento) - new Date()) / 86400000;
+  if (diff < 0)  return {label:'Vencido', cls:'exp'};
+  if (diff < 60) return {label:'Vence en '+Math.round(diff)+'d', cls:'warn'};
+  return {label:'Vigente', cls:'ok'};
+}
+
+function activeCert(equipoId) {
+  const list = allCerts.filter(c => c.equipoId === equipoId).sort((a,b) => b.id - a.id);
+  return list[0] || null;
+}
+
+function relevIcon(r) {
+  if (r === 'proceso')  return '🔄';
+  if (r === 'relevado') return '✅';
+  return '⬜';
+}
+
+// ═══════════════════════════════════════════
+//  SIDEBAR
+// ═══════════════════════════════════════════
+function setFloor(floor, el) {
+  currentFloor = floor;
+  document.querySelectorAll('.floor-btn').forEach(b => b.classList.remove('active'));
+  el.classList.add('active');
+  const map = {all:'🏢 Todos los pisos','1 piso':'1️⃣ 1er Piso','2 Piso':'2️⃣ 2do Piso','3 Piso':'3️⃣ 3er Piso','Sin asignar':'📦 Sin asignar'};
+  document.getElementById('sectionTitle').textContent = map[floor] || floor;
+  renderGrid();
+}
+
+function renderSidebar() {
+  const c = {};
+  allEquipos.forEach(e => { c[e.piso] = (c[e.piso]||0)+1; });
+  document.getElementById('cnt-all').textContent = allEquipos.length;
+  document.getElementById('cnt-1').textContent   = c['1 piso']     || 0;
+  document.getElementById('cnt-2').textContent   = c['2 Piso']     || 0;
+  document.getElementById('cnt-3').textContent   = c['3 Piso']     || 0;
+  document.getElementById('cnt-sin').textContent = c['Sin asignar']|| 0;
+}
+
+// ═══════════════════════════════════════════
+//  STATS
+// ═══════════════════════════════════════════
+function renderStats() {
+  let ok=0, warn=0, exp=0, none=0, rPend=0, rProc=0, rDone=0;
+  allEquipos.forEach(e => {
+    const s = certStatus(e.id);
+    if (s.cls==='ok') ok++; else if (s.cls==='warn') warn++; else if (s.cls==='exp') exp++; else none++;
+    if (!e.relev) rPend++; else if (e.relev==='proceso') rProc++; else if (e.relev==='relevado') rDone++;
+  });
+  document.getElementById('statsBar').innerHTML =
+    `<div class="stat"><b>${allEquipos.length}</b> equipos</div>
+     <div class="stat" style="color:var(--green)"><b>${ok}</b> vigentes</div>
+     <div class="stat" style="color:var(--yellow)"><b>${warn}</b> por vencer</div>
+     <div class="stat" style="color:var(--red)"><b>${exp}</b> vencidos</div>
+     <div class="stat" style="color:var(--muted)"><b>${none}</b> sin cert.</div>
+     <div class="stat" style="border-left:2px solid var(--border);padding-left:14px">⬜ <b>${rPend}</b></div>
+     <div class="stat">🔄 <b>${rProc}</b></div>
+     <div class="stat">✅ <b>${rDone}</b></div>`;
+}
+
+// ═══════════════════════════════════════════
+//  GRID
+// ═══════════════════════════════════════════
+function renderGrid() {
+  try {
+  const q      = document.getElementById('searchBox').value.toLowerCase();
+  const tipo   = document.getElementById('tipoFilter').value;
+  const status = document.getElementById('statusFilter').value;
+  const relev  = document.getElementById('relevFilter').value;
+
+  const list = allEquipos.filter(e => {
+    if (!e || !e.id) return false;
+    if (currentFloor !== 'all' && e.piso !== currentFloor) return false;
+    if (tipo && e.tipo !== tipo) return false;
+    if (q && !e.codigo.toLowerCase().includes(q) && !(e.nombre||'').toLowerCase().includes(q)) return false;
+    if (status && certStatus(e.id).cls !== status) return false;
+    if (soloConCert && !activeCert(e.id)) return false;
+    if (relev === 'pendiente' && e.relev) return false;
+    if (relev === 'proceso'   && e.relev !== 'proceso')  return false;
+    if (relev === 'relevado'  && e.relev !== 'relevado') return false;
+    return true;
+  });
+
+  const grid = document.getElementById('equipoGrid');
+  if (!list.length) {
+    grid.innerHTML = '<div class="empty" style="grid-column:1/-1"><div class="icon">📭</div><p>No se encontraron equipos.</p></div>';
+    return;
+  }
+
+  grid.innerHTML = list.map(e => {
+    try {
+    const st   = certStatus(e.id);
+    const cert = activeCert(e.id);
+    const icon = equipoIcon(e.tipo);
+    const noteDot = e.notas ? '<span class="note-dot" title="Tiene notas"></span>' : '';
+
+    let certInfo;
+    if (!cert) {
+      certInfo = '<div class="cert-filename">Sin certificado cargado</div>';
+    } else {
+      const archivos = (cert.archivos && cert.archivos.length) ? cert.archivos : [{name: cert.nombre || 'cert.pdf'}];
+      const adjHTML  = archivos.map(a => '<div style="display:flex;align-items:center;gap:4px"><span style="color:var(--green)">📄</span><span>'+(a.name||'')+'</span></div>').join('');
+      certInfo = '<div class="cert-filename">'
+        + (cert.empresa ? '<span style="color:var(--muted)">'+cert.empresa+'</span>' : '')
+        + (cert.emision ? '<span style="color:var(--muted)"> · '+cert.emision+'</span>' : '')
+        + '<div style="margin-top:4px;font-size:.75rem">'+adjHTML+'</div></div>';
+    }
+
+    return '<div class="equipo-card" id="card-'+e.id+'">'
+      + '<div class="equipo-header">'
+      + '<div class="equipo-icon">'+icon+'</div>'
+      + '<div class="equipo-info">'
+      + '<div class="equipo-code">'+(cert ? '<span class="cert-dot">●</span> ' : '')+e.codigo+noteDot+'</div>'
+      + '<div class="equipo-name">'+(e.nombre||'—')+'</div>'
+      + '<span class="equipo-piso">'+e.piso+'</span>'
+      + '</div>'
+      + '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px">'
+      + '<span class="badge '+st.cls+'">● '+st.label+'</span>'
+      + '<button onclick="cycleRelev('+e.id+')" title="Estado de relevamiento" style="background:transparent;border:none;cursor:pointer;font-size:1.2rem">'+relevIcon(e.relev)+'</button>'
+      + '</div></div>'
+      + certInfo
+      + '<div class="equipo-actions">'
+      + '<button class="btn-action success" onclick="openAddCert('+e.id+')">📎 Cert.</button>'
+      + (cert ? '<button class="btn-action" onclick="viewPDF('+e.id+')">👁️ Ver</button>' : '')
+      + '<button class="btn-action" onclick="openQR('+e.id+')">📱 QR</button>'
+      + '<button class="btn-action" onclick="openHistorial('+e.id+')">📋 Historial</button>'
+      + '<button class="btn-action" onclick="openEditEquipo('+e.id+')">✏️</button>'
+      + '<button class="btn-action danger" onclick="confirmDeleteEquipo('+e.id+')">🗑️</button>'
+      + '</div></div>';
+    } catch(err) {
+      console.error('Error renderizando equipo', e, err);
+      return '<div class="equipo-card" style="border-color:var(--red)"><div class="equipo-code" style="color:var(--red)">Error: '+e.codigo+'</div></div>';
+    }
+  }).join('');
+  } catch(err) {
+    console.error('renderGrid error:', err);
+    document.getElementById('equipoGrid').innerHTML = '<div class="empty" style="grid-column:1/-1"><div class="icon">⚠️</div><p>Error al renderizar: '+err.message+'</p></div>';
+  }
+}
+
+// ═══════════════════════════════════════════
+//  RELEVAMIENTO
+// ═══════════════════════════════════════════
+async function cycleRelev(id) {
+  const eq = await dbGet('equipos', id);
+  if (!eq) return;
+  const orden = [undefined, 'proceso', 'relevado'];
+  const idx = orden.indexOf(eq.relev);
+  eq.relev = orden[(idx + 1) % orden.length];
+  await dbPut('equipos', eq);
+  allEquipos = await dbAll('equipos');
+  renderGrid();
+  renderStats();
+}
+
+// ═══════════════════════════════════════════
+//  FILTRO CON CERT
+// ═══════════════════════════════════════════
+function toggleConCert() {
+  soloConCert = !soloConCert;
+  const btn = document.getElementById('btnConCert');
+  btn.classList.toggle('active', soloConCert);
+  renderGrid();
+}
+
+// ═══════════════════════════════════════════
+//  EQUIPO CRUD
+// ═══════════════════════════════════════════
+function openAddEquipo() {
+  editingId = null;
+  document.getElementById('modalEquipoTitle').textContent = '⚙️ Nuevo equipo';
+  ['fCodigo','fNombre','fNotas'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('fPiso').value = 'Sin asignar';
+  document.getElementById('fTipo').value = 'OTRO';
+  openModal('modalEquipo');
+}
+
+async function openEditEquipo(id) {
+  const eq = await dbGet('equipos', id);
+  if (!eq) return;
+  editingId = id;
+  document.getElementById('modalEquipoTitle').textContent = '✏️ Editar equipo';
+  document.getElementById('fCodigo').value = eq.codigo;
+  document.getElementById('fNombre').value = eq.nombre || '';
+  document.getElementById('fPiso').value   = eq.piso;
+  document.getElementById('fTipo').value   = eq.tipo || 'OTRO';
+  document.getElementById('fNotas').value  = eq.notas || '';
+  openModal('modalEquipo');
+}
+
+async function saveEquipo() {
+  const codigo = document.getElementById('fCodigo').value.trim();
+  if (!codigo) { toast('El código es obligatorio', 'err'); return; }
+  const obj = {
+    codigo, nombre: document.getElementById('fNombre').value.trim(),
+    piso: document.getElementById('fPiso').value, tipo: document.getElementById('fTipo').value,
+    notas: document.getElementById('fNotas').value.trim(),
+  };
+  if (editingId) obj.id = editingId;
+  await dbPut('equipos', obj);
+  allEquipos = await dbAll('equipos');
+  closeModal('modalEquipo');
+  renderSidebar(); renderGrid(); renderStats();
+  toast(editingId ? 'Equipo actualizado ✓' : 'Equipo agregado ✓', 'ok');
+}
+
+function confirmDeleteEquipo(id) {
+  const eq = allEquipos.find(e => e.id === id);
+  document.getElementById('confirmTitle').textContent = '¿Eliminar equipo?';
+  document.getElementById('confirmMsg').textContent = 'Se eliminará "'+eq?.codigo+'" y todos sus certificados.';
+  document.getElementById('confirmOkBtn').textContent = 'Eliminar';
+  document.getElementById('confirmOkBtn').style.background = 'var(--red)';
+  document.getElementById('confirmOkBtn').onclick = () => deleteEquipo(id);
+  openModal('modalConfirm');
+}
+
+async function deleteEquipo(id) {
+  const cs = await dbByIndex('certs', 'equipoId', id);
+  for (const c of cs) await dbDel('certs', c.id);
+  await dbDel('equipos', id);
+  allEquipos = await dbAll('equipos');
+  allCerts   = await dbAll('certs');
+  closeModal('modalConfirm');
+  renderSidebar(); renderGrid(); renderStats();
+  toast('Equipo eliminado', 'ok');
+}
+
+// ═══════════════════════════════════════════
+//  CERTIFICADOS — subir
+// ═══════════════════════════════════════════
+function openAddCert(equipoId) {
+  certEquipoId = equipoId;
+  pendingPDFs  = [];
+  const eq = allEquipos.find(e => e.id === equipoId);
+  document.getElementById('certEquipoLabel').textContent = eq ? eq.codigo : equipoId;
+  document.getElementById('fFechaEmision').value = '';
+  document.getElementById('fFechaVenc').value    = '';
+  document.getElementById('fEmpresa').value      = '';
+  document.getElementById('dropLabel').textContent = '📂 Arrastrá uno o más PDFs aquí o hacé clic';
+  renderPendingList();
+  openModal('modalCert');
+}
+
+function renderPendingList() {
+  const el = document.getElementById('pendingList');
+  if (!pendingPDFs.length) { el.innerHTML = ''; return; }
+  document.getElementById('dropLabel').textContent = '✅ '+pendingPDFs.length+' archivo(s)';
+  el.innerHTML = pendingPDFs.map((p,i) =>
+    '<div style="display:flex;align-items:center;gap:8px;background:var(--bg);border-radius:5px;padding:4px 8px;font-size:.78rem">'
+    +'<span style="color:var(--green)">📄</span><span style="flex:1">'+p.name+'</span>'
+    +'<button onclick="removePending('+i+')" style="background:transparent;border:none;color:var(--red);cursor:pointer">✕</button>'
+    +'</div>'
+  ).join('');
+}
+
+function removePending(i) { pendingPDFs.splice(i,1); renderPendingList(); }
+
+function handleFileSelect(input) { addFiles(Array.from(input.files)); input.value=''; }
+
+function handleDrop(ev) {
+  ev.preventDefault();
+  document.getElementById('dropZone').classList.remove('over');
+  const files = Array.from(ev.dataTransfer.files).filter(f => f.type==='application/pdf');
+  if (!files.length) { toast('Solo se aceptan PDFs','err'); return; }
+  addFiles(files);
+}
+
+function addFiles(files) {
+  const promises = files.map(file => new Promise(res => {
+    const r = new FileReader();
+    r.onload = e => { pendingPDFs.push({name:file.name, data:e.target.result}); res(); };
+    r.readAsArrayBuffer(file);
+  }));
+  Promise.all(promises).then(() => renderPendingList());
+}
+
+async function saveCert() {
+  if (!pendingPDFs.length) { toast('Seleccioná al menos un PDF','err'); return; }
+  const cert = {
+    equipoId:    certEquipoId,
+    archivos:    pendingPDFs,
+    nombre:      pendingPDFs[0].name,
+    data:        pendingPDFs[0].data,
+    emision:     document.getElementById('fFechaEmision').value,
+    vencimiento: document.getElementById('fFechaVenc').value,
+    empresa:     document.getElementById('fEmpresa').value.trim(),
+    fecha:       new Date().toISOString(),
+  };
+  await dbPut('certs', cert);
+  allCerts = await dbAll('certs');
+  closeModal('modalCert');
+  renderGrid(); renderStats();
+  toast('Certificado guardado — '+pendingPDFs.length+' archivo(s) ✓','ok');
+}
+
+// ═══════════════════════════════════════════
+//  VISOR PDF
+// ═══════════════════════════════════════════
+async function viewPDF(equipoId) {
+  const cert = activeCert(equipoId);
+  if (!cert) { toast('Sin certificado cargado','err'); return; }
+  openCertViewer(cert);
+}
+
+async function viewHistCert(certId) {
+  const cert = await dbGet('certs', certId);
+  if (!cert) return;
+  openCertViewer(cert);
+}
+
+async function viewCertAdjunto(certId, adjIdx) {
+  const cert = await dbGet('certs', certId);
+  if (!cert) return;
+  openCertViewer(cert);
+  setTimeout(() => selectAdjunto(adjIdx), 80);
+}
+
+function openCertViewer(cert) {
+  currentCertArchivos = (cert.archivos && cert.archivos.length)
+    ? cert.archivos
+    : [{name: cert.nombre || 'certificado.pdf', data: cert.data}];
+
+  const adjEl = document.getElementById('pdfAdjuntosList');
+  if (currentCertArchivos.length > 1) {
+    adjEl.style.display = 'flex';
+    adjEl.innerHTML = currentCertArchivos.map((a,i) =>
+      '<button class="pdf-adj-btn" id="adjBtn'+i+'" onclick="selectAdjunto('+i+')" title="'+a.name+'">📄 '+a.name+'</button>'
+    ).join('');
+  } else {
+    adjEl.style.display = 'none';
+  }
+  openModal('modalPDF');
+  selectAdjunto(0);
+}
+
+function selectAdjunto(idx) {
+  const a = currentCertArchivos[idx];
+  if (!a || !a.data) return;
+
+  currentCertArchivos.forEach((_,i) => {
+    const btn = document.getElementById('adjBtn'+i);
+    if (btn) btn.className = 'pdf-adj-btn' + (i===idx ? ' active' : '');
+  });
+
+  const frame = document.getElementById('pdfFrame');
+  if (frame.data && frame.data.startsWith('blob:')) URL.revokeObjectURL(frame.data);
+
+  const blob = new Blob([a.data], {type:'application/pdf'});
+  currentPDFBlob = blob;
+  currentPDFName = a.name;
+  const url = URL.createObjectURL(blob);
+  frame.data = url;
+  const fl = document.getElementById('pdfFallbackLink');
+  if (fl) { fl.href = url; fl.download = a.name; }
+  document.getElementById('pdfTitle').textContent = a.name;
+}
+
+function closePDFModal() {
+  const frame = document.getElementById('pdfFrame');
+  if (frame.data && frame.data.startsWith('blob:')) URL.revokeObjectURL(frame.data);
+  frame.data = '';
+  currentCertArchivos = [];
+  closeModal('modalPDF');
+}
+
+function downloadCurrentPDF() {
+  if (!currentPDFBlob) return;
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(currentPDFBlob);
+  a.download = currentPDFName;
+  a.click();
+}
+
+// ═══════════════════════════════════════════
+//  HISTORIAL
+// ═══════════════════════════════════════════
+async function openHistorial(equipoId) {
+  const eq = allEquipos.find(e => e.id === equipoId);
+  document.getElementById('histLabel').textContent = eq ? eq.codigo : equipoId;
+  const certs = allCerts.filter(c => c.equipoId === equipoId).sort((a,b) => b.id - a.id);
+  const container = document.getElementById('histList');
+  if (!certs.length) {
+    container.innerHTML = '<p style="color:var(--muted);font-size:.85rem">Sin certificados registrados.</p>';
+  } else {
+    container.innerHTML = certs.map((c,i) => {
+      const isActivo = i === 0;
+      const diff = c.vencimiento ? Math.round((new Date(c.vencimiento)-new Date())/86400000) : null;
+      const cls  = diff===null ? 'none' : diff<0 ? 'exp' : diff<60 ? 'warn' : 'ok';
+      const lbl  = diff===null ? 'Sin venc.' : diff<0 ? 'Vencido' : 'Vence en '+diff+'d';
+      const archivos = (c.archivos && c.archivos.length) ? c.archivos : [{name:c.nombre||'cert.pdf'}];
+      const adjHTML = archivos.map((a,ai) =>
+        '<div style="display:flex;align-items:center;gap:6px;font-size:.75rem;background:var(--bg);border-radius:4px;padding:3px 8px">'
+        +'<span style="color:var(--green)">📄</span><span style="flex:1">'+a.name+'</span>'
+        +'<button class="btn-action" style="min-width:unset;padding:2px 8px;font-size:.72rem" onclick="viewCertAdjunto('+c.id+','+ai+')">👁️</button>'
+        +'</div>'
+      ).join('');
+      return '<div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:8px">'
+        +'<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">'
+        +'<div style="flex:1"><div style="font-weight:600;font-size:.85rem">'+(archivos.length>1?'<span style="color:var(--accent)">'+archivos.length+' adjuntos</span>':archivos[0].name)+'</div>'
+        +'<div style="font-size:.75rem;color:var(--muted)">'+(c.empresa||'')+' '+(c.emision?'· '+c.emision:'')+'</div>'
+        +'<div style="font-size:.75rem;color:var(--muted)">Cargado: '+new Date(c.fecha).toLocaleDateString('es-AR')+'</div></div>'
+        +'<span class="badge '+cls+'">● '+lbl+'</span>'
+        +(isActivo?'<span style="font-size:.72rem;color:var(--accent)">● Activo</span>':'')
+        +'<button class="btn-action danger" style="min-width:unset" onclick="confirmDeleteCert('+c.id+','+equipoId+')">🗑️</button>'
+        +'</div><div style="display:flex;flex-direction:column;gap:4px">'+adjHTML+'</div></div>';
+    }).join('');
+  }
+  openModal('modalHistorial');
+}
+
+function confirmDeleteCert(certId, equipoId) {
+  document.getElementById('confirmTitle').textContent = '¿Eliminar certificado?';
+  document.getElementById('confirmMsg').textContent = 'Se eliminará este certificado y todos sus adjuntos.';
+  document.getElementById('confirmOkBtn').textContent = 'Eliminar';
+  document.getElementById('confirmOkBtn').style.background = 'var(--red)';
+  document.getElementById('confirmOkBtn').onclick = () => deleteCert(certId, equipoId);
+  openModal('modalConfirm');
+}
+
+async function deleteCert(certId, equipoId) {
+  await dbDel('certs', certId);
+  allCerts = await dbAll('certs');
+  closeModal('modalConfirm');
+  renderGrid(); renderStats();
+  openHistorial(equipoId);
+  toast('Certificado eliminado','ok');
+}
+
+// ═══════════════════════════════════════════
+//  QR
+// ═══════════════════════════════════════════
+function openQR(equipoId) {
+  const eq   = allEquipos.find(e => e.id === equipoId);
+  const cert = activeCert(equipoId);
+  const st   = certStatus(equipoId);
+  const info = ['EQUIPO: '+eq.codigo,'NOMBRE: '+(eq.nombre||'-'),'PISO: '+eq.piso,'ESTADO: '+st.label,
+    cert&&cert.vencimiento?'VENCIMIENTO: '+cert.vencimiento:'',
+    cert&&cert.empresa?'EMPRESA: '+cert.empresa:''].filter(Boolean).join('\n');
+  document.getElementById('qrInfo').innerHTML = '<b>'+eq.codigo+'</b><br>'+(eq.nombre||'')+' · '+eq.piso;
+  document.getElementById('qrcode').innerHTML = '';
+  new QRCode(document.getElementById('qrcode'), {text:info, width:200, height:200, colorDark:'#1a1d27', colorLight:'#ffffff', correctLevel:QRCode.CorrectLevel.M});
+  openModal('modalQR');
+}
+
+function downloadQR() {
+  const canvas = document.querySelector('#qrcode canvas');
+  if (!canvas) { toast('QR no disponible','err'); return; }
+  const a = document.createElement('a'); a.href=canvas.toDataURL('image/png'); a.download='qr-equipo.png'; a.click();
+}
+
+// ═══════════════════════════════════════════
+//  EXPORT CSV
+// ═══════════════════════════════════════════
+function exportCSV() {
+  const rows = [['Código','Nombre','Piso','Tipo','Estado','Vencimiento','Empresa','Relevamiento','Notas']];
+  allEquipos.forEach(e => {
+    const st = certStatus(e.id), cert = activeCert(e.id);
+    rows.push([e.codigo,e.nombre||'',e.piso,e.tipo||'',st.label,cert?cert.vencimiento||'':'',cert?cert.empresa||'':'',e.relev||'pendiente',e.notas||'']);
+  });
+  const csv = rows.map(r => r.map(c => '"'+String(c).replace(/"/g,'""')+'"').join(',')).join('\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8;'}));
+  a.download = 'CertLab_Catamarca_'+new Date().toISOString().slice(0,10)+'.csv';
+  a.click();
+  toast('CSV exportado ✓','ok');
+}
+
+// ═══════════════════════════════════════════
+//  EXPORTAR / IMPORTAR DB
+// ═══════════════════════════════════════════
+async function exportDB() {
+  toast('Preparando exportación…','ok');
+  const equipos = await dbAll('equipos');
+  const certs   = await dbAll('certs');
+  const certsExp = certs.map(c => {
+    const archivos = (c.archivos && c.archivos.length) ? c.archivos : [{name:c.nombre||'cert.pdf',data:c.data}];
+    const archB64 = archivos.map(a => {
+      if (!a.data) return {name:a.name,data:''};
+      const bytes = new Uint8Array(a.data); let bin='';
+      bytes.forEach(b => bin+=String.fromCharCode(b));
+      return {name:a.name,data:btoa(bin)};
+    });
+    return {...c, archivos:archB64, data:archB64[0]?archB64[0].data:'', nombre:archB64[0]?archB64[0].name:''};
+  });
+  const json = JSON.stringify({version:2, exportDate:new Date().toISOString(), exportedBy:'CertLab', equipos, certs:certsExp});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([json],{type:'application/json'}));
+  a.download = 'CertLab_DB_'+new Date().toISOString().slice(0,10)+'.certlab';
+  a.click();
+  toast('DB exportada — '+equipos.length+' equipos, '+certs.length+' certs ✓','ok');
+}
+
+async function importDB(input) {
+  const file = input.files[0]; if (!file) return; input.value='';
+  const text = await file.text();
+  let data; try { data=JSON.parse(text); } catch { toast('Archivo inválido','err'); return; }
+  if (!data.equipos||!data.certs) { toast('Formato no reconocido','err'); return; }
+  const ok = confirm('¿Importar DB?\nEquipos: '+data.equipos.length+'\nCertificados: '+data.certs.length+'\n\nEsto REEMPLAZA la base actual.');
+  if (!ok) return;
+  const eqsAct=await dbAll('equipos'); for(const e of eqsAct) await dbDel('equipos',e.id);
+  const csAct=await dbAll('certs');    for(const c of csAct)  await dbDel('certs',c.id);
+  const idMap={};
+  for(const eq of data.equipos) { const old=eq.id; const obj={...eq}; delete obj.id; idMap[old]=await dbPut('equipos',obj); }
+  for(const c of data.certs) {
+    const archivos=(c.archivos&&c.archivos.length)?c.archivos:[{name:c.nombre||'cert.pdf',data:c.data}];
+    const archAB=archivos.map(a => {
+      if(!a.data) return {name:a.name,data:null};
+      const bin=atob(a.data); const bytes=new Uint8Array(bin.length);
+      for(let i=0;i<bin.length;i++) bytes[i]=bin.charCodeAt(i);
+      return {name:a.name,data:bytes.buffer};
+    });
+    const obj={...c,archivos:archAB,data:archAB[0]?archAB[0].data:null,nombre:archAB[0]?archAB[0].name:'',equipoId:idMap[c.equipoId]??c.equipoId};
+    delete obj.id; await dbPut('certs',obj);
+  }
+  allEquipos=await dbAll('equipos'); allCerts=await dbAll('certs');
+  renderSidebar(); renderGrid(); renderStats();
+  toast('Importación completa — '+data.equipos.length+' equipos ✓','ok');
+}
+
+// ═══════════════════════════════════════════
+//  IMPORTAR CARPETA
+// ═══════════════════════════════════════════
+async function importarCarpeta() {
+  if (!window.showDirectoryPicker) { toast('Usá Chrome o Edge','err'); return; }
+  let dirHandle; try { dirHandle=await window.showDirectoryPicker(); } catch(e) { return; }
+  let importados=0, noEncontrados=[];
+  for await (const [name,handle] of dirHandle.entries()) {
+    if (handle.kind!=='directory') continue;
+    let eq=allEquipos.find(e=>e.codigo.toLowerCase()===name.toLowerCase()||name.toLowerCase().includes(e.codigo.toLowerCase()));
+    if (!eq) { const base=name.replace(/\s+\d{2}\.\d{2}\.\d{2,4}.*$/,'').trim(); eq=allEquipos.find(e=>e.codigo.toLowerCase()===base.toLowerCase()); }
+    if (!eq) { noEncontrados.push(name); continue; }
+    const pdfs=[]; await collectPDFs(handle,pdfs,0);
+    if (!pdfs.length) continue;
+    const archivosAB=[];
+    for(const pdf of pdfs) { const ab=await pdf.file.arrayBuffer(); archivosAB.push({name:pdf.name,data:ab}); }
+    await dbPut('certs',{equipoId:eq.id,archivos:archivosAB,nombre:archivosAB[0].name,data:archivosAB[0].data,emision:'',vencimiento:'',empresa:'',fecha:new Date().toISOString()});
+    importados++;
+  }
+  allCerts=await dbAll('certs'); renderGrid(); renderStats();
+  let msg=importados+' equipos importados ✓';
+  if(noEncontrados.length) msg+=' · '+noEncontrados.length+' sin match';
+  toast(msg,'ok');
+}
+
+async function collectPDFs(dirHandle, result, depth) {
+  for await (const [name,handle] of dirHandle.entries()) {
+    if (handle.kind==='file'&&name.toLowerCase().endsWith('.pdf')) { result.push({name,file:await handle.getFile()}); }
+    else if (handle.kind==='directory'&&depth<2) { await collectPDFs(handle,result,depth+1); }
+  }
+}
+
+// ═══════════════════════════════════════════
+//  RESET / REIMPORTAR
+// ═══════════════════════════════════════════
+function confirmReset() {
+  document.getElementById('confirmTitle').textContent = '¿Actualizar lista de equipos?';
+  document.getElementById('confirmMsg').textContent = 'Agrega los equipos nuevos que faltan. Los equipos y certificados existentes NO se tocan.';
+  document.getElementById('confirmOkBtn').textContent = 'Actualizar';
+  document.getElementById('confirmOkBtn').style.background = 'var(--accent)';
+  document.getElementById('confirmOkBtn').onclick = resetDB;
+  openModal('modalConfirm');
+}
+
+async function resetDB() {
+  // Solo agrega los equipos que no existen todavía (por código)
+  const seed = [
+    {codigo:'4571',nombre:'Equipo',piso:'Sin asignar',tipo:'OTRO',notas:''},
+    {codigo:'794BR11779',nombre:'Equipo',piso:'Sin asignar',tipo:'OTRO',notas:''},
+    {codigo:'794BR12420',nombre:'Equipo',piso:'Sin asignar',tipo:'OTRO',notas:''},
+    {codigo:'AGI-12961330',nombre:'Agitador',piso:'Sin asignar',tipo:'AGITADO',notas:''},
+    {codigo:'AGI-200102448',nombre:'Agitador',piso:'Sin asignar',tipo:'AGITADO',notas:''},
+    {codigo:'AGI-VB23CBC0003127',nombre:'Agitador',piso:'Sin asignar',tipo:'AGITADO',notas:''},
+    {codigo:'AGITADO-27594',nombre:'Agitador',piso:'Sin asignar',tipo:'AGITADO',notas:''},
+    {codigo:'AGITADO-8AS0004975',nombre:'Agitador',piso:'Sin asignar',tipo:'AGITADO',notas:''},
+    {codigo:'AGITADO-SC256AW0000912',nombre:'Agitador',piso:'Sin asignar',tipo:'AGITADO',notas:''},
+    {codigo:'AGITADO-VB255BG0003558',nombre:'Agitador',piso:'Sin asignar',tipo:'AGITADO',notas:''},
+    {codigo:'AGITADO-VB255VG003558',nombre:'Agitador',piso:'Sin asignar',tipo:'AGITADO',notas:''},
+    {codigo:'ANA-2965439',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-36205289',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-393163',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-395235',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-4946A14729',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-7127',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-C1600476',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-C1600957',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-ISR53213',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-ISR53215',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-0000Q0614',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-022101490',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-0807',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-10614',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-12500108',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-1445',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-15W6-03',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-25078501',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-251250',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-2842-18',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-36102139',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-421016',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-450209P',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-52421',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-54270',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-5438',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-5649A45430',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-578',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-5938',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-C107042089',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-CJ07042089',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-HQ00382',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-HQ00386',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-HQ00387',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-HS00177',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-ISR53823',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-ISR62129',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-Q0614',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-SU0500522',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-SU0802495',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-SV0500256',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-SV0901885',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'ANA-LAB-VN06057',nombre:'Analizador',piso:'Sin asignar',tipo:'ANA',notas:''},
+    {codigo:'Arch d Aud',nombre:'Archivo de Auditoría',piso:'Sin asignar',tipo:'OTRO',notas:''},
+    {codigo:'AUT-336',nombre:'Autoclave',piso:'Sin asignar',tipo:'AUT',notas:''},
+    {codigo:'AUT-C801336',nombre:'Autoclave',piso:'Sin asignar',tipo:'AUT',notas:''},
+    {codigo:'AUTO-12965104',nombre:'Autoclave',piso:'Sin asignar',tipo:'AUT',notas:''},
+    {codigo:'BALANZA-733793',nombre:'Balanza',piso:'Sin asignar',tipo:'BALANZA',notas:''},
+    {codigo:'BAN-26355',nombre:'Baño termostático',piso:'Sin asignar',tipo:'BAÑO',notas:''},
+    {codigo:'BANO-27143',nombre:'Baño termostático',piso:'Sin asignar',tipo:'BAÑO',notas:''},
+    {codigo:'BANO-28544',nombre:'Baño termostático',piso:'Sin asignar',tipo:'BAÑO',notas:''},
+    {codigo:'CAB-201386154 20.08.25',nombre:'Cabina de flujo laminar',piso:'Sin asignar',tipo:'CAB',notas:''},
+    {codigo:'CABINA-74 20.08.25',nombre:'Cabina de flujo laminar',piso:'Sin asignar',tipo:'CAB',notas:''},
+    {codigo:'CALENTA-170605019',nombre:'Calentador',piso:'Sin asignar',tipo:'OTRO',notas:''},
+    {codigo:'CEN-24083',nombre:'Centrifugador',piso:'Sin asignar',tipo:'CEN',notas:''},
+    {codigo:'CEN-24084',nombre:'Centrifugador',piso:'Sin asignar',tipo:'CEN',notas:''},
+    {codigo:'CEN-25089',nombre:'Centrifugador',piso:'Sin asignar',tipo:'CEN',notas:''},
+    {codigo:'CEN-28009',nombre:'Centrifugador',piso:'Sin asignar',tipo:'CEN',notas:''},
+    {codigo:'CEN-50212022',nombre:'Centrifugador',piso:'Sin asignar',tipo:'CEN',notas:''},
+    {codigo:'CEN-53602',nombre:'Centrifugador',piso:'Sin asignar',tipo:'CEN',notas:''},
+    {codigo:'CEN-61974610',nombre:'Centrifugador',piso:'Sin asignar',tipo:'CEN',notas:''},
+    {codigo:'CEN-MON-LABCAT',nombre:'Centrifugador Monitor',piso:'Sin asignar',tipo:'CEN',notas:''},
+    {codigo:'CENTRIF-28008',nombre:'Centrífuga',piso:'Sin asignar',tipo:'CENTRIF',notas:''},
+    {codigo:'CENTRIF-30766',nombre:'Centrífuga',piso:'Sin asignar',tipo:'CENTRIF',notas:''},
+    {codigo:'DIS-FLC00015370',nombre:'Dispensador',piso:'Sin asignar',tipo:'OTRO',notas:''},
+    {codigo:'EST-01543',nombre:'Estufa',piso:'Sin asignar',tipo:'ESTUFA',notas:''},
+    {codigo:'EST-AGU-0071491',nombre:'Estufa',piso:'Sin asignar',tipo:'ESTUFA',notas:''},
+    {codigo:'EST-AGU-MIC0001562',nombre:'Estufa',piso:'Sin asignar',tipo:'ESTUFA',notas:''},
+    {codigo:'EST-AGU-MP00005085',nombre:'Estufa',piso:'Sin asignar',tipo:'ESTUFA',notas:''},
+    {codigo:'EST-MP00003507',nombre:'Estufa',piso:'Sin asignar',tipo:'ESTUFA',notas:''},
+    {codigo:'EST-MR120H2732252 1',nombre:'Estufa',piso:'Sin asignar',tipo:'ESTUFA',notas:''},
+    {codigo:'ESTUFA-32533',nombre:'Estufa',piso:'Sin asignar',tipo:'ESTUFA',notas:''},
+    {codigo:'INC-27500',nombre:'Incubadora',piso:'Sin asignar',tipo:'INC',notas:''},
+    {codigo:'Lector-640003359P',nombre:'Lector',piso:'Sin asignar',tipo:'OTRO',notas:''},
+    {codigo:'MIC-1F09479',nombre:'Microscopio',piso:'Sin asignar',tipo:'MIC',notas:''},
+    {codigo:'MIC-207840',nombre:'Microscopio',piso:'Sin asignar',tipo:'MIC',notas:''},
+    {codigo:'MIC-7G00807',nombre:'Microscopio',piso:'Sin asignar',tipo:'MIC',notas:''},
+    {codigo:'MICROSC-086228',nombre:'Microscopio',piso:'Sin asignar',tipo:'MIC',notas:''},
+    {codigo:'MICROSC-20B0571',nombre:'Microscopio',piso:'Sin asignar',tipo:'MIC',notas:''},
+    {codigo:'MICROSC-3134033303',nombre:'Microscopio',piso:'Sin asignar',tipo:'MIC',notas:''},
+    {codigo:'OTRO EQUIPOS DESMONTADOS',nombre:'Equipos desmontados',piso:'Sin asignar',tipo:'OTRO',notas:''},
+    {codigo:'08020006',nombre:'Equipo',piso:'Sin asignar',tipo:'OTRO',notas:''},
+    {codigo:'19771',nombre:'Equipo',piso:'Sin asignar',tipo:'OTRO',notas:''},
+    {codigo:'24622',nombre:'Equipo',piso:'Sin asignar',tipo:'OTRO',notas:''},
+    {codigo:'34150',nombre:'Equipo',piso:'Sin asignar',tipo:'OTRO',notas:''},
+    {codigo:'CEN-00053602',nombre:'Centrifugador',piso:'Sin asignar',tipo:'CEN',notas:''},
+    {codigo:'CENTRIF-28009',nombre:'Centrífuga',piso:'Sin asignar',tipo:'CENTRIF',notas:''},
+    {codigo:'EZ-37114186',nombre:'Equipo',piso:'Sin asignar',tipo:'OTRO',notas:''},
+  ];
+  const existentes = allEquipos.map(e => e.codigo.toLowerCase());
+  let agregados = 0, actualizados = 0;
+  for (const eq of seed) {
+    const existing = allEquipos.find(e => e.codigo.toLowerCase() === eq.codigo.toLowerCase());
+    if (!existing) {
+      await dbPut('equipos', eq);
+      agregados++;
+    } else if (existing.piso === 'Sin asignar' && eq.piso !== 'Sin asignar') {
+      // actualizar piso si estaba sin asignar y ahora tenemos uno
+      existing.piso = eq.piso;
+      await dbPut('equipos', existing);
+      actualizados++;
+    }
+  }
+  allEquipos = await dbAll('equipos');
+  allCerts   = await dbAll('certs');
+  closeModal('modalConfirm');
+  renderSidebar(); renderGrid(); renderStats();
+  toast(agregados > 0 || actualizados > 0
+    ? agregados+' nuevos · '+actualizados+' pisos actualizados ✓'
+    : 'Lista ya actualizada — sin cambios', 'ok');
+}
+
+// ═══════════════════════════════════════════
+//  MODALES
+// ═══════════════════════════════════════════
+function openModal(id)  { document.getElementById(id).classList.add('open'); }
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+
+document.querySelectorAll('.overlay').forEach(ov => {
+  ov.addEventListener('click', e => {
+    if (e.target===ov) { if(ov.id==='modalPDF') closePDFModal(); else closeModal(ov.id); }
+  });
+});
+
+// ═══════════════════════════════════════════
+//  TOAST
+// ═══════════════════════════════════════════
+let toastTimer;
+function toast(msg, type='ok') {
+  const el=document.getElementById('toast');
+  el.textContent=msg; el.className='show '+type;
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=>{ el.className=''; },3000);
+}
+
+// ═══════════════════════════════════════════
+init();
+</script>
+</body>
+</html>
