@@ -2894,6 +2894,731 @@
       "vencimiento": "",
       "empresa": "",
       "ts": 1791383527214
+    },
+    {
+      "id": "muy7ia1etwe284m1lz",
+      "equipoId": "CEN-50212022",
+      "archivos": [
+        {
+          "path": "pdfs/1791383534211_CEN-50212022.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383534211_CEN-50212022.pdf",
+          "name": "CEN-50212022.pdf"
+        },
+        {
+          "path": "pdfs/1791383536795_2026-MP-CEN-50212022.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383536795_2026-MP-CEN-50212022.pdf",
+          "name": "2026-MP-CEN-50212022.pdf"
+        },
+        {
+          "path": "pdfs/1791383538657_2026-SE-CEN-50212022.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383538657_2026-SE-CEN-50212022.pdf",
+          "name": "2026-SE-CEN-50212022.pdf"
+        }
+      ],
+      "nombre": "CEN-50212022.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383540306
+    },
+    {
+      "id": "muy7iia9cccmhrxvdv",
+      "equipoId": "CEN-53602",
+      "archivos": [
+        {
+          "path": "pdfs/1791383540330_2024-SE_CEN-00053602.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383540330_2024-SE_CEN-00053602.pdf",
+          "name": "2024-SE CEN-00053602.pdf"
+        },
+        {
+          "path": "pdfs/1791383542125_2026-SE_CEN-00053602.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383542125_2026-SE_CEN-00053602.pdf",
+          "name": "2026-SE CEN-00053602.pdf"
+        },
+        {
+          "path": "pdfs/1791383543777_2025-SE_CEN-00053602.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383543777_2025-SE_CEN-00053602.pdf",
+          "name": "2025-SE CEN-00053602.pdf"
+        },
+        {
+          "path": "pdfs/1791383545318_2024-_PM_CEN-00053602.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383545318_2024-_PM_CEN-00053602.pdf",
+          "name": "2024- PM CEN-00053602.pdf"
+        },
+        {
+          "path": "pdfs/1791383547108_2025-MP_CEN-00053602.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383547108_2025-MP_CEN-00053602.pdf",
+          "name": "2025-MP CEN-00053602.pdf"
+        },
+        {
+          "path": "pdfs/1791383549057_2026-MP_CEN-00053602.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383549057_2026-MP_CEN-00053602.pdf",
+          "name": "2026-MP CEN-00053602.pdf"
+        }
+      ],
+      "nombre": "2024-SE CEN-00053602.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383550993
+    },
+    {
+      "id": "muy7o0t6yk9w4ejitrl",
+      "equipoId": "CEN-MON-LABCAT",
+      "archivos": [
+        {
+          "path": "pdfs/1791383551722_CENTRIF-28008.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383551722_CENTRIF-28008.pdf",
+          "name": "CENTRIF-28008.pdf"
+        },
+        {
+          "path": "pdfs/1791383553336_2025_SE_CENTRIF-28008.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383553336_2025_SE_CENTRIF-28008.pdf",
+          "name": "2025 SE CENTRIF-28008.pdf"
+        },
+        {
+          "path": "pdfs/1791383555329_19091453.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383555329_19091453.pdf",
+          "name": "19091453.pdf"
+        },
+        {
+          "path": "pdfs/1791383557449_22072550.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383557449_22072550.pdf",
+          "name": "22072550.pdf"
+        },
+        {
+          "path": "pdfs/1791383559794_23062334.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383559794_23062334.pdf",
+          "name": "23062334.pdf"
+        },
+        {
+          "path": "pdfs/1791383561932_21111003.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383561932_21111003.pdf",
+          "name": "21111003.pdf"
+        },
+        {
+          "path": "pdfs/1791383564012_25111239.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383564012_25111239.pdf",
+          "name": "25111239.pdf"
+        },
+        {
+          "path": "pdfs/1791383566378_22031248.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383566378_22031248.pdf",
+          "name": "22031248.pdf"
+        },
+        {
+          "path": "pdfs/1791383570700_21111004.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383570700_21111004.pdf",
+          "name": "21111004.pdf"
+        },
+        {
+          "path": "pdfs/1791383572434_22041703.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383572434_22041703.pdf",
+          "name": "22041703.pdf"
+        },
+        {
+          "path": "pdfs/1791383574648_22081659.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383574648_22081659.pdf",
+          "name": "22081659.pdf"
+        },
+        {
+          "path": "pdfs/1791383576912_23101140.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383576912_23101140.pdf",
+          "name": "23101140.pdf"
+        },
+        {
+          "path": "pdfs/1791383579134_16031392.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383579134_16031392.pdf",
+          "name": "16031392.pdf"
+        },
+        {
+          "path": "pdfs/1791383581416_16081036.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383581416_16081036.pdf",
+          "name": "16081036.pdf"
+        },
+        {
+          "path": "pdfs/1791383584059_251220171.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383584059_251220171.pdf",
+          "name": "251220171.pdf"
+        },
+        {
+          "path": "pdfs/1791383586073_25012413.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383586073_25012413.pdf",
+          "name": "25012413.pdf"
+        },
+        {
+          "path": "pdfs/1791383587958_26092586.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383587958_26092586.pdf",
+          "name": "26092586.pdf"
+        },
+        {
+          "path": "pdfs/1791383590056_27021144.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383590056_27021144.pdf",
+          "name": "27021144.pdf"
+        },
+        {
+          "path": "pdfs/1791383591912_26101066.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383591912_26101066.pdf",
+          "name": "26101066.pdf"
+        },
+        {
+          "path": "pdfs/1791383594157_27101237.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383594157_27101237.pdf",
+          "name": "27101237.pdf"
+        },
+        {
+          "path": "pdfs/1791383597597_26101065.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383597597_26101065.pdf",
+          "name": "26101065.pdf"
+        },
+        {
+          "path": "pdfs/1791383600825_26101067.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383600825_26101067.pdf",
+          "name": "26101067.pdf"
+        },
+        {
+          "path": "pdfs/1791383603114_26101956.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383603114_26101956.pdf",
+          "name": "26101956.pdf"
+        },
+        {
+          "path": "pdfs/1791383605663_27021230.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383605663_27021230.pdf",
+          "name": "27021230.pdf"
+        },
+        {
+          "path": "pdfs/1791383607864_251220199.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383607864_251220199.pdf",
+          "name": "251220199.pdf"
+        },
+        {
+          "path": "pdfs/1791383609958_26092587.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383609958_26092587.pdf",
+          "name": "26092587.pdf"
+        },
+        {
+          "path": "pdfs/1791383612218_26091772.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383612218_26091772.pdf",
+          "name": "26091772.pdf"
+        },
+        {
+          "path": "pdfs/1791383614269_26091790.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383614269_26091790.pdf",
+          "name": "26091790.pdf"
+        },
+        {
+          "path": "pdfs/1791383616941_27051041.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383616941_27051041.pdf",
+          "name": "27051041.pdf"
+        },
+        {
+          "path": "pdfs/1791383619172_26101957.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383619172_26101957.pdf",
+          "name": "26101957.pdf"
+        },
+        {
+          "path": "pdfs/1791383621738_27101294.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383621738_27101294.pdf",
+          "name": "27101294.pdf"
+        },
+        {
+          "path": "pdfs/1791383624231_31112260.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383624231_31112260.pdf",
+          "name": "31112260.pdf"
+        },
+        {
+          "path": "pdfs/1791383626077_29072081.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383626077_29072081.pdf",
+          "name": "29072081.pdf"
+        },
+        {
+          "path": "pdfs/1791383628230_31112799.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383628230_31112799.pdf",
+          "name": "31112799.pdf"
+        },
+        {
+          "path": "pdfs/1791383630272_30061505.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383630272_30061505.pdf",
+          "name": "30061505.pdf"
+        },
+        {
+          "path": "pdfs/1791383632487_32021830.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383632487_32021830.pdf",
+          "name": "32021830.pdf"
+        },
+        {
+          "path": "pdfs/1791383634695_31112261.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383634695_31112261.pdf",
+          "name": "31112261.pdf"
+        },
+        {
+          "path": "pdfs/1791383636942_26121172.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383636942_26121172.pdf",
+          "name": "26121172.pdf"
+        },
+        {
+          "path": "pdfs/1791383638898_31112262.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383638898_31112262.pdf",
+          "name": "31112262.pdf"
+        },
+        {
+          "path": "pdfs/1791383640979_32031100.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383640979_32031100.pdf",
+          "name": "32031100.pdf"
+        },
+        {
+          "path": "pdfs/1791383642752_32031018.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383642752_32031018.pdf",
+          "name": "32031018.pdf"
+        },
+        {
+          "path": "pdfs/1791383645391_32041481.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383645391_32041481.pdf",
+          "name": "32041481.pdf"
+        },
+        {
+          "path": "pdfs/1791383647155_33041817.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383647155_33041817.pdf",
+          "name": "33041817.pdf"
+        },
+        {
+          "path": "pdfs/1791383649131_32061030.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383649131_32061030.pdf",
+          "name": "32061030.pdf"
+        },
+        {
+          "path": "pdfs/1791383651346_33041678.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383651346_33041678.pdf",
+          "name": "33041678.pdf"
+        },
+        {
+          "path": "pdfs/1791383653686_31032275.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383653686_31032275.pdf",
+          "name": "31032275.pdf"
+        },
+        {
+          "path": "pdfs/1791383655927_440461764.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383655927_440461764.pdf",
+          "name": "440461764.pdf"
+        },
+        {
+          "path": "pdfs/1791383658192_356642413.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383658192_356642413.pdf",
+          "name": "356642413.pdf"
+        },
+        {
+          "path": "pdfs/1791383659921_451220056.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383659921_451220056.pdf",
+          "name": "451220056.pdf"
+        },
+        {
+          "path": "pdfs/1791383661958_34101010.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383661958_34101010.pdf",
+          "name": "34101010.pdf"
+        },
+        {
+          "path": "pdfs/1791383663959_CERTIFICADO_DE_CALIBRACION__PIPETAS_CATAMARCA_.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383663959_CERTIFICADO_DE_CALIBRACION__PIPETAS_CATAMARCA_.pdf",
+          "name": "CERTIFICADO DE CALIBRACION  PIPETAS CATAMARCA .pdf"
+        },
+        {
+          "path": "pdfs/1791383666224_CERTIFICADO_DE_CALIBRACION__PIPETAS_CMA_.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383666224_CERTIFICADO_DE_CALIBRACION__PIPETAS_CMA_.pdf",
+          "name": "CERTIFICADO DE CALIBRACION  PIPETAS CMA .pdf"
+        },
+        {
+          "path": "pdfs/1791383668275_32051121.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383668275_32051121.pdf",
+          "name": "32051121.pdf"
+        },
+        {
+          "path": "pdfs/1791383670571_34031031.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383670571_34031031.pdf",
+          "name": "34031031.pdf"
+        },
+        {
+          "path": "pdfs/1791383672655_451220066.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383672655_451220066.pdf",
+          "name": "451220066.pdf"
+        },
+        {
+          "path": "pdfs/1791383674987_33041818.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383674987_33041818.pdf",
+          "name": "33041818.pdf"
+        },
+        {
+          "path": "pdfs/1791383677042_33041680.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383677042_33041680.pdf",
+          "name": "33041680.pdf"
+        },
+        {
+          "path": "pdfs/1791383679556_CERTIFICADO_DE_CALIBRACION__PIPETAS_CATAMARCA_hoja_2_.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383679556_CERTIFICADO_DE_CALIBRACION__PIPETAS_CATAMARCA_hoja_2_.pdf",
+          "name": "CERTIFICADO DE CALIBRACION  PIPETAS CATAMARCA hoja 2 .pdf"
+        },
+        {
+          "path": "pdfs/1791383681661_KJ15147.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383681661_KJ15147.pdf",
+          "name": "KJ15147.pdf"
+        },
+        {
+          "path": "pdfs/1791383683764_JH40938.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383683764_JH40938.pdf",
+          "name": "JH40938.pdf"
+        },
+        {
+          "path": "pdfs/1791383685959_FJ25431.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383685959_FJ25431.pdf",
+          "name": "FJ25431.pdf"
+        },
+        {
+          "path": "pdfs/1791383687974_CN54246.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383687974_CN54246.pdf",
+          "name": "CN54246.pdf"
+        },
+        {
+          "path": "pdfs/1791383690551_QH69950.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383690551_QH69950.pdf",
+          "name": "QH69950.pdf"
+        },
+        {
+          "path": "pdfs/1791383692737_33041996.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383692737_33041996.pdf",
+          "name": "33041996.pdf"
+        },
+        {
+          "path": "pdfs/1791383695185_JH24840.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383695185_JH24840.pdf",
+          "name": "JH24840.pdf"
+        },
+        {
+          "path": "pdfs/1791383697377_JH28942.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383697377_JH28942.pdf",
+          "name": "JH28942.pdf"
+        },
+        {
+          "path": "pdfs/1791383699594_32061296.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383699594_32061296.pdf",
+          "name": "32061296.pdf"
+        },
+        {
+          "path": "pdfs/1791383701660_SJ17044.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383701660_SJ17044.pdf",
+          "name": "SJ17044.pdf"
+        },
+        {
+          "path": "pdfs/1791383704500_KH38288.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383704500_KH38288.pdf",
+          "name": "KH38288.pdf"
+        },
+        {
+          "path": "pdfs/1791383706669_TH16334.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383706669_TH16334.pdf",
+          "name": "TH16334.pdf"
+        },
+        {
+          "path": "pdfs/1791383708817_KJ27085.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383708817_KJ27085.pdf",
+          "name": "KJ27085.pdf"
+        },
+        {
+          "path": "pdfs/1791383711138_SJ23938.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383711138_SJ23938.pdf",
+          "name": "SJ23938.pdf"
+        },
+        {
+          "path": "pdfs/1791383713037_SJ23941.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383713037_SJ23941.pdf",
+          "name": "SJ23941.pdf"
+        },
+        {
+          "path": "pdfs/1791383715107_VH05961.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383715107_VH05961.pdf",
+          "name": "VH05961.pdf"
+        },
+        {
+          "path": "pdfs/1791383717200_TH16327.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383717200_TH16327.pdf",
+          "name": "TH16327.pdf"
+        },
+        {
+          "path": "pdfs/1791383719190_QH74232.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383719190_QH74232.pdf",
+          "name": "QH74232.pdf"
+        },
+        {
+          "path": "pdfs/1791383721200_SJ19758.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383721200_SJ19758.pdf",
+          "name": "SJ19758.pdf"
+        },
+        {
+          "path": "pdfs/1791383723008_SJ17055.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383723008_SJ17055.pdf",
+          "name": "SJ17055.pdf"
+        },
+        {
+          "path": "pdfs/1791383725181_VH05962.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383725181_VH05962.pdf",
+          "name": "VH05962.pdf"
+        },
+        {
+          "path": "pdfs/1791383726986_VH05960.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383726986_VH05960.pdf",
+          "name": "VH05960.pdf"
+        },
+        {
+          "path": "pdfs/1791383729337_VH05963.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383729337_VH05963.pdf",
+          "name": "VH05963.pdf"
+        },
+        {
+          "path": "pdfs/1791383731179_TH16352.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383731179_TH16352.pdf",
+          "name": "TH16352.pdf"
+        },
+        {
+          "path": "pdfs/1791383733343_TH16325.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383733343_TH16325.pdf",
+          "name": "TH16325.pdf"
+        },
+        {
+          "path": "pdfs/1791383735435_VH05965.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383735435_VH05965.pdf",
+          "name": "VH05965.pdf"
+        },
+        {
+          "path": "pdfs/1791383737411_VH05978.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383737411_VH05978.pdf",
+          "name": "VH05978.pdf"
+        },
+        {
+          "path": "pdfs/1791383739445_VH23663.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383739445_VH23663.pdf",
+          "name": "VH23663.pdf"
+        },
+        {
+          "path": "pdfs/1791383741386_VH23665.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383741386_VH23665.pdf",
+          "name": "VH23665.pdf"
+        },
+        {
+          "path": "pdfs/1791383743633_VH05964.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383743633_VH05964.pdf",
+          "name": "VH05964.pdf"
+        },
+        {
+          "path": "pdfs/1791383746253_VH23664.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383746253_VH23664.pdf",
+          "name": "VH23664.pdf"
+        },
+        {
+          "path": "pdfs/1791383749922_VH23667.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383749922_VH23667.pdf",
+          "name": "VH23667.pdf"
+        },
+        {
+          "path": "pdfs/1791383752255_VH23668.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383752255_VH23668.pdf",
+          "name": "VH23668.pdf"
+        },
+        {
+          "path": "pdfs/1791383754560_VH05977.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383754560_VH05977.pdf",
+          "name": "VH05977.pdf"
+        },
+        {
+          "path": "pdfs/1791383756769_VH05976.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383756769_VH05976.pdf",
+          "name": "VH05976.pdf"
+        },
+        {
+          "path": "pdfs/1791383758859_VH23669.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383758859_VH23669.pdf",
+          "name": "VH23669.pdf"
+        },
+        {
+          "path": "pdfs/1791383760689_VH05966.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383760689_VH05966.pdf",
+          "name": "VH05966.pdf"
+        },
+        {
+          "path": "pdfs/1791383762670_WH05620.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383762670_WH05620.pdf",
+          "name": "WH05620.pdf"
+        },
+        {
+          "path": "pdfs/1791383764759_VH23672.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383764759_VH23672.pdf",
+          "name": "VH23672.pdf"
+        },
+        {
+          "path": "pdfs/1791383766615_VH23671.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383766615_VH23671.pdf",
+          "name": "VH23671.pdf"
+        },
+        {
+          "path": "pdfs/1791383768819_WH23670.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383768819_WH23670.pdf",
+          "name": "WH23670.pdf"
+        },
+        {
+          "path": "pdfs/1791383770690_WH05621.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383770690_WH05621.pdf",
+          "name": "WH05621.pdf"
+        },
+        {
+          "path": "pdfs/1791383772865_2019-MP_Term_metro_TERMOME-TA20.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383772865_2019-MP_Term_metro_TERMOME-TA20.pdf",
+          "name": "2019-MP Termómetro TERMOME-TA20.pdf"
+        },
+        {
+          "path": "pdfs/1791383774488_2019-MP_CEN-MON-LABCAT.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383774488_2019-MP_CEN-MON-LABCAT.pdf",
+          "name": "2019-MP CEN-MON-LABCAT.pdf"
+        },
+        {
+          "path": "pdfs/1791383776335_2019-MP_Termometro_TER-TA02.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383776335_2019-MP_Termometro_TER-TA02.pdf",
+          "name": "2019-MP Termometro TER-TA02.pdf"
+        },
+        {
+          "path": "pdfs/1791383778182_2022-MP_CENTRAL_MONDIS_Lab_Catamarca.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383778182_2022-MP_CENTRAL_MONDIS_Lab_Catamarca.pdf",
+          "name": "2022-MP CENTRAL MONDIS Lab Catamarca.pdf"
+        },
+        {
+          "path": "pdfs/1791383780090_2021-MP_CEN-MON-LABCAT.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383780090_2021-MP_CEN-MON-LABCAT.pdf",
+          "name": "2021-MP CEN-MON-LABCAT.pdf"
+        },
+        {
+          "path": "pdfs/1791383781938_2021-MP_Termometro_Madgetech_OctTemp2000__P93.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383781938_2021-MP_Termometro_Madgetech_OctTemp2000__P93.pdf",
+          "name": "2021-MP Termometro Madgetech OctTemp2000 #P93.pdf"
+        },
+        {
+          "path": "pdfs/1791383785087_2024-MP_CEN-MON-LABCAT.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383785087_2024-MP_CEN-MON-LABCAT.pdf",
+          "name": "2024-MP CEN-MON-LABCAT.pdf"
+        },
+        {
+          "path": "pdfs/1791383787276_2025_CEN-MON-LABCAT.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383787276_2025_CEN-MON-LABCAT.pdf",
+          "name": "2025 CEN-MON-LABCAT.pdf"
+        },
+        {
+          "path": "pdfs/1791383789084_2023_CEN-MON-LABCAT.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383789084_2023_CEN-MON-LABCAT.pdf",
+          "name": "2023 CEN-MON-LABCAT.pdf"
+        },
+        {
+          "path": "pdfs/1791383791106_2023-MP_DataloggerMadgetechOctTemp2000.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383791106_2023-MP_DataloggerMadgetechOctTemp2000.pdf",
+          "name": "2023-MP DataloggerMadgetechOctTemp2000.pdf"
+        },
+        {
+          "path": "pdfs/1791383792922_2020-MP_Central_temper._Mondis_Laboratorio_Catamarca._piso_2.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383792922_2020-MP_Central_temper._Mondis_Laboratorio_Catamarca._piso_2.pdf",
+          "name": "2020-MP Central temper. Mondis Laboratorio Catamarca. piso 2.pdf"
+        },
+        {
+          "path": "pdfs/1791383795092_2024_CEN-MON-LABCAT.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383795092_2024_CEN-MON-LABCAT.pdf",
+          "name": "2024 CEN-MON-LABCAT.pdf"
+        },
+        {
+          "path": "pdfs/1791383796962_2019-MP_TERMOME-748A143.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383796962_2019-MP_TERMOME-748A143.pdf",
+          "name": "2019-MP TERMOME-748A143.pdf"
+        },
+        {
+          "path": "pdfs/1791383798726_2022-MP_Datalogger_Mediciones.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383798726_2022-MP_Datalogger_Mediciones.pdf",
+          "name": "2022-MP Datalogger Mediciones.pdf"
+        },
+        {
+          "path": "pdfs/1791383802158_TERMOME-P93230.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383802158_TERMOME-P93230.pdf",
+          "name": "TERMOME-P93230.pdf"
+        },
+        {
+          "path": "pdfs/1791383804330_2022-MP_Datalogger.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383804330_2022-MP_Datalogger.pdf",
+          "name": "2022-MP Datalogger.pdf"
+        },
+        {
+          "path": "pdfs/1791383806207_MP_mondis_lab_1-08-2023.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383806207_MP_mondis_lab_1-08-2023.pdf",
+          "name": "MP mondis lab 1-08-2023.pdf"
+        }
+      ],
+      "nombre": "CENTRIF-28008.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383808282
+    },
+    {
+      "id": "muy7o904ifzl1of53j",
+      "equipoId": "CENTRIF-28008",
+      "archivos": [
+        {
+          "path": "pdfs/1791383808327_2026-MP-CENTRIF-28008.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383808327_2026-MP-CENTRIF-28008.pdf",
+          "name": "2026-MP-CENTRIF-28008.pdf"
+        },
+        {
+          "path": "pdfs/1791383810161_2026-SE-CENTRIF-28008.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383810161_2026-SE-CENTRIF-28008.pdf",
+          "name": "2026-SE-CENTRIF-28008.pdf"
+        },
+        {
+          "path": "pdfs/1791383811750_2026_SE_CENTRIF-28008.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383811750_2026_SE_CENTRIF-28008.pdf",
+          "name": "2026 SE CENTRIF-28008.pdf"
+        },
+        {
+          "path": "pdfs/1791383813492_2025_SE_CENTRIF-28008.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383813492_2025_SE_CENTRIF-28008.pdf",
+          "name": "2025 SE CENTRIF-28008.pdf"
+        },
+        {
+          "path": "pdfs/1791383815309_CENTRIF-28008.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383815309_CENTRIF-28008.pdf",
+          "name": "CENTRIF-28008.pdf"
+        },
+        {
+          "path": "pdfs/1791383816911_2026_MP_CENTRIF-28008.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383816911_2026_MP_CENTRIF-28008.pdf",
+          "name": "2026 MP CENTRIF-28008.pdf"
+        }
+      ],
+      "nombre": "2026-MP-CENTRIF-28008.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383818900
+    },
+    {
+      "id": "muy7oc2mva7ek4ugp8a",
+      "equipoId": "CENTRIF-28009",
+      "archivos": [
+        {
+          "path": "pdfs/1791383818907_CENTRIF-28009.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383818907_CENTRIF-28009.pdf",
+          "name": "CENTRIF-28009.pdf"
+        },
+        {
+          "path": "pdfs/1791383820947_MP_CENTRIF-28009.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383820947_MP_CENTRIF-28009.pdf",
+          "name": "MP CENTRIF-28009.pdf"
+        }
+      ],
+      "nombre": "CENTRIF-28009.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383822878
     }
   ],
   "version": 1
