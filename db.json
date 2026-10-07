@@ -793,6 +793,495 @@
       "relev": ""
     }
   ],
-  "certs": [],
+  "certs": [
+    {
+      "id": "muy8pe0biu5nwyd36pm",
+      "equipoId": "EST-MP00003507",
+      "archivos": [
+        {
+          "path": "pdfs/1791385343633_Capacitacion.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385343633_Capacitacion.pdf",
+          "name": "Capacitacion.pdf"
+        },
+        {
+          "path": "pdfs/1791385382756_2020-Diciembre_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385382756_2020-Diciembre_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "name": "2020-Diciembre Estacion tratamientoagua Elga#0003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385385582_2021-Enero_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385385582_2021-Enero_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "name": "2021-Enero Estacion tratamientoagua Elga#0003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385387774_2020-Noviembre_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385387774_2020-Noviembre_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "name": "2020-Noviembre Estacion tratamientoagua Elga#0003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385390138_2021-Marzo_Estacion_tratamientoagua_Elga_0003507.SEMESTRAL.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385390138_2021-Marzo_Estacion_tratamientoagua_Elga_0003507.SEMESTRAL.pdf",
+          "name": "2021-Marzo Estacion tratamientoagua Elga#0003507.SEMESTRAL.pdf"
+        },
+        {
+          "path": "pdfs/1791385392308_2021-Marzo_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385392308_2021-Marzo_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "name": "2021-Marzo Estacion tratamientoagua Elga#0003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385394921_2022-Julio_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385394921_2022-Julio_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "name": "2022-Julio Estacion tratamientoagua Elga#0003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385397525_2022-Agosto_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385397525_2022-Agosto_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "name": "2022-Agosto Estacion tratamientoagua Elga#0003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385399921_2022-Junio_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385399921_2022-Junio_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "name": "2022-Junio Estacion tratamientoagua Elga#0003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385402441_2022-Noviembre_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385402441_2022-Noviembre_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "name": "2022-Noviembre Estacion tratamientoagua Elga#0003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385404960_2022-Septiembre_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385404960_2022-Septiembre_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "name": "2022-Septiembre Estacion tratamientoagua Elga#0003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385407531_2024_-_05_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385407531_2024_-_05_-_EST-MP00003507.pdf",
+          "name": "2024 - 05 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385410622_2024_-_03_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385410622_2024_-_03_-_EST-MP00003507.pdf",
+          "name": "2024 - 03 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385412997_2022-Octubre_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385412997_2022-Octubre_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "name": "2022-Octubre Estacion tratamientoagua Elga#0003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385415360_2024_-_02_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385415360_2024_-_02_-_EST-MP00003507.pdf",
+          "name": "2024 - 02 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385417865_2023-Abril_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385417865_2023-Abril_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "name": "2023-Abril Estacion tratamientoagua Elga#0003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385420990_2023-Junio_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385420990_2023-Junio_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "name": "2023-Junio Estacion tratamientoagua Elga#0003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385423523_2024_-_08_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385423523_2024_-_08_-_EST-MP00003507.pdf",
+          "name": "2024 - 08 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385425932_2024_-_04_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385425932_2024_-_04_-_EST-MP00003507.pdf",
+          "name": "2024 - 04 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385428625_2024_-_11_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385428625_2024_-_11_-_EST-MP00003507.pdf",
+          "name": "2024 - 11 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385435569_2024_-_12_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385435569_2024_-_12_-_EST-MP00003507.pdf",
+          "name": "2024 - 12 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385442187_2024-Enero_Estacion_tratamiento_agua_Elga__3507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385442187_2024-Enero_Estacion_tratamiento_agua_Elga__3507.pdf",
+          "name": "2024-Enero Estacion tratamiento agua Elga #3507.pdf"
+        },
+        {
+          "path": "pdfs/1791385445593_2025_-_01_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385445593_2025_-_01_-_EST-MP00003507.pdf",
+          "name": "2025 - 01 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385448528_2023-Mayo_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385448528_2023-Mayo_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "name": "2023-Mayo Estacion tratamientoagua Elga#0003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385451005_2025_-_03_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385451005_2025_-_03_-_EST-MP00003507.pdf",
+          "name": "2025 - 03 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385454219_2023-Septiembre_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385454219_2023-Septiembre_Estacion_tratamientoagua_Elga_0003507.pdf",
+          "name": "2023-Septiembre Estacion tratamientoagua Elga#0003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385458394_2024_-_01_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385458394_2024_-_01_-_EST-MP00003507.pdf",
+          "name": "2024 - 01 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385460724_2024_-_09_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385460724_2024_-_09_-_EST-MP00003507.pdf",
+          "name": "2024 - 09 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385473480_2024_-_07_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385473480_2024_-_07_-_EST-MP00003507.pdf",
+          "name": "2024 - 07 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385475765_2025_-_02_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385475765_2025_-_02_-_EST-MP00003507.pdf",
+          "name": "2025 - 02 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385478622_2025_-_09_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385478622_2025_-_09_-_EST-MP00003507.pdf",
+          "name": "2025 - 09 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385481608_2025_-_05_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385481608_2025_-_05_-_EST-MP00003507.pdf",
+          "name": "2025 - 05 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385485203_2025_-_07_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385485203_2025_-_07_-_EST-MP00003507.pdf",
+          "name": "2025 - 07 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385489205_2025_-_08_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385489205_2025_-_08_-_EST-MP00003507.pdf",
+          "name": "2025 - 08 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385494737_2022-Septiembre_Estacion_tratamientoagua_Elga_0003507__2_.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385494737_2022-Septiembre_Estacion_tratamientoagua_Elga_0003507__2_.pdf",
+          "name": "2022-Septiembre Estacion tratamientoagua Elga#0003507 (2).pdf"
+        },
+        {
+          "path": "pdfs/1791385497237_2025_-_04_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385497237_2025_-_04_-_EST-MP00003507.pdf",
+          "name": "2025 - 04 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385513557_2025_-_10_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385513557_2025_-_10_-_EST-MP00003507.pdf",
+          "name": "2025 - 10 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385516955_2025_-_06_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385516955_2025_-_06_-_EST-MP00003507.pdf",
+          "name": "2025 - 06 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385519916_2025_-_11_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385519916_2025_-_11_-_EST-MP00003507.pdf",
+          "name": "2025 - 11 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385525717_2025_-_12-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385525717_2025_-_12-_EST-MP00003507.pdf",
+          "name": "2025 - 12- EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385531692_2026_-_01_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385531692_2026_-_01_-_EST-MP00003507.pdf",
+          "name": "2026 - 01 - EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385537361_2026_-_04-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385537361_2026_-_04-_EST-MP00003507.pdf",
+          "name": "2026 - 04- EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385539817_2026_-_03-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385539817_2026_-_03-_EST-MP00003507.pdf",
+          "name": "2026 - 03- EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385542938_2026_-_06-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385542938_2026_-_06-_EST-MP00003507.pdf",
+          "name": "2026 - 06- EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385545391_2026_-_05-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385545391_2026_-_05-_EST-MP00003507.pdf",
+          "name": "2026 - 05- EST-MP00003507.pdf"
+        },
+        {
+          "path": "pdfs/1791385548793_2026_-_02_-_EST-MP00003507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385548793_2026_-_02_-_EST-MP00003507.pdf",
+          "name": "2026 - 02 - EST-MP00003507.pdf"
+        }
+      ],
+      "nombre": "Capacitacion.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791385551659
+    },
+    {
+      "id": "muy8u2lz35ugbjxlv49",
+      "equipoId": "EST-MR120H2732252 1",
+      "archivos": [
+        {
+          "path": "pdfs/1791385552044_2020-Diciembre__Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385552044_2020-Diciembre__Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "name": "2020-Diciembre  Estación Tratamiento Agua Elga 120 #2252.pdf"
+        },
+        {
+          "path": "pdfs/1791385555456_2020-Noviembre_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385555456_2020-Noviembre_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "name": "2020-Noviembre Estación Tratamiento Agua Elga 120 #2252.pdf"
+        },
+        {
+          "path": "pdfs/1791385558104_2021-Enero_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385558104_2021-Enero_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "name": "2021-Enero Estación Tratamiento Agua Elga 120 #2252.pdf"
+        },
+        {
+          "path": "pdfs/1791385560291_2022-Julio_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385560291_2022-Julio_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "name": "2022-Julio Estación Tratamiento Agua Elga 120 #2252.pdf"
+        },
+        {
+          "path": "pdfs/1791385562696_2022-Octubre_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385562696_2022-Octubre_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "name": "2022-Octubre Estación Tratamiento Agua Elga 120 #2252.pdf"
+        },
+        {
+          "path": "pdfs/1791385565070_2022-Agosto_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385565070_2022-Agosto_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "name": "2022-Agosto Estación Tratamiento Agua Elga 120 #2252.pdf"
+        },
+        {
+          "path": "pdfs/1791385567288_2022-Junio_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385567288_2022-Junio_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "name": "2022-Junio Estación Tratamiento Agua Elga 120 #2252.pdf"
+        },
+        {
+          "path": "pdfs/1791385569951_2022-Noviembre_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385569951_2022-Noviembre_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "name": "2022-Noviembre Estación Tratamiento Agua Elga 120 #2252.pdf"
+        },
+        {
+          "path": "pdfs/1791385572215_2022-Septiembre_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385572215_2022-Septiembre_Estaci_n_Tratamiento_Agua_Elga_120__2252.pdf",
+          "name": "2022-Septiembre Estación Tratamiento Agua Elga 120 #2252.pdf"
+        },
+        {
+          "path": "pdfs/1791385574314_2023-04-TODAS.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385574314_2023-04-TODAS.pdf",
+          "name": "2023-04-TODAS.pdf"
+        },
+        {
+          "path": "pdfs/1791385577617_2023-05-PRE2.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385577617_2023-05-PRE2.pdf",
+          "name": "2023-05-PRE2.pdf"
+        },
+        {
+          "path": "pdfs/1791385579922_2023-05PRET1.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385579922_2023-05PRET1.pdf",
+          "name": "2023-05PRET1.pdf"
+        },
+        {
+          "path": "pdfs/1791385582418_2023-05-1562.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385582418_2023-05-1562.pdf",
+          "name": "2023-05-1562.pdf"
+        },
+        {
+          "path": "pdfs/1791385584825_2023-05-5085.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385584825_2023-05-5085.pdf",
+          "name": "2023-05-5085.pdf"
+        },
+        {
+          "path": "pdfs/1791385587241_2023-05-1543.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385587241_2023-05-1543.pdf",
+          "name": "2023-05-1543.pdf"
+        },
+        {
+          "path": "pdfs/1791385589924_2023-05-3507.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385589924_2023-05-3507.pdf",
+          "name": "2023-05-3507.pdf"
+        },
+        {
+          "path": "pdfs/1791385592263_2023-05-1491.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385592263_2023-05-1491.pdf",
+          "name": "2023-05-1491.pdf"
+        },
+        {
+          "path": "pdfs/1791385594613_2023-05-2252.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385594613_2023-05-2252.pdf",
+          "name": "2023-05-2252.pdf"
+        },
+        {
+          "path": "pdfs/1791385596952_2023-06-1543.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385596952_2023-06-1543.pdf",
+          "name": "2023-06-1543.pdf"
+        },
+        {
+          "path": "pdfs/1791385599392_2023-06-1491.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385599392_2023-06-1491.pdf",
+          "name": "2023-06-1491.pdf"
+        },
+        {
+          "path": "pdfs/1791385601448_2023-06-5085.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385601448_2023-06-5085.pdf",
+          "name": "2023-06-5085.pdf"
+        },
+        {
+          "path": "pdfs/1791385604458_2023-06-PRETRATAM1.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791385604458_2023-06-PRETRATAM1.pdf",
+          "name": "2023-06-PRETRATAM1.pdf"
+        }
+      ],
+      "nombre": "2020-Diciembre  Estación Tratamiento Agua Elga 120 #2252.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791385770167
+    },
+    {
+      "id": "muy951bilq3eff18a9",
+      "equipoId": "OTRO EQUIPOS DESMONTADOS",
+      "archivos": [
+        {
+          "path": "pdfs/1791386188313_2023-MP_ESTUFA-26413.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386188313_2023-MP_ESTUFA-26413.pdf",
+          "name": "2023-MP ESTUFA-26413.pdf"
+        },
+        {
+          "path": "pdfs/1791386192466_2024_-__ESTUFA-26413_17_04_24_OAA__2024_.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386192466_2024_-__ESTUFA-26413_17_04_24_OAA__2024_.pdf",
+          "name": "2024 -  ESTUFA-26413 17 04 24 OAA (2024).pdf"
+        },
+        {
+          "path": "pdfs/1791386196496_2022-MP_ESTUFA-29841.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386196496_2022-MP_ESTUFA-29841.pdf",
+          "name": "2022-MP ESTUFA-29841.pdf"
+        },
+        {
+          "path": "pdfs/1791386202111_2022-MP_Incubadora__20197.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386202111_2022-MP_Incubadora__20197.pdf",
+          "name": "2022-MP Incubadora #20197.pdf"
+        },
+        {
+          "path": "pdfs/1791386225573_2019-SE_Incubadora__20197.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386225573_2019-SE_Incubadora__20197.pdf",
+          "name": "2019-SE Incubadora #20197.pdf"
+        },
+        {
+          "path": "pdfs/1791386227779_2023-MP_Incubadora__27500.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386227779_2023-MP_Incubadora__27500.pdf",
+          "name": "2023-MP Incubadora #27500.pdf"
+        },
+        {
+          "path": "pdfs/1791386234498_2019-SE_Incubadora__27500.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386234498_2019-SE_Incubadora__27500.pdf",
+          "name": "2019-SE Incubadora #27500.pdf"
+        },
+        {
+          "path": "pdfs/1791386236737_2024_-_INC-27500.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386236737_2024_-_INC-27500.pdf",
+          "name": "2024 - INC-27500.pdf"
+        },
+        {
+          "path": "pdfs/1791386239544_2025_-_INC-27500.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386239544_2025_-_INC-27500.pdf",
+          "name": "2025 - INC-27500.pdf"
+        },
+        {
+          "path": "pdfs/1791386241653_2022-MP_Microscopio_Nikon_Eclipse_E200__46468_Remitos.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386241653_2022-MP_Microscopio_Nikon_Eclipse_E200__46468_Remitos.pdf",
+          "name": "2022-MP Microscopio Nikon Eclipse E200 #46468 Remitos.pdf"
+        },
+        {
+          "path": "pdfs/1791386248765_2022-MP_Microscopio_Nikon_Eclipse_E200__46468_informe_t_cnico.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386248765_2022-MP_Microscopio_Nikon_Eclipse_E200__46468_informe_t_cnico.pdf",
+          "name": "2022-MP Microscopio Nikon Eclipse E200 #46468 informe técnico.pdf"
+        },
+        {
+          "path": "pdfs/1791386250894_2021-MP_Microscopio_Nikon_Eclipse_E200__46468.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386250894_2021-MP_Microscopio_Nikon_Eclipse_E200__46468.pdf",
+          "name": "2021-MP Microscopio Nikon Eclipse E200 #46468.pdf"
+        },
+        {
+          "path": "pdfs/1791386252845_2022-MP_Microscopio_Nikon_Eclipse_E200__46468.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386252845_2022-MP_Microscopio_Nikon_Eclipse_E200__46468.pdf",
+          "name": "2022-MP Microscopio Nikon Eclipse E200 #46468.pdf"
+        },
+        {
+          "path": "pdfs/1791386254573_2020-PM_Microscopio_Nikon_Eclipse_E200__46468.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386254573_2020-PM_Microscopio_Nikon_Eclipse_E200__46468.pdf",
+          "name": "2020-PM Microscopio Nikon Eclipse E200 #46468.pdf"
+        },
+        {
+          "path": "pdfs/1791386257070_2022-MP_Microscopio_Leica_BG38__198268_informe_t_cnico.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386257070_2022-MP_Microscopio_Leica_BG38__198268_informe_t_cnico.pdf",
+          "name": "2022-MP Microscopio Leica BG38 #198268 informe técnico.pdf"
+        },
+        {
+          "path": "pdfs/1791386261301_2022-MP_Microscopio_Leica_BG38__198268_Remitos.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386261301_2022-MP_Microscopio_Leica_BG38__198268_Remitos.pdf",
+          "name": "2022-MP Microscopio Leica BG38 #198268 Remitos.pdf"
+        },
+        {
+          "path": "pdfs/1791386264539_2023-MP_Microscopio_Leica_BG38__198268_Remito.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386264539_2023-MP_Microscopio_Leica_BG38__198268_Remito.pdf",
+          "name": "2023-MP Microscopio Leica BG38 #198268 Remito.pdf"
+        },
+        {
+          "path": "pdfs/1791386266546_2022-MP_Microscopio_Leica_BG38__198268.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386266546_2022-MP_Microscopio_Leica_BG38__198268.pdf",
+          "name": "2022-MP Microscopio Leica BG38 #198268.pdf"
+        },
+        {
+          "path": "pdfs/1791386269647_2021-MP_Microscopio_Leica_BG38__198268.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386269647_2021-MP_Microscopio_Leica_BG38__198268.pdf",
+          "name": "2021-MP Microscopio Leica BG38 #198268.pdf"
+        },
+        {
+          "path": "pdfs/1791386272486_2020-PM_Microscopio_Leica_BG38__198268.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386272486_2020-PM_Microscopio_Leica_BG38__198268.pdf",
+          "name": "2020-PM Microscopio Leica BG38 #198268.pdf"
+        },
+        {
+          "path": "pdfs/1791386274953_2023-MP_Microscopio_Leica_BG38__198268.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386274953_2023-MP_Microscopio_Leica_BG38__198268.pdf",
+          "name": "2023-MP Microscopio Leica BG38 #198268.pdf"
+        },
+        {
+          "path": "pdfs/1791386277222_2022-MP_MICROSC-614243.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386277222_2022-MP_MICROSC-614243.pdf",
+          "name": "2022-MP MICROSC-614243.pdf"
+        },
+        {
+          "path": "pdfs/1791386279410_2022-MP_MICROSC-617406.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791386279410_2022-MP_MICROSC-617406.pdf",
+          "name": "2022-MP MICROSC-617406.pdf"
+        }
+      ],
+      "nombre": "2023-MP ESTUFA-26413.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791386281710
+    }
+  ],
   "version": 1
 }
