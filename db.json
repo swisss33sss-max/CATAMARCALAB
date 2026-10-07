@@ -2194,6 +2194,131 @@
       "vencimiento": "",
       "empresa": "",
       "ts": 1791313808708
+    },
+    {
+      "id": "muy7cvn0n0yzqmhsmy",
+      "equipoId": "08020006",
+      "archivos": [
+        {
+          "path": "pdfs/1791383284844_08020006.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383284844_08020006.pdf",
+          "name": "08020006.pdf"
+        },
+        {
+          "path": "pdfs/1791383286565_SE_-_08020006.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383286565_SE_-_08020006.pdf",
+          "name": "SE - 08020006.pdf"
+        }
+      ],
+      "nombre": "08020006.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383288364
+    },
+    {
+      "id": "muy7d1rwhl4u0ikryff",
+      "equipoId": "19771",
+      "archivos": [
+        {
+          "path": "pdfs/1791383288386_080.19771.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383288386_080.19771.pdf",
+          "name": "080.19771.pdf"
+        },
+        {
+          "path": "pdfs/1791383290002_SE_-_080.19771.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383290002_SE_-_080.19771.pdf",
+          "name": "SE - 080.19771.pdf"
+        },
+        {
+          "path": "pdfs/1791383291848_Seg_Electrica_Schiller_AT-101___8019771-.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383291848_Seg_Electrica_Schiller_AT-101___8019771-.pdf",
+          "name": "Seg Electrica Schiller AT-101 # 8019771-.pdf"
+        },
+        {
+          "path": "pdfs/1791383294310_Seg_Electrica_Schiller_AT-101___8019771.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383294310_Seg_Electrica_Schiller_AT-101___8019771.pdf",
+          "name": "Seg Electrica Schiller AT-101 # 8019771.pdf"
+        }
+      ],
+      "nombre": "080.19771.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383296316
+    },
+    {
+      "id": "muy7d5rmtqv77ziw7ii",
+      "equipoId": "24622",
+      "archivos": [
+        {
+          "path": "pdfs/1791383296334_24622-Centrifuga_-__lab_CSL.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383296334_24622-Centrifuga_-__lab_CSL.pdf",
+          "name": "24622-Centrifuga -  lab CSL.pdf"
+        },
+        {
+          "path": "pdfs/1791383297960_24622-CENTRIFUGA.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383297960_24622-CENTRIFUGA.pdf",
+          "name": "24622-CENTRIFUGA.pdf"
+        },
+        {
+          "path": "pdfs/1791383299821_24622.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383299821_24622.pdf",
+          "name": "24622.pdf"
+        }
+      ],
+      "nombre": "24622-Centrifuga -  lab CSL.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383301490
+    },
+    {
+      "id": "muy7da2xxncb3tlto0t",
+      "equipoId": "34150",
+      "archivos": [
+        {
+          "path": "pdfs/1791383301501_SE_34150.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383301501_SE_34150.pdf",
+          "name": "SE 34150.pdf"
+        },
+        {
+          "path": "pdfs/1791383303392_34150-CENTRIFUGA.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383303392_34150-CENTRIFUGA.pdf",
+          "name": "34150-CENTRIFUGA.pdf"
+        },
+        {
+          "path": "pdfs/1791383305145_34150-CENTRIFUGA__1_.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383305145_34150-CENTRIFUGA__1_.pdf",
+          "name": "34150-CENTRIFUGA (1).pdf"
+        }
+      ],
+      "nombre": "SE 34150.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383307081
+    },
+    {
+      "id": "muy7dcf2kiteo0p39i",
+      "equipoId": "AGITADO-27594",
+      "archivos": [
+        {
+          "path": "pdfs/1791383307101_AGITADO-27594.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383307101_AGITADO-27594.pdf",
+          "name": "AGITADO-27594.pdf"
+        },
+        {
+          "path": "pdfs/1791383308630_2026-SE-AGITADO-27594.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383308630_2026-SE-AGITADO-27594.pdf",
+          "name": "2026-SE-AGITADO-27594.pdf"
+        }
+      ],
+      "nombre": "AGITADO-27594.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383310110
     }
   ],
   "version": 1
