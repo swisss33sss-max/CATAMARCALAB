@@ -15,135 +15,134 @@
 }
 body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;min-height:100vh}
 header{background:linear-gradient(135deg,#1a1d27,#22263a);border-bottom:1px solid var(--border);
-  padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-header h1{font-size:1.2rem;font-weight:700;display:flex;align-items:center;gap:8px}
-.subtitle{font-size:.75rem;color:var(--muted)}
-.stats-bar{display:flex;gap:8px;flex-wrap:wrap}
+  padding:12px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+header h1{font-size:1.15rem;font-weight:700;display:flex;align-items:center;gap:8px}
+.subtitle{font-size:.72rem;color:var(--muted)}
+.stats-bar{display:flex;gap:7px;flex-wrap:wrap}
 .stat{background:var(--card);border:1px solid var(--border);border-radius:8px;
-  padding:5px 12px;font-size:.78rem;display:flex;align-items:center;gap:5px}
-.stat b{font-size:1rem}
-.sync-status{font-size:.72rem;padding:4px 10px;border-radius:6px;border:1px solid var(--border);
-  display:flex;align-items:center;gap:5px;cursor:pointer;transition:all .2s}
-.sync-status.ok{border-color:var(--green);color:var(--green)}
-.sync-status.saving{border-color:var(--yellow);color:var(--yellow)}
-.sync-status.err{border-color:var(--red);color:var(--red)}
-.app{display:flex;height:calc(100vh - 62px)}
-.sidebar{width:220px;min-width:220px;background:var(--panel);border-right:1px solid var(--border);
-  overflow-y:auto;display:flex;flex-direction:column;padding:14px 0}
-.sidebar-title{font-size:.68rem;font-weight:700;color:var(--muted);letter-spacing:.08em;
-  padding:0 14px 6px;text-transform:uppercase}
-.floor-btn{display:flex;align-items:center;gap:8px;padding:9px 14px;cursor:pointer;
-  border:none;background:transparent;color:var(--text);font-size:.88rem;width:100%;
+  padding:4px 11px;font-size:.76rem;display:flex;align-items:center;gap:4px}
+.stat b{font-size:.95rem}
+.sync-btn{font-size:.72rem;padding:4px 10px;border-radius:6px;border:1px solid var(--border);
+  display:flex;align-items:center;gap:5px;cursor:pointer;transition:all .2s;background:var(--card);color:var(--muted)}
+.sync-btn.ok{border-color:var(--green);color:var(--green)}
+.sync-btn.saving{border-color:var(--yellow);color:var(--yellow)}
+.sync-btn.err{border-color:var(--red);color:var(--red)}
+.app{display:flex;height:calc(100vh - 58px)}
+.sidebar{width:210px;min-width:210px;background:var(--panel);border-right:1px solid var(--border);
+  overflow-y:auto;display:flex;flex-direction:column;padding:12px 0}
+.sidebar-title{font-size:.67rem;font-weight:700;color:var(--muted);letter-spacing:.08em;
+  padding:0 12px 5px;text-transform:uppercase}
+.floor-btn{display:flex;align-items:center;gap:7px;padding:8px 12px;cursor:pointer;
+  border:none;background:transparent;color:var(--text);font-size:.86rem;width:100%;
   text-align:left;border-left:3px solid transparent;transition:all .15s}
 .floor-btn:hover{background:var(--card)}
 .floor-btn.active{background:var(--card);border-left-color:var(--accent);color:var(--accent)}
 .floor-btn .count{margin-left:auto;background:var(--border);border-radius:999px;
-  padding:1px 7px;font-size:.7rem;color:var(--muted)}
-.sidebar-sep{height:1px;background:var(--border);margin:8px 14px}
-.sidebar-btn{margin:4px 14px 0;border:none;border-radius:var(--radius);
-  padding:8px 0;font-size:.82rem;font-weight:600;cursor:pointer;width:calc(100% - 28px);transition:opacity .15s}
-.sidebar-btn:hover{opacity:.85}
-.main{flex:1;overflow-y:auto;padding:20px}
-.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px}
-.search-box{flex:1;min-width:160px;background:var(--card);border:1px solid var(--border);
-  border-radius:var(--radius);padding:7px 12px;color:var(--text);font-size:.85rem;outline:none}
+  padding:1px 6px;font-size:.68rem;color:var(--muted)}
+.sidebar-sep{height:1px;background:var(--border);margin:7px 12px}
+.sbtn{margin:3px 12px 0;border:none;border-radius:var(--radius);
+  padding:7px 0;font-size:.8rem;font-weight:600;cursor:pointer;width:calc(100% - 24px);transition:opacity .15s}
+.sbtn:hover{opacity:.85}
+.main{flex:1;overflow-y:auto;padding:18px}
+.toolbar{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-bottom:14px}
+.search-box{flex:1;min-width:150px;background:var(--card);border:1px solid var(--border);
+  border-radius:var(--radius);padding:6px 11px;color:var(--text);font-size:.83rem;outline:none}
 .search-box:focus{border-color:var(--accent)}
-select.filter-sel{background:var(--card);border:1px solid var(--border);color:var(--text);
-  border-radius:var(--radius);padding:7px 10px;font-size:.82rem;outline:none;cursor:pointer}
-.btn-tool{background:var(--card);border:1px solid var(--border);color:var(--text);
-  border-radius:var(--radius);padding:7px 12px;font-size:.82rem;cursor:pointer;
-  display:flex;align-items:center;gap:5px;transition:border-color .15s;white-space:nowrap}
-.btn-tool:hover{border-color:var(--accent);color:var(--accent)}
-.btn-tool.green{border-color:var(--green);color:var(--green)}
-.btn-tool.green.active{background:rgba(34,197,94,.15)}
-.btn-tool.blue{border-color:var(--accent);color:var(--accent)}
-.btn-tool.purple{border-color:var(--accent2);color:var(--accent2)}
-.section-title{font-size:.95rem;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px;
-  border-bottom:1px solid var(--border);padding-bottom:8px}
-.equipo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
-.equipo-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
-  padding:14px;display:flex;flex-direction:column;gap:8px;transition:border-color .2s,transform .15s}
-.equipo-card:hover{border-color:var(--accent);transform:translateY(-2px)}
-.equipo-header{display:flex;align-items:flex-start;gap:8px}
-.equipo-icon{font-size:1.5rem}
-.equipo-info{flex:1}
-.equipo-code{font-weight:700;font-size:.92rem}
-.equipo-name{font-size:.78rem;color:var(--muted);margin-top:2px}
-.equipo-piso{font-size:.7rem;background:var(--border);border-radius:4px;
+select.fs{background:var(--card);border:1px solid var(--border);color:var(--text);
+  border-radius:var(--radius);padding:6px 9px;font-size:.8rem;outline:none;cursor:pointer}
+.tbtn{background:var(--card);border:1px solid var(--border);color:var(--text);
+  border-radius:var(--radius);padding:6px 11px;font-size:.8rem;cursor:pointer;
+  display:flex;align-items:center;gap:4px;transition:all .15s;white-space:nowrap}
+.tbtn:hover{border-color:var(--accent);color:var(--accent)}
+.tbtn.green{border-color:var(--green);color:var(--green)}
+.tbtn.green.on{background:rgba(34,197,94,.15)}
+.tbtn.purple{border-color:var(--accent2);color:var(--accent2)}
+.section-title{font-size:.92rem;font-weight:700;margin-bottom:11px;display:flex;align-items:center;gap:7px;
+  border-bottom:1px solid var(--border);padding-bottom:7px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:13px;display:flex;flex-direction:column;gap:7px;transition:border-color .2s,transform .15s}
+.card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.card-header{display:flex;align-items:flex-start;gap:7px}
+.eq-icon{font-size:1.4rem}
+.eq-info{flex:1}
+.eq-code{font-weight:700;font-size:.9rem}
+.eq-name{font-size:.76rem;color:var(--muted);margin-top:1px}
+.eq-piso{font-size:.68rem;background:var(--border);border-radius:4px;
   padding:2px 6px;color:var(--muted);display:inline-block;margin-top:3px}
-.badge{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;
-  border-radius:999px;font-size:.72rem;font-weight:600}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;
+  border-radius:999px;font-size:.7rem;font-weight:600}
 .badge.ok{background:rgba(34,197,94,.15);color:var(--green)}
 .badge.warn{background:rgba(245,158,11,.15);color:var(--yellow)}
 .badge.exp{background:rgba(239,68,68,.15);color:var(--red)}
 .badge.none{background:rgba(136,146,176,.12);color:var(--muted)}
-.equipo-actions{display:flex;gap:5px;flex-wrap:wrap;margin-top:2px}
-.btn-action{flex:1;min-width:54px;padding:5px 3px;font-size:.72rem;font-weight:600;
+.actions{display:flex;gap:4px;flex-wrap:wrap;margin-top:2px}
+.ab{flex:1;min-width:50px;padding:5px 3px;font-size:.7rem;font-weight:600;
   border:1px solid var(--border);border-radius:6px;background:transparent;color:var(--muted);
   cursor:pointer;display:flex;align-items:center;justify-content:center;gap:3px;transition:all .15s}
-.btn-action:hover{border-color:var(--accent);color:var(--accent);background:rgba(79,142,247,.07)}
-.btn-action.danger:hover{border-color:var(--red);color:var(--red);background:rgba(239,68,68,.07)}
-.btn-action.success:hover{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.07)}
-.cert-filename{font-size:.72rem;color:var(--muted);background:var(--bg);border-radius:5px;padding:4px 7px}
-.cert-dot{color:var(--green);font-size:.68rem;vertical-align:middle}
-.note-dot{width:6px;height:6px;border-radius:50%;background:var(--yellow);
-  display:inline-block;margin-left:4px;vertical-align:middle}
-.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.65);
-  z-index:100;align-items:center;justify-content:center;padding:16px}
+.ab:hover{border-color:var(--accent);color:var(--accent);background:rgba(79,142,247,.07)}
+.ab.del:hover{border-color:var(--red);color:var(--red);background:rgba(239,68,68,.07)}
+.ab.ok:hover{border-color:var(--green);color:var(--green);background:rgba(34,197,94,.07)}
+.cert-info{font-size:.71rem;color:var(--muted);background:var(--bg);border-radius:5px;padding:3px 7px}
+.cdot{color:var(--green);font-size:.66rem;vertical-align:middle}
+.ndot{width:5px;height:5px;border-radius:50%;background:var(--yellow);display:inline-block;margin-left:3px;vertical-align:middle}
+/* MODALES */
+.overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.68);
+  z-index:100;align-items:center;justify-content:center;padding:14px}
 .overlay.open{display:flex}
 .modal{background:var(--panel);border:1px solid var(--border);border-radius:14px;
-  padding:24px;width:100%;max-width:480px;box-shadow:var(--shadow);max-height:90vh;overflow-y:auto}
-.modal h2{font-size:1.05rem;margin-bottom:16px;display:flex;align-items:center;gap:8px}
-.form-group{margin-bottom:12px}
-label{display:block;font-size:.78rem;color:var(--muted);margin-bottom:4px}
-input[type=text],input[type=date],input[type=password],select.modal-sel,textarea{
+  padding:22px;width:100%;max-width:470px;box-shadow:var(--shadow);max-height:92vh;overflow-y:auto}
+.modal h2{font-size:1rem;margin-bottom:14px;display:flex;align-items:center;gap:7px}
+.fg{margin-bottom:11px}
+label{display:block;font-size:.76rem;color:var(--muted);margin-bottom:3px}
+input[type=text],input[type=date],input[type=password],select.ms,textarea{
   width:100%;background:var(--card);border:1px solid var(--border);
-  border-radius:8px;padding:8px 11px;color:var(--text);font-size:.88rem;outline:none}
-input:focus,textarea:focus{border-color:var(--accent)}
-textarea{resize:vertical;min-height:55px;font-family:inherit}
-.drop-zone{border:2px dashed var(--border);border-radius:8px;padding:20px;
-  text-align:center;cursor:pointer;color:var(--muted);font-size:.82rem;transition:border-color .2s}
-.drop-zone.over,.drop-zone:hover{border-color:var(--accent);color:var(--accent)}
+  border-radius:8px;padding:7px 10px;color:var(--text);font-size:.86rem;outline:none}
+input:focus,textarea:focus,select.ms:focus{border-color:var(--accent)}
+textarea{resize:vertical;min-height:50px;font-family:inherit}
+.dz{border:2px dashed var(--border);border-radius:8px;padding:18px;
+  text-align:center;cursor:pointer;color:var(--muted);font-size:.8rem;transition:border-color .2s}
+.dz.over,.dz:hover{border-color:var(--accent);color:var(--accent)}
 input[type=file]{display:none}
-.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:18px}
-.btn-primary{background:var(--accent);color:#fff;border:none;border-radius:8px;
-  padding:8px 20px;font-size:.88rem;font-weight:600;cursor:pointer}
-.btn-primary:hover{opacity:.87}
-.btn-cancel{background:transparent;border:1px solid var(--border);color:var(--muted);
-  border-radius:8px;padding:8px 20px;font-size:.88rem;cursor:pointer}
-.btn-cancel:hover{border-color:var(--red);color:var(--red)}
+.ma{display:flex;gap:7px;justify-content:flex-end;margin-top:16px}
+.bp{background:var(--accent);color:#fff;border:none;border-radius:8px;
+  padding:7px 18px;font-size:.86rem;font-weight:600;cursor:pointer}
+.bp:hover{opacity:.87}
+.bc{background:transparent;border:1px solid var(--border);color:var(--muted);
+  border-radius:8px;padding:7px 18px;font-size:.86rem;cursor:pointer}
+.bc:hover{border-color:var(--red);color:var(--red)}
 .modal-pdf{max-width:900px;height:88vh;display:flex;flex-direction:column}
-.modal-pdf h2{margin-bottom:8px}
-.pdf-adjuntos{display:none;gap:6px;flex-wrap:wrap;margin-bottom:8px}
-.pdf-adj-btn{background:var(--card);border:1px solid var(--border);color:var(--muted);
-  border-radius:6px;padding:4px 9px;font-size:.74rem;cursor:pointer;transition:all .15s;
-  max-width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.pdf-adj-btn.active{border-color:var(--accent);color:var(--accent);background:rgba(79,142,247,.1)}
+.modal-pdf h2{margin-bottom:6px}
+.adj-bar{display:none;gap:5px;flex-wrap:wrap;margin-bottom:7px}
+.adj-btn{background:var(--card);border:1px solid var(--border);color:var(--muted);
+  border-radius:6px;padding:3px 8px;font-size:.72rem;cursor:pointer;transition:all .15s;
+  max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.adj-btn.on{border-color:var(--accent);color:var(--accent);background:rgba(79,142,247,.1)}
 .pdf-frame{flex:1;border:1px solid var(--border);border-radius:8px;width:100%;min-height:200px}
-.modal-qr{max-width:340px;text-align:center}
-#qr-container{display:inline-block;background:#fff;padding:12px;border-radius:10px;margin:14px 0}
-#toast{position:fixed;bottom:24px;right:24px;z-index:200;background:var(--card);
-  border:1px solid var(--border);color:var(--text);padding:10px 18px;border-radius:10px;
-  font-size:.85rem;box-shadow:var(--shadow);opacity:0;transform:translateY(10px);
-  transition:all .3s;pointer-events:none}
+/* PROGRESS */
+.progress-bar{height:4px;background:var(--border);border-radius:2px;margin-top:8px;overflow:hidden}
+.progress-fill{height:100%;background:var(--accent);border-radius:2px;transition:width .3s;width:0%}
+/* TOAST */
+#toast{position:fixed;bottom:22px;right:22px;z-index:200;background:var(--card);
+  border:1px solid var(--border);color:var(--text);padding:9px 16px;border-radius:10px;
+  font-size:.83rem;box-shadow:var(--shadow);opacity:0;transform:translateY(10px);
+  transition:all .3s;pointer-events:none;max-width:320px}
 #toast.show{opacity:1;transform:translateY(0)}
 #toast.ok{border-color:var(--green);color:var(--green)}
 #toast.err{border-color:var(--red);color:var(--red)}
 #toast.warn{border-color:var(--yellow);color:var(--yellow)}
-.empty{text-align:center;padding:50px 20px;color:var(--muted)}
-.empty .icon{font-size:2.5rem;margin-bottom:10px}
-.loading{display:flex;align-items:center;justify-content:center;height:200px;
-  color:var(--muted);font-size:.9rem;gap:10px}
+.empty{text-align:center;padding:45px 20px;color:var(--muted)}
+.empty .icon{font-size:2.2rem;margin-bottom:8px}
 @keyframes spin{to{transform:rotate(360deg)}}
-.spinner{width:20px;height:20px;border:2px solid var(--border);border-top-color:var(--accent);
-  border-radius:50%;animation:spin .8s linear infinite}
-@media(max-width:640px){
+.spinner{width:18px;height:18px;border:2px solid var(--border);border-top-color:var(--accent);
+  border-radius:50%;animation:spin .8s linear infinite;display:inline-block}
+@media(max-width:600px){
   .sidebar{width:100%;min-width:unset;height:auto;flex-direction:row;overflow-x:auto;
     border-right:none;border-bottom:1px solid var(--border)}
   .app{flex-direction:column;height:auto}
   .floor-btn{white-space:nowrap;border-left:none;border-bottom:3px solid transparent}
   .floor-btn.active{border-bottom-color:var(--accent);border-left:none}
-  .sidebar-title,.sidebar-sep,.sidebar-btn{display:none}
+  .sidebar-title,.sidebar-sep,.sbtn{display:none}
 }
 </style>
 </head>
@@ -151,12 +150,12 @@ input[type=file]{display:none}
 
 <header>
   <div>
-    <h1>🔬 CertLab <span style="color:var(--muted);font-weight:400">— Laboratorio Catamarca</span></h1>
-    <div class="subtitle">Gestión de certificados de calibración y preventivos</div>
+    <h1>🔬 CertLab <span style="color:var(--muted);font-weight:400">— Catamarca</span></h1>
+    <div class="subtitle">Gestión de certificados · sincronizado en GitHub</div>
   </div>
-  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+  <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
     <div class="stats-bar" id="statsBar"></div>
-    <div class="sync-status" id="syncStatus" onclick="loadDB()" title="Clic para sincronizar">⟳ Cargando...</div>
+    <button class="sync-btn" id="syncBtn" onclick="loadDB()">⟳ Cargando...</button>
   </div>
 </header>
 
@@ -169,86 +168,16 @@ input[type=file]{display:none}
     <button class="floor-btn" onclick="setFloor('3 Piso',this)">3️⃣ 3er Piso <span class="count" id="cnt-3">0</span></button>
     <button class="floor-btn" onclick="setFloor('Sin asignar',this)">📦 Sin asignar <span class="count" id="cnt-sin">0</span></button>
     <div class="sidebar-sep"></div>
-    <button class="sidebar-btn" style="background:var(--accent);color:#fff" onclick="openAddEquipo()">+ Nuevo equipo</button>
-    <button class="sidebar-btn" style="background:var(--accent2);color:#fff" onclick="confirmAgregar()">➕ Agregar equipos nuevos</button>
+    <button class="sbtn" style="background:var(--accent);color:#fff" onclick="openAddEquipo()">+ Nuevo equipo</button>
+    <button class="sbtn" style="background:var(--accent2);color:#fff" onclick="confirmAgregar()">➕ Agregar equipos nuevos</button>
+    <button class="sbtn" style="background:#166534;color:#fff" onclick="importarCarpeta()">📂 Importar carpeta PDFs</button>
   </nav>
 
   <main class="main">
     <div class="toolbar">
-      <input class="search-box" id="searchBox" placeholder="🔍  Buscar…" oninput="renderGrid()"/>
-      <select class="filter-sel" id="tipoFilter" onchange="renderGrid()">
+      <input class="search-box" id="searchBox" placeholder="🔍 Buscar…" oninput="renderGrid()"/>
+      <select class="fs" id="tipoFilter" onchange="renderGrid()">
         <option value="">Todos los tipos</option>
-        <option value="CENTRIF">Centrífuga</option>
-        <option value="CEN">Centrifugador</option>
-        <option value="BAÑO">Baño termostático</option>
-        <option value="MIC">Microscopio</option>
-        <option value="AGITADO">Agitador</option>
-        <option value="ANA">Analizador</option>
-        <option value="AUT">Autoclave</option>
-        <option value="BALANZA">Balanza</option>
-        <option value="CAB">Cabina flujo laminar</option>
-        <option value="ESTUFA">Estufa</option>
-        <option value="INC">Incubadora</option>
-        <option value="OTRO">Otro</option>
-      </select>
-      <select class="filter-sel" id="statusFilter" onchange="renderGrid()">
-        <option value="">Todos los estados</option>
-        <option value="ok">✅ Vigente</option>
-        <option value="warn">⚠️ Por vencer</option>
-        <option value="exp">❌ Vencido</option>
-        <option value="none">📭 Sin cert.</option>
-      </select>
-      <select class="filter-sel" id="relevFilter" onchange="renderGrid()">
-        <option value="">Todos los relevamientos</option>
-        <option value="pendiente">⬜ Pendiente</option>
-        <option value="proceso">🔄 En proceso</option>
-        <option value="relevado">✅ Relevado</option>
-      </select>
-      <button class="btn-tool green" id="btnConCert" onclick="toggleConCert()">● Con certificado</button>
-      <button class="btn-tool blue" onclick="exportCSV()">📥 CSV</button>
-      <label class="btn-tool purple" style="cursor:pointer" title="Importar DB exportada desde la app anterior">
-        📦 Importar .certlab
-        <input type="file" accept=".certlab" onchange="importCertlab(this)">
-      </label>
-    </div>
-    <div class="section-title" id="sectionTitle">🏢 Todos los pisos</div>
-    <div class="equipo-grid" id="equipoGrid">
-      <div class="loading" style="grid-column:1/-1"><div class="spinner"></div> Cargando desde GitHub...</div>
-    </div>
-  </main>
-</div>
-
-<!-- MODAL TOKEN -->
-<div class="overlay" id="modalToken">
-  <div class="modal" style="max-width:420px">
-    <h2>🔑 GitHub Token</h2>
-    <p style="font-size:.82rem;color:var(--muted);margin-bottom:14px">Para sincronizar entre dispositivos necesitás un Personal Access Token de GitHub con permiso <b>repo</b>.</p>
-    <div class="form-group">
-      <label>Token (ghp_...)</label>
-      <input type="password" id="fToken" placeholder="ghp_..." />
-    </div>
-    <div class="modal-actions">
-      <button class="btn-primary" onclick="saveToken()">Guardar y conectar</button>
-    </div>
-  </div>
-</div>
-
-<!-- MODAL EQUIPO -->
-<div class="overlay" id="modalEquipo">
-  <div class="modal">
-    <h2 id="modalEquipoTitle">⚙️ Nuevo equipo</h2>
-    <div class="form-group"><label>Código *</label><input type="text" id="fCodigo" placeholder="Ej: CENTRIF-28008"/></div>
-    <div class="form-group"><label>Nombre</label><input type="text" id="fNombre" placeholder="Ej: Centrífuga de laboratorio"/></div>
-    <div class="form-group"><label>Piso *</label>
-      <select class="modal-sel" id="fPiso">
-        <option value="1 piso">1er Piso</option>
-        <option value="2 Piso">2do Piso</option>
-        <option value="3 Piso">3er Piso</option>
-        <option value="Sin asignar">Sin asignar</option>
-      </select>
-    </div>
-    <div class="form-group"><label>Tipo</label>
-      <select class="modal-sel" id="fTipo">
         <option value="CENTRIF">Centrífuga</option><option value="CEN">Centrifugador</option>
         <option value="BAÑO">Baño termostático</option><option value="MIC">Microscopio</option>
         <option value="AGITADO">Agitador</option><option value="ANA">Analizador</option>
@@ -256,110 +185,171 @@ input[type=file]{display:none}
         <option value="CAB">Cabina flujo laminar</option><option value="ESTUFA">Estufa</option>
         <option value="INC">Incubadora</option><option value="OTRO">Otro</option>
       </select>
+      <select class="fs" id="statusFilter" onchange="renderGrid()">
+        <option value="">Todos los estados</option>
+        <option value="ok">✅ Vigente</option><option value="warn">⚠️ Por vencer</option>
+        <option value="exp">❌ Vencido</option><option value="none">📭 Sin cert.</option>
+      </select>
+      <select class="fs" id="relevFilter" onchange="renderGrid()">
+        <option value="">Todos los relevamientos</option>
+        <option value="pendiente">⬜ Pendiente</option>
+        <option value="proceso">🔄 En proceso</option>
+        <option value="relevado">✅ Relevado</option>
+      </select>
+      <button class="tbtn green" id="btnCC" onclick="toggleCC()">● Con cert.</button>
+      <button class="tbtn" onclick="exportCSV()">📥 CSV</button>
+      <label class="tbtn purple" style="cursor:pointer">
+        📦 Importar .certlab
+        <input type="file" accept=".certlab" onchange="importCertlab(this)">
+      </label>
     </div>
-    <div class="form-group"><label>Notas</label><textarea id="fNotas" placeholder="Observaciones…"></textarea></div>
-    <div class="modal-actions">
-      <button class="btn-cancel" onclick="closeModal('modalEquipo')">Cancelar</button>
-      <button class="btn-primary" onclick="saveEquipo()">Guardar</button>
+    <div class="section-title" id="sectionTitle">🏢 Todos los pisos</div>
+    <div class="grid" id="equipoGrid">
+      <div style="grid-column:1/-1;display:flex;align-items:center;gap:10px;padding:40px;color:var(--muted)">
+        <div class="spinner"></div> Cargando desde GitHub...
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- TOKEN -->
+<div class="overlay" id="modalToken">
+  <div class="modal" style="max-width:400px">
+    <h2>🔑 GitHub Token</h2>
+    <p style="font-size:.8rem;color:var(--muted);margin-bottom:12px">Personal Access Token con permiso <b>repo</b>.</p>
+    <div class="fg"><label>Token (ghp_...)</label><input type="password" id="fToken" placeholder="ghp_..."/></div>
+    <div class="ma"><button class="bp" onclick="saveToken()">Conectar</button></div>
+  </div>
+</div>
+
+<!-- EQUIPO -->
+<div class="overlay" id="modalEquipo">
+  <div class="modal">
+    <h2 id="meqTitle">⚙️ Nuevo equipo</h2>
+    <div class="fg"><label>Código *</label><input type="text" id="fCodigo"/></div>
+    <div class="fg"><label>Nombre</label><input type="text" id="fNombre"/></div>
+    <div class="fg"><label>Piso *</label>
+      <select class="ms" id="fPiso">
+        <option value="1 piso">1er Piso</option><option value="2 Piso">2do Piso</option>
+        <option value="3 Piso">3er Piso</option><option value="Sin asignar">Sin asignar</option>
+      </select></div>
+    <div class="fg"><label>Tipo</label>
+      <select class="ms" id="fTipo">
+        <option value="CENTRIF">Centrífuga</option><option value="CEN">Centrifugador</option>
+        <option value="BAÑO">Baño termostático</option><option value="MIC">Microscopio</option>
+        <option value="AGITADO">Agitador</option><option value="ANA">Analizador</option>
+        <option value="AUT">Autoclave</option><option value="BALANZA">Balanza</option>
+        <option value="CAB">Cabina flujo laminar</option><option value="ESTUFA">Estufa</option>
+        <option value="INC">Incubadora</option><option value="OTRO">Otro</option>
+      </select></div>
+    <div class="fg"><label>Notas</label><textarea id="fNotas"></textarea></div>
+    <div class="ma">
+      <button class="bc" onclick="closeModal('modalEquipo')">Cancelar</button>
+      <button class="bp" onclick="saveEquipo()">Guardar</button>
     </div>
   </div>
 </div>
 
-<!-- MODAL CERTIFICADO -->
+<!-- CERTIFICADO -->
 <div class="overlay" id="modalCert">
   <div class="modal">
     <h2>📄 Agregar certificado</h2>
-    <p style="font-size:.8rem;color:var(--muted);margin-bottom:14px">Equipo: <b id="certEquipoLabel"></b></p>
-    <div class="form-group"><label>Fecha de emisión</label><input type="date" id="fFechaEmision"/></div>
-    <div class="form-group"><label>Fecha de vencimiento</label><input type="date" id="fFechaVenc"/></div>
-    <div class="form-group"><label>Empresa certificadora</label><input type="text" id="fEmpresa" placeholder="Ej: INTI…"/></div>
-    <div class="form-group">
-      <label>Archivos PDF <span style="color:var(--muted)">(podés adjuntar varios)</span></label>
-      <div class="drop-zone" id="dropZone"
+    <p style="font-size:.78rem;color:var(--muted);margin-bottom:12px">Equipo: <b id="certEqLabel"></b></p>
+    <div class="fg"><label>Fecha emisión</label><input type="date" id="fEmision"/></div>
+    <div class="fg"><label>Fecha vencimiento</label><input type="date" id="fVenc"/></div>
+    <div class="fg"><label>Empresa certificadora</label><input type="text" id="fEmpresa"/></div>
+    <div class="fg">
+      <label>Archivos PDF <span style="color:var(--muted)">(varios)</span></label>
+      <div class="dz" id="dropZone"
         onclick="document.getElementById('fileInput').click()"
         ondragover="event.preventDefault();this.classList.add('over')"
         ondragleave="this.classList.remove('over')"
         ondrop="handleDrop(event)">
-        <div id="dropLabel">📂 Arrastrá PDFs aquí o hacé clic</div>
+        <div id="dropLabel">📂 Arrastrá PDFs o hacé clic</div>
       </div>
       <input type="file" id="fileInput" accept=".pdf" multiple onchange="handleFileSelect(this)"/>
-      <div id="pendingList" style="display:flex;flex-direction:column;gap:4px;margin-top:6px"></div>
+      <div id="pendingList" style="margin-top:6px;display:flex;flex-direction:column;gap:3px"></div>
+      <div class="progress-bar" id="uploadProgress" style="display:none"><div class="progress-fill" id="progressFill"></div></div>
+      <div id="uploadStatus" style="font-size:.72rem;color:var(--muted);margin-top:4px"></div>
     </div>
-    <div class="modal-actions">
-      <button class="btn-cancel" onclick="closeModal('modalCert')">Cancelar</button>
-      <button class="btn-primary" onclick="saveCert()">Guardar</button>
+    <div class="ma">
+      <button class="bc" onclick="closeModal('modalCert')">Cancelar</button>
+      <button class="bp" id="btnSaveCert" onclick="saveCert()">Guardar</button>
     </div>
   </div>
 </div>
 
-<!-- MODAL PDF -->
+<!-- PDF VIEWER -->
 <div class="overlay" id="modalPDF">
   <div class="modal modal-pdf">
     <h2>📄 <span id="pdfTitle"></span></h2>
-    <div class="pdf-adjuntos" id="pdfAdjuntosList"></div>
-    <object class="pdf-frame" id="pdfFrame" type="application/pdf">
-      <p style="padding:20px;color:var(--muted)">No se puede mostrar. <a id="pdfFallbackLink" href="#" style="color:var(--accent)">Descargar</a></p>
-    </object>
-    <div class="modal-actions" style="margin-top:10px">
-      <button class="btn-primary" onclick="downloadCurrentPDF()">⬇️ Descargar</button>
-      <button class="btn-cancel" onclick="closePDFModal()">Cerrar</button>
+    <div class="adj-bar" id="adjBar"></div>
+    <iframe class="pdf-frame" id="pdfFrame" title="PDF"></iframe>
+    <div class="ma" style="margin-top:8px">
+      <a id="pdfDownloadBtn" href="#" download style="background:var(--accent);color:#fff;border:none;border-radius:8px;padding:7px 18px;font-size:.86rem;font-weight:600;cursor:pointer;text-decoration:none">⬇️ Descargar</a>
+      <button class="bc" onclick="closeModal('modalPDF')">Cerrar</button>
     </div>
   </div>
 </div>
 
-<!-- MODAL QR -->
+<!-- QR -->
 <div class="overlay" id="modalQR">
-  <div class="modal modal-qr">
-    <h2 style="justify-content:center">📱 Código QR</h2>
-    <div id="qrInfo" style="font-size:.78rem;color:var(--muted);margin-bottom:10px"></div>
-    <div id="qr-container"><div id="qrcode"></div></div>
-    <div class="modal-actions" style="justify-content:center;margin-top:14px">
-      <button class="btn-primary" onclick="downloadQR()">⬇️ Guardar QR</button>
-      <button class="btn-cancel" onclick="closeModal('modalQR')">Cerrar</button>
+  <div class="modal" style="max-width:320px;text-align:center">
+    <h2 style="justify-content:center">📱 QR</h2>
+    <div id="qrInfo" style="font-size:.76rem;color:var(--muted);margin-bottom:8px"></div>
+    <div style="display:inline-block;background:#fff;padding:12px;border-radius:10px;margin:10px 0">
+      <div id="qrcode"></div>
+    </div>
+    <div class="ma" style="justify-content:center;margin-top:10px">
+      <button class="bp" onclick="downloadQR()">⬇️ Guardar</button>
+      <button class="bc" onclick="closeModal('modalQR')">Cerrar</button>
     </div>
   </div>
 </div>
 
-<!-- MODAL CONFIRMAR -->
+<!-- CONFIRMAR -->
 <div class="overlay" id="modalConfirm">
-  <div class="modal" style="max-width:360px;text-align:center">
-    <div style="font-size:2.2rem;margin-bottom:8px" id="confirmIcon">🗑️</div>
-    <h2 style="justify-content:center" id="confirmTitle">¿Confirmar?</h2>
-    <p style="color:var(--muted);font-size:.85rem;margin:8px 0 18px" id="confirmMsg"></p>
-    <div class="modal-actions" style="justify-content:center">
-      <button class="btn-cancel" onclick="closeModal('modalConfirm')">Cancelar</button>
-      <button class="btn-primary" id="confirmOkBtn">OK</button>
+  <div class="modal" style="max-width:340px;text-align:center">
+    <div style="font-size:2rem;margin-bottom:7px" id="cIcon">⚠️</div>
+    <h2 style="justify-content:center" id="cTitle">¿Confirmar?</h2>
+    <p style="color:var(--muted);font-size:.83rem;margin:7px 0 16px" id="cMsg"></p>
+    <div class="ma" style="justify-content:center">
+      <button class="bc" onclick="closeModal('modalConfirm')">Cancelar</button>
+      <button class="bp" id="cOkBtn">OK</button>
     </div>
   </div>
 </div>
 
-<!-- MODAL HISTORIAL -->
+<!-- HISTORIAL -->
 <div class="overlay" id="modalHistorial">
-  <div class="modal" style="max-width:600px">
+  <div class="modal" style="max-width:580px">
     <h2>📋 Historial — <span id="histLabel"></span></h2>
-    <div id="histList" style="display:flex;flex-direction:column;gap:8px;margin-top:8px"></div>
-    <div class="modal-actions"><button class="btn-cancel" onclick="closeModal('modalHistorial')">Cerrar</button></div>
+    <div id="histList" style="display:flex;flex-direction:column;gap:7px;margin-top:7px"></div>
+    <div class="ma"><button class="bc" onclick="closeModal('modalHistorial')">Cerrar</button></div>
   </div>
 </div>
 
 <div id="toast"></div>
 
 <script>
-// ═══════════════════════════════════════════
-//  CONFIG GITHUB
-// ═══════════════════════════════════════════
-const REPO  = 'swisss33sss-max/CATAMARCALAB';
+// ═══════════════════════════════════
+//  CONFIG
+// ═══════════════════════════════════
+const REPO   = 'swisss33sss-max/CATAMARCALAB';
 const BRANCH = 'main';
 const DB_PATH = 'db.json';
-const API = 'https://api.github.com';
+const PDF_DIR = 'pdfs';
+const RAW     = 'https://raw.githubusercontent.com/'+REPO+'/'+BRANCH+'/';
+const API     = 'https://api.github.com/repos/'+REPO+'/contents/';
 
-function getToken() { return localStorage.getItem('gh_token') || ''; }
-function setToken(t) { localStorage.setItem('gh_token', t); }
+function getToken(){ return localStorage.getItem('gh_token')||''; }
+function setToken(t){ localStorage.setItem('gh_token',t); }
+function apiHeaders(){ return { Authorization:'token '+getToken(), Accept:'application/vnd.github.v3+json', 'Content-Type':'application/json' }; }
 
-// ═══════════════════════════════════════════
-//  SEED EQUIPOS
-// ═══════════════════════════════════════════
-const SEED_EQUIPOS = [
+// ═══════════════════════════════════
+//  SEED
+// ═══════════════════════════════════
+const SEED = [
   {id:'4571',nombre:'Equipo',piso:'Sin asignar',tipo:'OTRO',notas:'',relev:''},
   {id:'794BR11779',nombre:'Equipo',piso:'Sin asignar',tipo:'OTRO',notas:'',relev:''},
   {id:'794BR12420',nombre:'Equipo',piso:'Sin asignar',tipo:'OTRO',notas:'',relev:''},
@@ -461,674 +451,727 @@ const SEED_EQUIPOS = [
   {id:'EZ-37114186',nombre:'Equipo',piso:'2 Piso',tipo:'OTRO',notas:'',relev:''},
 ];
 
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════
 //  ESTADO
-// ═══════════════════════════════════════════
-let db = { equipos: [], certs: [], version: 1 };
+// ═══════════════════════════════════
+// db.json solo tiene metadatos — los PDFs viven en pdfs/ del repo
+// cert = { id, equipoId, archivos:[{name,path,url}], emision, vencimiento, empresa, ts }
+let db = { equipos:[], certs:[], version:2 };
 let dbSHA = '';
 let currentFloor = 'all';
 let editingId = null, certEquipoId = null;
-let pendingPDFs = [];
-let currentPDFBlob = null, currentPDFName = '';
-let currentCertArchivos = [];
+let pendingFiles = []; // [{name, arrayBuffer}]
 let soloConCert = false;
 let saveTimer = null;
 
-// ═══════════════════════════════════════════
-//  GITHUB API
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════
+//  GITHUB HELPERS
+// ═══════════════════════════════════
+async function ghGet(path) {
+  const r = await fetch(API+path+'?ref='+BRANCH+'&t='+Date.now(), { headers: apiHeaders() });
+  return r;
+}
+
+async function ghPut(path, contentB64, sha, msg) {
+  const body = { message: msg||'CertLab update', content: contentB64, branch: BRANCH };
+  if (sha) body.sha = sha;
+  const r = await fetch(API+path, { method:'PUT', headers: apiHeaders(), body: JSON.stringify(body) });
+  return r;
+}
+
+async function getSHA(path) {
+  const r = await ghGet(path);
+  if (r.status === 404) return null;
+  if (!r.ok) return null;
+  const j = await r.json();
+  return j.sha || null;
+}
+
+// ═══════════════════════════════════
+//  DB LOAD / SAVE
+// ═══════════════════════════════════
 async function loadDB() {
-  const token = getToken();
-  if (!token) { openModal('modalToken'); return; }
-  setSyncStatus('saving', '⟳ Sincronizando...');
+  if (!getToken()) { openModal('modalToken'); return; }
+  setSS('saving','⟳ Cargando...');
   try {
-    const res = await fetch(`${API}/repos/${REPO}/contents/${DB_PATH}?ref=${BRANCH}&t=${Date.now()}`, {
-      headers: { Authorization: 'token '+token, Accept: 'application/vnd.github.v3+json' }
-    });
-    if (res.status === 404) {
-      // archivo no existe aún, inicializar con seed
-      db = { equipos: JSON.parse(JSON.stringify(SEED_EQUIPOS)), certs: [], version: 1 };
+    // obtener SHA
+    const metaR = await ghGet(DB_PATH);
+    if (metaR.status === 404) {
+      db = { equipos: SEED.map(e=>({...e})), certs:[], version:2 };
       dbSHA = '';
       await saveDB();
       return;
     }
-    if (!res.ok) throw new Error('HTTP '+res.status);
-    const json = await res.json();
-    dbSHA = json.sha;
-    const content = atob(json.content.replace(/\n/g,''));
-    db = JSON.parse(content);
-    // agregar equipos nuevos del seed que no estén
-    let changed = false;
-    for (const eq of SEED_EQUIPOS) {
-      if (!db.equipos.find(e => e.id === eq.id)) {
-        db.equipos.push(eq);
-        changed = true;
-      }
+    if (!metaR.ok) throw new Error('HTTP '+metaR.status);
+    const meta = await metaR.json();
+    dbSHA = meta.sha;
+    // leer contenido via raw (sin límite)
+    const rawR = await fetch(RAW+DB_PATH+'?t='+Date.now());
+    if (!rawR.ok) throw new Error('Raw '+rawR.status);
+    db = await rawR.json();
+    if (!db.equipos) db.equipos=[];
+    if (!db.certs)   db.certs=[];
+    // seed nuevos
+    let changed=false;
+    for (const eq of SEED) {
+      const ex=db.equipos.find(e=>e.id===eq.id);
+      if (!ex) { db.equipos.push({...eq}); changed=true; }
+      else if((!ex.piso||ex.piso==='Sin asignar')&&eq.piso!=='Sin asignar'){ ex.piso=eq.piso; changed=true; }
     }
     if (changed) await saveDB();
-    else { renderAll(); setSyncStatus('ok', '✓ Sincronizado'); }
+    else { renderAll(); setSS('ok','✓ Sincronizado'); }
   } catch(e) {
-    setSyncStatus('err', '✗ Error — clic para reintentar');
-    toast('Error al cargar: '+e.message, 'err');
+    setSS('err','✗ Error — clic para reintentar');
+    toast('Error: '+e.message,'err');
   }
 }
 
 async function saveDB() {
-  const token = getToken();
-  if (!token) return;
-  setSyncStatus('saving', '⟳ Guardando...');
+  if (!getToken()) return;
+  setSS('saving','⟳ Guardando...');
   try {
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(db, null, 2))));
-    const body = { message: 'CertLab update', content, branch: BRANCH };
-    if (dbSHA) body.sha = dbSHA;
-    const res = await fetch(`${API}/repos/${REPO}/contents/${DB_PATH}`, {
-      method: 'PUT',
-      headers: { Authorization: 'token '+token, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
-      body: JSON.stringify(body)
-    });
-    if (!res.ok) {
-      const err = await res.json();
-      // conflicto: alguien más guardó antes → recargar
-      if (res.status === 409 || res.status === 422) { await loadDB(); return; }
-      throw new Error(err.message || 'HTTP '+res.status);
+    const json = JSON.stringify(db, null, 2);
+    const b64  = btoa(unescape(encodeURIComponent(json)));
+    const r = await ghPut(DB_PATH, b64, dbSHA, 'CertLab db update');
+    if (!r.ok) {
+      const e = await r.json();
+      if (r.status===409||r.status===422) { await loadDB(); return; }
+      throw new Error(e.message||'HTTP '+r.status);
     }
-    const json = await res.json();
-    dbSHA = json.content.sha;
+    const j = await r.json();
+    dbSHA = j.content.sha;
     renderAll();
-    setSyncStatus('ok', '✓ Guardado');
+    setSS('ok','✓ Guardado');
   } catch(e) {
-    setSyncStatus('err', '✗ Error al guardar');
-    toast('Error al guardar: '+e.message, 'err');
+    setSS('err','✗ Error guardando');
+    toast('Error guardando: '+e.message,'err');
   }
 }
 
-function scheduleSave() {
-  clearTimeout(saveTimer);
-  saveTimer = setTimeout(() => saveDB(), 800);
-}
+function scheduleSave() { clearTimeout(saveTimer); saveTimer=setTimeout(saveDB,800); }
 
-function setSyncStatus(cls, text) {
-  const el = document.getElementById('syncStatus');
-  el.className = 'sync-status ' + cls;
-  el.textContent = text;
+function setSS(cls,text) {
+  const el=document.getElementById('syncBtn');
+  el.className='sync-btn '+cls; el.textContent=text;
 }
 
 function saveToken() {
-  const t = document.getElementById('fToken').value.trim();
-  if (!t) { toast('Ingresá el token', 'err'); return; }
-  setToken(t);
-  closeModal('modalToken');
-  loadDB();
+  const t=document.getElementById('fToken').value.trim();
+  if(!t){toast('Ingresá el token','err');return;}
+  setToken(t); closeModal('modalToken'); loadDB();
 }
 
-// ═══════════════════════════════════════════
-//  HELPERS
-// ═══════════════════════════════════════════
-const ICONS = {CENTRIF:'⚗️',CEN:'🔄',BAÑO:'🌡️',BANO:'🌡️',MIC:'🔬',AGITADO:'🌀',ANA:'🧪',AUT:'♨️',BALANZA:'⚖️',CAB:'🗄️',ESTUFA:'🔥',INC:'🧫',OTRO:'🔧'};
-function equipoIcon(t) { return ICONS[t] || '🔧'; }
-
-function certStatus(eqId) {
-  const list = (db.certs||[]).filter(c => c.equipoId === eqId);
-  if (!list.length) return {label:'Sin certificado', cls:'none'};
-  const last = list.sort((a,b) => b.ts - a.ts)[0];
-  if (!last.vencimiento) return {label:'Sin vencimiento', cls:'none'};
-  const diff = (new Date(last.vencimiento) - new Date()) / 86400000;
-  if (diff < 0)  return {label:'Vencido', cls:'exp'};
-  if (diff < 60) return {label:'Vence en '+Math.round(diff)+'d', cls:'warn'};
-  return {label:'Vigente', cls:'ok'};
+// ═══════════════════════════════════
+//  SUBIR PDF AL REPO
+// ═══════════════════════════════════
+async function uploadPDF(arrayBuffer, filename) {
+  // sanitizar nombre para path de GitHub
+  const safeName = filename.replace(/[^a-zA-Z0-9._-]/g,'_');
+  const ts = Date.now();
+  const path = PDF_DIR+'/'+ts+'_'+safeName;
+  // convertir ArrayBuffer a base64
+  const bytes = new Uint8Array(arrayBuffer);
+  let bin=''; bytes.forEach(b=>bin+=String.fromCharCode(b));
+  const b64 = btoa(bin);
+  const sha = await getSHA(path); // null si no existe
+  const r = await ghPut(path, b64, sha, 'PDF: '+safeName);
+  if (!r.ok) {
+    const e=await r.json(); throw new Error(e.message||'HTTP '+r.status);
+  }
+  const url = RAW+path;
+  return { path, url, name: filename };
 }
 
-function activeCert(eqId) {
-  const list = (db.certs||[]).filter(c => c.equipoId === eqId).sort((a,b) => b.ts - a.ts);
-  return list[0] || null;
+// ═══════════════════════════════════
+//  HELPERS RENDER
+// ═══════════════════════════════════
+const ICONS={CENTRIF:'⚗️',CEN:'🔄',BAÑO:'🌡️',BANO:'🌡️',MIC:'🔬',AGITADO:'🌀',ANA:'🧪',AUT:'♨️',BALANZA:'⚖️',CAB:'🗄️',ESTUFA:'🔥',INC:'🧫',OTRO:'🔧'};
+function eIcon(t){return ICONS[t]||'🔧';}
+
+function certStatus(eqId){
+  const list=(db.certs||[]).filter(c=>c.equipoId===eqId);
+  if(!list.length) return {label:'Sin certificado',cls:'none'};
+  const last=list.sort((a,b)=>b.ts-a.ts)[0];
+  if(!last.vencimiento) return {label:'Sin vencimiento',cls:'none'};
+  const diff=(new Date(last.vencimiento)-new Date())/86400000;
+  if(diff<0) return {label:'Vencido',cls:'exp'};
+  if(diff<60) return {label:'Vence en '+Math.round(diff)+'d',cls:'warn'};
+  return {label:'Vigente',cls:'ok'};
 }
 
-function relevIcon(r) {
-  if (r === 'proceso')  return '🔄';
-  if (r === 'relevado') return '✅';
-  return '⬜';
+function activeCert(eqId){
+  const l=(db.certs||[]).filter(c=>c.equipoId===eqId).sort((a,b)=>b.ts-a.ts);
+  return l[0]||null;
 }
 
-function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2); }
+function rIcon(r){return r==='proceso'?'🔄':r==='relevado'?'✅':'⬜';}
 
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════
 //  RENDER
-// ═══════════════════════════════════════════
-function renderAll() { renderSidebar(); renderGrid(); renderStats(); }
+// ═══════════════════════════════════
+function renderAll(){renderSidebar();renderGrid();renderStats();}
 
-function setFloor(floor, el) {
-  currentFloor = floor;
-  document.querySelectorAll('.floor-btn').forEach(b => b.classList.remove('active'));
+function setFloor(f,el){
+  currentFloor=f;
+  document.querySelectorAll('.floor-btn').forEach(b=>b.classList.remove('active'));
   el.classList.add('active');
-  const map = {all:'🏢 Todos los pisos','1 piso':'1️⃣ 1er Piso','2 Piso':'2️⃣ 2do Piso','3 Piso':'3️⃣ 3er Piso','Sin asignar':'📦 Sin asignar'};
-  document.getElementById('sectionTitle').textContent = map[floor] || floor;
+  const m={all:'🏢 Todos los pisos','1 piso':'1️⃣ 1er Piso','2 Piso':'2️⃣ 2do Piso','3 Piso':'3️⃣ 3er Piso','Sin asignar':'📦 Sin asignar'};
+  document.getElementById('sectionTitle').textContent=m[f]||f;
   renderGrid();
 }
 
-function renderSidebar() {
-  const c = {};
-  (db.equipos||[]).forEach(e => { c[e.piso] = (c[e.piso]||0)+1; });
-  document.getElementById('cnt-all').textContent = (db.equipos||[]).length;
-  document.getElementById('cnt-1').textContent   = c['1 piso']     || 0;
-  document.getElementById('cnt-2').textContent   = c['2 Piso']     || 0;
-  document.getElementById('cnt-3').textContent   = c['3 Piso']     || 0;
-  document.getElementById('cnt-sin').textContent = c['Sin asignar']|| 0;
+function renderSidebar(){
+  const c={};
+  (db.equipos||[]).forEach(e=>{c[e.piso]=(c[e.piso]||0)+1;});
+  document.getElementById('cnt-all').textContent=(db.equipos||[]).length;
+  document.getElementById('cnt-1').textContent=c['1 piso']||0;
+  document.getElementById('cnt-2').textContent=c['2 Piso']||0;
+  document.getElementById('cnt-3').textContent=c['3 Piso']||0;
+  document.getElementById('cnt-sin').textContent=c['Sin asignar']||0;
 }
 
-function renderStats() {
+function renderStats(){
   let ok=0,warn=0,exp=0,none=0,rP=0,rPr=0,rD=0;
-  (db.equipos||[]).forEach(e => {
-    const s = certStatus(e.id);
-    if(s.cls==='ok') ok++; else if(s.cls==='warn') warn++; else if(s.cls==='exp') exp++; else none++;
-    if(!e.relev) rP++; else if(e.relev==='proceso') rPr++; else if(e.relev==='relevado') rD++;
+  (db.equipos||[]).forEach(e=>{
+    const s=certStatus(e.id);
+    if(s.cls==='ok')ok++;else if(s.cls==='warn')warn++;else if(s.cls==='exp')exp++;else none++;
+    if(!e.relev)rP++;else if(e.relev==='proceso')rPr++;else if(e.relev==='relevado')rD++;
   });
-  document.getElementById('statsBar').innerHTML =
+  document.getElementById('statsBar').innerHTML=
     '<div class="stat"><b>'+(db.equipos||[]).length+'</b> equipos</div>'+
     '<div class="stat" style="color:var(--green)"><b>'+ok+'</b> vigentes</div>'+
     '<div class="stat" style="color:var(--yellow)"><b>'+warn+'</b> por vencer</div>'+
     '<div class="stat" style="color:var(--red)"><b>'+exp+'</b> vencidos</div>'+
     '<div class="stat" style="color:var(--muted)"><b>'+none+'</b> sin cert.</div>'+
-    '<div class="stat" style="border-left:2px solid var(--border);padding-left:10px">⬜ <b>'+rP+'</b></div>'+
-    '<div class="stat">🔄 <b>'+rPr+'</b></div>'+
-    '<div class="stat">✅ <b>'+rD+'</b></div>';
+    '<div class="stat" style="border-left:2px solid var(--border);padding-left:9px">⬜<b>'+rP+'</b></div>'+
+    '<div class="stat">🔄<b>'+rPr+'</b></div>'+
+    '<div class="stat">✅<b>'+rD+'</b></div>';
 }
 
-function renderGrid() {
-  const q      = document.getElementById('searchBox').value.toLowerCase();
-  const tipo   = document.getElementById('tipoFilter').value;
-  const status = document.getElementById('statusFilter').value;
-  const relev  = document.getElementById('relevFilter').value;
+function renderGrid(){
+  const q=document.getElementById('searchBox').value.toLowerCase();
+  const tipo=document.getElementById('tipoFilter').value;
+  const status=document.getElementById('statusFilter').value;
+  const relev=document.getElementById('relevFilter').value;
 
-  const list = (db.equipos||[]).filter(e => {
-    if (!e || !e.id) return false;
-    if (currentFloor !== 'all' && e.piso !== currentFloor) return false;
-    if (tipo && e.tipo !== tipo) return false;
-    if (q && !e.id.toLowerCase().includes(q) && !(e.nombre||'').toLowerCase().includes(q)) return false;
-    if (status && certStatus(e.id).cls !== status) return false;
-    if (soloConCert && !activeCert(e.id)) return false;
-    if (relev === 'pendiente' && e.relev) return false;
-    if (relev === 'proceso'   && e.relev !== 'proceso')  return false;
-    if (relev === 'relevado'  && e.relev !== 'relevado') return false;
+  const list=(db.equipos||[]).filter(e=>{
+    if(!e||!e.id) return false;
+    if(currentFloor!=='all'&&e.piso!==currentFloor) return false;
+    if(tipo&&e.tipo!==tipo) return false;
+    if(q&&!e.id.toLowerCase().includes(q)&&!(e.nombre||'').toLowerCase().includes(q)) return false;
+    if(status&&certStatus(e.id).cls!==status) return false;
+    if(soloConCert&&!activeCert(e.id)) return false;
+    if(relev==='pendiente'&&e.relev) return false;
+    if(relev==='proceso'&&e.relev!=='proceso') return false;
+    if(relev==='relevado'&&e.relev!=='relevado') return false;
     return true;
   });
 
-  const grid = document.getElementById('equipoGrid');
-  if (!list.length) {
-    grid.innerHTML = '<div class="empty" style="grid-column:1/-1"><div class="icon">📭</div><p>No se encontraron equipos.</p></div>';
+  const g=document.getElementById('equipoGrid');
+  if(!list.length){
+    g.innerHTML='<div class="empty" style="grid-column:1/-1"><div class="icon">📭</div><p>Sin equipos.</p></div>';
     return;
   }
 
-  grid.innerHTML = list.map(e => {
-    try {
-      const st   = certStatus(e.id);
-      const cert = activeCert(e.id);
-      const icon = equipoIcon(e.tipo);
-      const noteDot = e.notas ? '<span class="note-dot" title="Tiene notas"></span>' : '';
-      let certInfo;
-      if (!cert) {
-        certInfo = '<div class="cert-filename">Sin certificado cargado</div>';
+  g.innerHTML=list.map(e=>{
+    try{
+      const st=certStatus(e.id);
+      const cert=activeCert(e.id);
+      const icon=eIcon(e.tipo);
+      const nd=e.notas?'<span class="ndot"></span>':'';
+      let ci;
+      if(!cert){
+        ci='<div class="cert-info">Sin certificado cargado</div>';
       } else {
-        const archs = (cert.archivos&&cert.archivos.length) ? cert.archivos : [{name:cert.nombre||'cert.pdf'}];
-        const adjHTML = archs.map(a => '<div style="display:flex;align-items:center;gap:3px"><span style="color:var(--green)">📄</span><span>'+a.name+'</span></div>').join('');
-        certInfo = '<div class="cert-filename">'+(cert.empresa?'<span style="color:var(--muted)">'+cert.empresa+'</span>':'')+(cert.emision?'<span style="color:var(--muted)"> · '+cert.emision+'</span>':'')+'<div style="margin-top:3px;font-size:.72rem">'+adjHTML+'</div></div>';
+        const archs=cert.archivos||[];
+        const ah=archs.map(a=>'<div style="display:flex;align-items:center;gap:3px"><span style="color:var(--green)">📄</span><span>'+a.name+'</span></div>').join('');
+        ci='<div class="cert-info">'+(cert.empresa?'<span>'+cert.empresa+'</span>':'')+
+          (cert.emision?'<span style="margin-left:4px">· '+cert.emision+'</span>':'')+
+          '<div style="margin-top:2px">'+ah+'</div></div>';
       }
-      return '<div class="equipo-card">'
-        +'<div class="equipo-header">'
-        +'<div class="equipo-icon">'+icon+'</div>'
-        +'<div class="equipo-info">'
-        +'<div class="equipo-code">'+(cert?'<span class="cert-dot">●</span> ':'')+e.id+noteDot+'</div>'
-        +'<div class="equipo-name">'+(e.nombre||'—')+'</div>'
-        +'<span class="equipo-piso">'+e.piso+'</span>'
-        +'</div>'
-        +'<div style="display:flex;flex-direction:column;align-items:flex-end;gap:5px">'
-        +'<span class="badge '+st.cls+'">● '+st.label+'</span>'
-        +'<button onclick="cycleRelev(\''+e.id+'\')" style="background:transparent;border:none;cursor:pointer;font-size:1.1rem">'+relevIcon(e.relev)+'</button>'
-        +'</div></div>'
-        +certInfo
-        +'<div class="equipo-actions">'
-        +'<button class="btn-action success" onclick="openAddCert(\''+e.id+'\')">📎 Cert.</button>'
-        +(cert?'<button class="btn-action" onclick="viewPDF(\''+e.id+'\')">👁️ Ver</button>':'')
-        +'<button class="btn-action" onclick="openQR(\''+e.id+'\')">📱 QR</button>'
-        +'<button class="btn-action" onclick="openHistorial(\''+e.id+'\')">📋 Hist.</button>'
-        +'<button class="btn-action" onclick="openEditEquipo(\''+e.id+'\')">✏️</button>'
-        +'<button class="btn-action danger" onclick="confirmDeleteEquipo(\''+e.id+'\')">🗑️</button>'
-        +'</div></div>';
-    } catch(err) {
-      return '<div class="equipo-card" style="border-color:var(--red)"><div style="color:var(--red);font-size:.8rem">Error: '+e.id+'</div></div>';
+      const eid=e.id.replace(/'/g,"\\'");
+      return '<div class="card">'+
+        '<div class="card-header">'+
+        '<div class="eq-icon">'+icon+'</div>'+
+        '<div class="eq-info">'+
+        '<div class="eq-code">'+(cert?'<span class="cdot">●</span> ':'')+e.id+nd+'</div>'+
+        '<div class="eq-name">'+(e.nombre||'—')+'</div>'+
+        '<span class="eq-piso">'+e.piso+'</span>'+
+        '</div>'+
+        '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">'+
+        '<span class="badge '+st.cls+'">● '+st.label+'</span>'+
+        '<button onclick="cycleRelev(\''+eid+'\')" style="background:transparent;border:none;cursor:pointer;font-size:1.1rem">'+rIcon(e.relev)+'</button>'+
+        '</div></div>'+
+        ci+
+        '<div class="actions">'+
+        '<button class="ab ok" onclick="openAddCert(\''+eid+'\')">📎 Cert.</button>'+
+        (cert?'<button class="ab" onclick="viewCert(\''+eid+'\')">👁️ Ver</button>':'')+
+        '<button class="ab" onclick="openQR(\''+eid+'\')">📱 QR</button>'+
+        '<button class="ab" onclick="openHistorial(\''+eid+'\')">📋 Hist.</button>'+
+        '<button class="ab" onclick="openEditEquipo(\''+eid+'\')">✏️</button>'+
+        '<button class="ab del" onclick="confirmDelEq(\''+eid+'\')">🗑️</button>'+
+        '</div></div>';
+    }catch(err){
+      return '<div class="card" style="border-color:var(--red)"><div style="color:var(--red);font-size:.78rem">Error: '+e.id+'</div></div>';
     }
   }).join('');
 }
 
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════
 //  RELEVAMIENTO
-// ═══════════════════════════════════════════
-function cycleRelev(id) {
-  const eq = db.equipos.find(e => e.id === id);
-  if (!eq) return;
-  const orden = ['', 'proceso', 'relevado'];
-  const idx = orden.indexOf(eq.relev || '');
-  eq.relev = orden[(idx + 1) % orden.length];
-  scheduleSave();
-  renderGrid(); renderStats();
+// ═══════════════════════════════════
+function cycleRelev(id){
+  const eq=db.equipos.find(e=>e.id===id); if(!eq) return;
+  const o=['','proceso','relevado'];
+  eq.relev=o[(o.indexOf(eq.relev||'')+1)%o.length];
+  scheduleSave(); renderGrid(); renderStats();
 }
 
-function toggleConCert() {
-  soloConCert = !soloConCert;
-  const btn = document.getElementById('btnConCert');
-  btn.classList.toggle('active', soloConCert);
+function toggleCC(){
+  soloConCert=!soloConCert;
+  document.getElementById('btnCC').classList.toggle('on',soloConCert);
   renderGrid();
 }
 
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════
 //  EQUIPOS CRUD
-// ═══════════════════════════════════════════
-function openAddEquipo() {
-  editingId = null;
-  document.getElementById('modalEquipoTitle').textContent = '⚙️ Nuevo equipo';
-  ['fCodigo','fNombre','fNotas'].forEach(i => document.getElementById(i).value='');
-  document.getElementById('fPiso').value = 'Sin asignar';
-  document.getElementById('fTipo').value = 'OTRO';
+// ═══════════════════════════════════
+function openAddEquipo(){
+  editingId=null;
+  document.getElementById('meqTitle').textContent='⚙️ Nuevo equipo';
+  ['fCodigo','fNombre','fNotas'].forEach(i=>document.getElementById(i).value='');
+  document.getElementById('fPiso').value='Sin asignar';
+  document.getElementById('fTipo').value='OTRO';
   openModal('modalEquipo');
 }
 
-function openEditEquipo(id) {
-  const eq = db.equipos.find(e => e.id === id);
-  if (!eq) return;
-  editingId = id;
-  document.getElementById('modalEquipoTitle').textContent = '✏️ Editar equipo';
-  document.getElementById('fCodigo').value = eq.id;
-  document.getElementById('fNombre').value = eq.nombre||'';
-  document.getElementById('fPiso').value   = eq.piso;
-  document.getElementById('fTipo').value   = eq.tipo||'OTRO';
-  document.getElementById('fNotas').value  = eq.notas||'';
+function openEditEquipo(id){
+  const eq=db.equipos.find(e=>e.id===id); if(!eq) return;
+  editingId=id;
+  document.getElementById('meqTitle').textContent='✏️ Editar equipo';
+  document.getElementById('fCodigo').value=eq.id;
+  document.getElementById('fNombre').value=eq.nombre||'';
+  document.getElementById('fPiso').value=eq.piso;
+  document.getElementById('fTipo').value=eq.tipo||'OTRO';
+  document.getElementById('fNotas').value=eq.notas||'';
   openModal('modalEquipo');
 }
 
-function saveEquipo() {
-  const codigo = document.getElementById('fCodigo').value.trim();
-  if (!codigo) { toast('El código es obligatorio','err'); return; }
-  if (editingId) {
-    const eq = db.equipos.find(e => e.id === editingId);
-    if (eq) {
-      eq.id     = codigo;
-      eq.nombre = document.getElementById('fNombre').value.trim();
-      eq.piso   = document.getElementById('fPiso').value;
-      eq.tipo   = document.getElementById('fTipo').value;
-      eq.notas  = document.getElementById('fNotas').value.trim();
-      // actualizar refs en certs
-      db.certs.forEach(c => { if(c.equipoId===editingId) c.equipoId=codigo; });
+function saveEquipo(){
+  const codigo=document.getElementById('fCodigo').value.trim();
+  if(!codigo){toast('Código obligatorio','err');return;}
+  if(editingId){
+    const eq=db.equipos.find(e=>e.id===editingId);
+    if(eq){
+      eq.id=codigo; eq.nombre=document.getElementById('fNombre').value.trim();
+      eq.piso=document.getElementById('fPiso').value; eq.tipo=document.getElementById('fTipo').value;
+      eq.notas=document.getElementById('fNotas').value.trim();
+      db.certs.forEach(c=>{if(c.equipoId===editingId)c.equipoId=codigo;});
     }
   } else {
-    if (db.equipos.find(e => e.id === codigo)) { toast('Ya existe ese código','err'); return; }
-    db.equipos.push({id:codigo, nombre:document.getElementById('fNombre').value.trim(),
-      piso:document.getElementById('fPiso').value, tipo:document.getElementById('fTipo').value,
-      notas:document.getElementById('fNotas').value.trim(), relev:''});
+    if(db.equipos.find(e=>e.id===codigo)){toast('Ya existe ese código','err');return;}
+    db.equipos.push({id:codigo,nombre:document.getElementById('fNombre').value.trim(),
+      piso:document.getElementById('fPiso').value,tipo:document.getElementById('fTipo').value,
+      notas:document.getElementById('fNotas').value.trim(),relev:''});
   }
-  closeModal('modalEquipo');
-  scheduleSave();
-  renderAll();
-  toast(editingId?'Equipo actualizado ✓':'Equipo agregado ✓','ok');
+  closeModal('modalEquipo'); scheduleSave(); renderAll();
+  toast(editingId?'Actualizado ✓':'Agregado ✓','ok');
 }
 
-function confirmDeleteEquipo(id) {
-  document.getElementById('confirmIcon').textContent = '🗑️';
-  document.getElementById('confirmTitle').textContent = '¿Eliminar equipo?';
-  document.getElementById('confirmMsg').textContent = 'Se eliminará "'+id+'" y todos sus certificados.';
-  document.getElementById('confirmOkBtn').textContent = 'Eliminar';
-  document.getElementById('confirmOkBtn').style.background = 'var(--red)';
-  document.getElementById('confirmOkBtn').onclick = () => deleteEquipo(id);
+function confirmDelEq(id){
+  document.getElementById('cIcon').textContent='🗑️';
+  document.getElementById('cTitle').textContent='¿Eliminar equipo?';
+  document.getElementById('cMsg').textContent='"'+id+'" y todos sus certificados.';
+  document.getElementById('cOkBtn').textContent='Eliminar';
+  document.getElementById('cOkBtn').style.background='var(--red)';
+  document.getElementById('cOkBtn').onclick=()=>delEq(id);
   openModal('modalConfirm');
 }
 
-function deleteEquipo(id) {
-  db.equipos = db.equipos.filter(e => e.id !== id);
-  db.certs   = db.certs.filter(c => c.equipoId !== id);
-  closeModal('modalConfirm');
-  scheduleSave(); renderAll();
-  toast('Equipo eliminado','ok');
+function delEq(id){
+  db.equipos=db.equipos.filter(e=>e.id!==id);
+  db.certs=db.certs.filter(c=>c.equipoId!==id);
+  closeModal('modalConfirm'); scheduleSave(); renderAll();
+  toast('Eliminado','ok');
 }
 
-function confirmAgregar() {
-  document.getElementById('confirmIcon').textContent = '➕';
-  document.getElementById('confirmTitle').textContent = '¿Actualizar lista?';
-  document.getElementById('confirmMsg').textContent = 'Agrega equipos nuevos y actualiza pisos sin tocar datos existentes.';
-  document.getElementById('confirmOkBtn').textContent = 'Actualizar';
-  document.getElementById('confirmOkBtn').style.background = 'var(--accent)';
-  document.getElementById('confirmOkBtn').onclick = agregarNuevos;
+function confirmAgregar(){
+  document.getElementById('cIcon').textContent='➕';
+  document.getElementById('cTitle').textContent='¿Actualizar lista?';
+  document.getElementById('cMsg').textContent='Agrega equipos nuevos y actualiza pisos.';
+  document.getElementById('cOkBtn').textContent='Actualizar';
+  document.getElementById('cOkBtn').style.background='var(--accent)';
+  document.getElementById('cOkBtn').onclick=agregarNuevos;
   openModal('modalConfirm');
 }
 
-function agregarNuevos() {
-  let agregados=0, actualizados=0;
-  for (const eq of SEED_EQUIPOS) {
-    const ex = db.equipos.find(e => e.id === eq.id);
-    if (!ex) { db.equipos.push({...eq}); agregados++; }
-    else if ((!ex.piso || ex.piso==='Sin asignar') && eq.piso !== 'Sin asignar') {
-      ex.piso = eq.piso; actualizados++;
-    }
+function agregarNuevos(){
+  let ag=0,ac=0;
+  for(const eq of SEED){
+    const ex=db.equipos.find(e=>e.id===eq.id);
+    if(!ex){db.equipos.push({...eq});ag++;}
+    else if((!ex.piso||ex.piso==='Sin asignar')&&eq.piso!=='Sin asignar'){ex.piso=eq.piso;ac++;}
   }
-  closeModal('modalConfirm');
-  scheduleSave(); renderAll();
-  toast(agregados+' nuevos · '+actualizados+' pisos actualizados ✓','ok');
+  closeModal('modalConfirm'); scheduleSave(); renderAll();
+  toast(ag+' nuevos · '+ac+' pisos actualizados ✓','ok');
 }
 
-// ═══════════════════════════════════════════
-//  CERTIFICADOS
-// ═══════════════════════════════════════════
-function openAddCert(eqId) {
-  certEquipoId = eqId;
-  pendingPDFs  = [];
-  document.getElementById('certEquipoLabel').textContent = eqId;
-  ['fFechaEmision','fFechaVenc','fEmpresa'].forEach(i => document.getElementById(i).value='');
-  document.getElementById('dropLabel').textContent = '📂 Arrastrá PDFs aquí o hacé clic';
-  renderPendingList();
+// ═══════════════════════════════════
+//  CERTIFICADOS — subir PDFs al repo
+// ═══════════════════════════════════
+function openAddCert(eqId){
+  certEquipoId=eqId; pendingFiles=[];
+  document.getElementById('certEqLabel').textContent=eqId;
+  ['fEmision','fVenc','fEmpresa'].forEach(i=>document.getElementById(i).value='');
+  document.getElementById('dropLabel').textContent='📂 Arrastrá PDFs o hacé clic';
+  document.getElementById('pendingList').innerHTML='';
+  document.getElementById('uploadProgress').style.display='none';
+  document.getElementById('uploadStatus').textContent='';
+  document.getElementById('btnSaveCert').disabled=false;
   openModal('modalCert');
 }
 
-function renderPendingList() {
-  const el = document.getElementById('pendingList');
-  if (!pendingPDFs.length) { el.innerHTML=''; return; }
-  document.getElementById('dropLabel').textContent = '✅ '+pendingPDFs.length+' archivo(s)';
-  el.innerHTML = pendingPDFs.map((p,i) =>
-    '<div style="display:flex;align-items:center;gap:6px;background:var(--bg);border-radius:5px;padding:3px 7px;font-size:.76rem">'
-    +'<span style="color:var(--green)">📄</span><span style="flex:1">'+p.name+'</span>'
-    +'<button onclick="removePending('+i+')" style="background:transparent;border:none;color:var(--red);cursor:pointer">✕</button>'
-    +'</div>'
+function handleFileSelect(input){addFiles(Array.from(input.files));input.value='';}
+function handleDrop(ev){
+  ev.preventDefault();document.getElementById('dropZone').classList.remove('over');
+  const f=Array.from(ev.dataTransfer.files).filter(x=>x.type==='application/pdf');
+  if(!f.length){toast('Solo PDFs','err');return;}addFiles(f);
+}
+function addFiles(files){
+  files.forEach(f=>{
+    const r=new FileReader();
+    r.onload=e=>{pendingFiles.push({name:f.name,ab:e.target.result});renderPending();};
+    r.readAsArrayBuffer(f);
+  });
+}
+function renderPending(){
+  const el=document.getElementById('pendingList');
+  document.getElementById('dropLabel').textContent='✅ '+pendingFiles.length+' archivo(s)';
+  el.innerHTML=pendingFiles.map((p,i)=>
+    '<div style="display:flex;align-items:center;gap:5px;background:var(--bg);border-radius:5px;padding:3px 7px;font-size:.74rem">'+
+    '<span style="color:var(--green)">📄</span><span style="flex:1">'+p.name+'</span>'+
+    '<button onclick="pendingFiles.splice('+i+',1);renderPending()" style="background:transparent;border:none;color:var(--red);cursor:pointer">✕</button>'+
+    '</div>'
   ).join('');
 }
 
-function removePending(i) { pendingPDFs.splice(i,1); renderPendingList(); }
-function handleFileSelect(input) { addFiles(Array.from(input.files)); input.value=''; }
-function handleDrop(ev) {
-  ev.preventDefault();
-  document.getElementById('dropZone').classList.remove('over');
-  const files = Array.from(ev.dataTransfer.files).filter(f=>f.type==='application/pdf');
-  if (!files.length) { toast('Solo PDFs','err'); return; }
-  addFiles(files);
-}
-function addFiles(files) {
-  const p = files.map(f => new Promise(res => {
-    const r = new FileReader();
-    r.onload = e => { pendingPDFs.push({name:f.name, data:e.target.result}); res(); };
-    r.readAsDataURL(f); // base64 para guardar en JSON
-  }));
-  Promise.all(p).then(() => renderPendingList());
-}
+async function saveCert(){
+  if(!pendingFiles.length){toast('Seleccioná al menos un PDF','err');return;}
+  document.getElementById('btnSaveCert').disabled=true;
+  document.getElementById('uploadProgress').style.display='block';
+  const fill=document.getElementById('progressFill');
+  const status=document.getElementById('uploadStatus');
 
-function saveCert() {
-  if (!pendingPDFs.length) { toast('Seleccioná al menos un PDF','err'); return; }
-  const cert = {
-    id:          uid(),
-    equipoId:    certEquipoId,
-    archivos:    pendingPDFs,
-    nombre:      pendingPDFs[0].name,
-    emision:     document.getElementById('fFechaEmision').value,
-    vencimiento: document.getElementById('fFechaVenc').value,
-    empresa:     document.getElementById('fEmpresa').value.trim(),
-    ts:          Date.now(),
+  const archivos=[];
+  for(let i=0;i<pendingFiles.length;i++){
+    const pf=pendingFiles[i];
+    status.textContent='Subiendo '+pf.name+' ('+(i+1)+'/'+pendingFiles.length+')...';
+    fill.style.width=Math.round((i/pendingFiles.length)*100)+'%';
+    try{
+      const res=await uploadPDF(pf.ab, pf.name);
+      archivos.push(res);
+    }catch(e){
+      toast('Error subiendo '+pf.name+': '+e.message,'err');
+      document.getElementById('btnSaveCert').disabled=false;
+      return;
+    }
+  }
+  fill.style.width='100%';
+  status.textContent='Guardando metadatos...';
+
+  const cert={
+    id:Date.now().toString(36)+Math.random().toString(36).slice(2),
+    equipoId:certEquipoId,
+    archivos,
+    nombre:archivos[0].name,
+    emision:document.getElementById('fEmision').value,
+    vencimiento:document.getElementById('fVenc').value,
+    empresa:document.getElementById('fEmpresa').value.trim(),
+    ts:Date.now(),
   };
   db.certs.push(cert);
   closeModal('modalCert');
-  scheduleSave(); renderGrid(); renderStats();
-  toast('Certificado guardado — '+pendingPDFs.length+' archivo(s) ✓','ok');
+  await saveDB();
+  renderGrid();renderStats();
+  toast(archivos.length+' PDF(s) subidos y guardados ✓','ok');
 }
 
-// ═══════════════════════════════════════════
-//  VISOR PDF
-// ═══════════════════════════════════════════
-function viewPDF(eqId) {
-  const cert = activeCert(eqId);
-  if (!cert) { toast('Sin certificado','err'); return; }
+// ═══════════════════════════════════
+//  VER PDF
+// ═══════════════════════════════════
+function viewCert(eqId){
+  const cert=activeCert(eqId); if(!cert) return;
   openCertViewer(cert);
 }
 
-function openCertViewer(cert) {
-  currentCertArchivos = (cert.archivos&&cert.archivos.length)
-    ? cert.archivos : [{name:cert.nombre||'cert.pdf', data:cert.data||''}];
-  const adjEl = document.getElementById('pdfAdjuntosList');
-  if (currentCertArchivos.length > 1) {
-    adjEl.style.display = 'flex';
-    adjEl.innerHTML = currentCertArchivos.map((a,i) =>
-      '<button class="pdf-adj-btn" id="adjBtn'+i+'" onclick="selectAdjunto('+i+')" title="'+a.name+'">📄 '+a.name+'</button>'
+function openCertViewer(cert){
+  const archs=cert.archivos||[];
+  const adjBar=document.getElementById('adjBar');
+  if(archs.length>1){
+    adjBar.style.display='flex';
+    adjBar.innerHTML=archs.map((a,i)=>
+      '<button class="adj-btn" id="ab'+i+'" onclick="selectAdj('+i+','+JSON.stringify(archs).replace(/"/g,'&quot;')+')" title="'+a.name+'">📄 '+a.name+'</button>'
     ).join('');
-  } else { adjEl.style.display='none'; }
+  } else { adjBar.style.display='none'; }
   openModal('modalPDF');
-  selectAdjunto(0);
+  if(archs.length) selectAdj(0, archs);
 }
 
-function selectAdjunto(idx) {
-  const a = currentCertArchivos[idx];
-  if (!a || !a.data) return;
-  currentCertArchivos.forEach((_,i) => {
-    const btn = document.getElementById('adjBtn'+i);
-    if (btn) btn.className = 'pdf-adj-btn'+(i===idx?' active':'');
-  });
-  const frame = document.getElementById('pdfFrame');
-  if (frame.data && frame.data.startsWith('blob:')) URL.revokeObjectURL(frame.data);
-  // data es base64 dataURL
-  const b64 = a.data.split(',')[1] || a.data;
-  const binary = atob(b64);
-  const bytes = new Uint8Array(binary.length);
-  for (let i=0;i<binary.length;i++) bytes[i]=binary.charCodeAt(i);
-  const blob = new Blob([bytes], {type:'application/pdf'});
-  currentPDFBlob = blob;
-  currentPDFName = a.name;
-  const url = URL.createObjectURL(blob);
-  frame.data = url;
-  const fl = document.getElementById('pdfFallbackLink');
-  if (fl) { fl.href=url; fl.download=a.name; }
-  document.getElementById('pdfTitle').textContent = a.name;
+function selectAdj(idx, archs){
+  document.querySelectorAll('.adj-btn').forEach((b,i)=>b.classList.toggle('on',i===idx));
+  const a=archs[idx];
+  document.getElementById('pdfTitle').textContent=a.name;
+  document.getElementById('pdfFrame').src=a.url;
+  document.getElementById('pdfDownloadBtn').href=a.url;
+  document.getElementById('pdfDownloadBtn').download=a.name;
 }
 
-function closePDFModal() {
-  const frame = document.getElementById('pdfFrame');
-  if (frame.data&&frame.data.startsWith('blob:')) URL.revokeObjectURL(frame.data);
-  frame.data=''; currentCertArchivos=[];
-  closeModal('modalPDF');
+function viewCertById(certId, adjIdx){
+  const cert=db.certs.find(c=>c.id===certId); if(!cert) return;
+  openCertViewer(cert);
+  setTimeout(()=>selectAdj(adjIdx||0, cert.archivos||[]),80);
 }
 
-function downloadCurrentPDF() {
-  if (!currentPDFBlob) return;
-  const a = document.createElement('a');
-  a.href=URL.createObjectURL(currentPDFBlob); a.download=currentPDFName; a.click();
-}
-
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════
 //  HISTORIAL
-// ═══════════════════════════════════════════
-function openHistorial(eqId) {
-  document.getElementById('histLabel').textContent = eqId;
-  const certs = (db.certs||[]).filter(c=>c.equipoId===eqId).sort((a,b)=>b.ts-a.ts);
-  const container = document.getElementById('histList');
-  if (!certs.length) { container.innerHTML='<p style="color:var(--muted);font-size:.85rem">Sin certificados.</p>'; }
-  else {
-    container.innerHTML = certs.map((c,i) => {
-      const diff = c.vencimiento ? Math.round((new Date(c.vencimiento)-new Date())/86400000) : null;
-      const cls  = diff===null?'none':diff<0?'exp':diff<60?'warn':'ok';
-      const lbl  = diff===null?'Sin venc.':diff<0?'Vencido':'Vence en '+diff+'d';
-      const archs = (c.archivos&&c.archivos.length)?c.archivos:[{name:c.nombre||'cert.pdf'}];
-      const adjHTML = archs.map((a,ai) =>
-        '<div style="display:flex;align-items:center;gap:5px;font-size:.74rem;background:var(--bg);border-radius:4px;padding:3px 7px">'
-        +'<span style="color:var(--green)">📄</span><span style="flex:1">'+a.name+'</span>'
-        +'<button class="btn-action" style="min-width:unset;padding:2px 7px;font-size:.7rem" onclick="viewCertAdjunto(\''+c.id+'\','+ai+')">👁️</button>'
-        +'</div>'
-      ).join('');
-      return '<div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px;display:flex;flex-direction:column;gap:7px">'
-        +'<div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">'
-        +'<div style="flex:1"><div style="font-weight:600;font-size:.83rem">'+(archs.length>1?'<span style="color:var(--accent)">'+archs.length+' adjuntos</span>':archs[0].name)+'</div>'
-        +'<div style="font-size:.74rem;color:var(--muted)">'+(c.empresa||'')+' '+(c.emision?'· '+c.emision:'')+'</div>'
-        +'<div style="font-size:.74rem;color:var(--muted)">'+new Date(c.ts).toLocaleDateString('es-AR')+'</div></div>'
-        +'<span class="badge '+cls+'">● '+lbl+'</span>'
-        +(i===0?'<span style="font-size:.7rem;color:var(--accent)">● Activo</span>':'')
-        +'<button class="btn-action danger" style="min-width:unset" onclick="confirmDeleteCert(\''+c.id+'\',\''+eqId+'\')">🗑️</button>'
-        +'</div><div style="display:flex;flex-direction:column;gap:3px">'+adjHTML+'</div></div>';
-    }).join('');
-  }
+// ═══════════════════════════════════
+function openHistorial(eqId){
+  document.getElementById('histLabel').textContent=eqId;
+  const certs=(db.certs||[]).filter(c=>c.equipoId===eqId).sort((a,b)=>b.ts-a.ts);
+  const el=document.getElementById('histList');
+  if(!certs.length){el.innerHTML='<p style="color:var(--muted);font-size:.83rem">Sin certificados.</p>';openModal('modalHistorial');return;}
+  el.innerHTML=certs.map((c,i)=>{
+    const diff=c.vencimiento?Math.round((new Date(c.vencimiento)-new Date())/86400000):null;
+    const cls=diff===null?'none':diff<0?'exp':diff<60?'warn':'ok';
+    const lbl=diff===null?'Sin venc.':diff<0?'Vencido':'Vence en '+diff+'d';
+    const archs=c.archivos||[];
+    const ah=archs.map((a,ai)=>
+      '<div style="display:flex;align-items:center;gap:5px;font-size:.73rem;background:var(--bg);border-radius:4px;padding:2px 7px">'+
+      '<span style="color:var(--green)">📄</span><span style="flex:1">'+a.name+'</span>'+
+      '<a href="'+a.url+'" target="_blank" class="ab" style="min-width:unset;padding:2px 7px;font-size:.7rem;text-decoration:none">🔗 Abrir</a>'+
+      '<button class="ab" style="min-width:unset;padding:2px 7px;font-size:.7rem" onclick="viewCertById(\''+c.id+'\','+ai+')">👁️</button>'+
+      '</div>'
+    ).join('');
+    return '<div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px;display:flex;flex-direction:column;gap:6px">'+
+      '<div style="display:flex;gap:7px;align-items:center;flex-wrap:wrap">'+
+      '<div style="flex:1"><div style="font-weight:600;font-size:.82rem">'+(archs.length>1?'<span style="color:var(--accent)">'+archs.length+' adjuntos</span>':archs[0]?.name||'cert')+'</div>'+
+      '<div style="font-size:.72rem;color:var(--muted)">'+(c.empresa||'')+' '+(c.emision?'· '+c.emision:'')+'</div>'+
+      '<div style="font-size:.72rem;color:var(--muted)">'+new Date(c.ts).toLocaleDateString('es-AR')+'</div></div>'+
+      '<span class="badge '+cls+'">● '+lbl+'</span>'+
+      (i===0?'<span style="font-size:.68rem;color:var(--accent)">● Activo</span>':'')+
+      '<button class="ab del" style="min-width:unset" onclick="confirmDelCert(\''+c.id+'\',\''+eqId.replace(/'/g,"\\'")+'\')" >🗑️</button>'+
+      '</div><div style="display:flex;flex-direction:column;gap:3px">'+ah+'</div></div>';
+  }).join('');
   openModal('modalHistorial');
 }
 
-function viewCertAdjunto(certId, adjIdx) {
-  const cert = db.certs.find(c=>c.id===certId);
-  if (!cert) return;
-  openCertViewer(cert);
-  setTimeout(()=>selectAdjunto(adjIdx), 80);
-}
-
-function confirmDeleteCert(certId, eqId) {
-  document.getElementById('confirmIcon').textContent = '🗑️';
-  document.getElementById('confirmTitle').textContent = '¿Eliminar certificado?';
-  document.getElementById('confirmMsg').textContent = 'Se eliminará este certificado y sus adjuntos.';
-  document.getElementById('confirmOkBtn').textContent = 'Eliminar';
-  document.getElementById('confirmOkBtn').style.background = 'var(--red)';
-  document.getElementById('confirmOkBtn').onclick = () => deleteCert(certId, eqId);
+function confirmDelCert(certId,eqId){
+  document.getElementById('cIcon').textContent='🗑️';
+  document.getElementById('cTitle').textContent='¿Eliminar certificado?';
+  document.getElementById('cMsg').textContent='Se eliminan los metadatos. Los PDFs en el repo quedan (podés borrarlos manualmente).';
+  document.getElementById('cOkBtn').textContent='Eliminar';
+  document.getElementById('cOkBtn').style.background='var(--red)';
+  document.getElementById('cOkBtn').onclick=()=>delCert(certId,eqId);
   openModal('modalConfirm');
 }
 
-function deleteCert(certId, eqId) {
-  db.certs = db.certs.filter(c=>c.id!==certId);
-  closeModal('modalConfirm');
-  scheduleSave(); renderGrid(); renderStats();
-  openHistorial(eqId);
-  toast('Certificado eliminado','ok');
+function delCert(certId,eqId){
+  db.certs=db.certs.filter(c=>c.id!==certId);
+  closeModal('modalConfirm'); scheduleSave(); renderGrid(); renderStats();
+  openHistorial(eqId); toast('Eliminado','ok');
 }
 
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════
 //  QR
-// ═══════════════════════════════════════════
-function openQR(eqId) {
-  const eq = db.equipos.find(e=>e.id===eqId);
-  const cert = activeCert(eqId);
-  const st = certStatus(eqId);
-  const info = ['EQUIPO: '+eq.id,'NOMBRE: '+(eq.nombre||'-'),'PISO: '+eq.piso,'ESTADO: '+st.label,
-    cert&&cert.vencimiento?'VENCE: '+cert.vencimiento:'',
-    cert&&cert.empresa?'EMPRESA: '+cert.empresa:''].filter(Boolean).join('\n');
-  document.getElementById('qrInfo').innerHTML = '<b>'+eq.id+'</b><br>'+(eq.nombre||'')+' · '+eq.piso;
+// ═══════════════════════════════════
+function openQR(eqId){
+  const eq=db.equipos.find(e=>e.id===eqId); if(!eq) return;
+  const cert=activeCert(eqId);
+  const st=certStatus(eqId);
+  const url='https://swisss33sss-max.github.io/CATAMARCALAB/';
+  const info=['EQUIPO: '+eq.id,'NOMBRE: '+(eq.nombre||'-'),'PISO: '+eq.piso,
+    'ESTADO: '+st.label,cert&&cert.vencimiento?'VENCE: '+cert.vencimiento:'',
+    'URL: '+url].filter(Boolean).join('\n');
+  document.getElementById('qrInfo').innerHTML='<b>'+eq.id+'</b> · '+eq.piso;
   document.getElementById('qrcode').innerHTML='';
-  new QRCode(document.getElementById('qrcode'),{text:info,width:200,height:200,colorDark:'#1a1d27',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});
+  new QRCode(document.getElementById('qrcode'),{text:info,width:190,height:190,colorDark:'#1a1d27',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});
   openModal('modalQR');
 }
 
-function downloadQR() {
-  const canvas = document.querySelector('#qrcode canvas');
-  if (!canvas) { toast('QR no disponible','err'); return; }
-  const a=document.createElement('a'); a.href=canvas.toDataURL('image/png'); a.download='qr-equipo.png'; a.click();
+function downloadQR(){
+  const c=document.querySelector('#qrcode canvas');
+  if(!c){toast('QR no disponible','err');return;}
+  const a=document.createElement('a');a.href=c.toDataURL('image/png');a.download='qr.png';a.click();
 }
 
-// ═══════════════════════════════════════════
-//  IMPORTAR .certlab (DB vieja)
-// ═══════════════════════════════════════════
-async function importCertlab(input) {
-  const file = input.files[0]; if (!file) return; input.value='';
-  let data;
-  try { data = JSON.parse(await file.text()); }
-  catch { toast('Archivo inválido','err'); return; }
-  if (!data.equipos || !data.certs) { toast('Formato no reconocido','err'); return; }
+// ═══════════════════════════════════
+//  IMPORTAR CARPETA LOCAL → REPO
+// ═══════════════════════════════════
+async function importarCarpeta(){
+  if(!window.showDirectoryPicker){toast('Usá Chrome o Edge','err');return;}
+  let dirHandle;
+  try{dirHandle=await window.showDirectoryPicker();}catch(e){return;}
 
-  const ok = confirm('Importar '+data.equipos.length+' equipos y '+data.certs.length+' certificados?\n\nSe FUSIONA con los datos actuales — no se borra nada.');
-  if (!ok) return;
+  let importados=0, noMatch=[];
 
-  let eqAdded=0, certAdded=0;
+  for await(const [name,handle] of dirHandle.entries()){
+    if(handle.kind!=='directory') continue;
 
-  // Fusionar equipos (por código, no duplicar)
-  for (const eq of data.equipos) {
-    const codigo = eq.codigo || eq.id;
-    if (!codigo) continue;
-    const ex = db.equipos.find(e => e.id === codigo);
-    if (!ex) {
-      db.equipos.push({
-        id:     codigo,
-        nombre: eq.nombre||'',
-        piso:   eq.piso||'Sin asignar',
-        tipo:   eq.tipo||'OTRO',
-        notas:  eq.notas||'',
-        relev:  eq.relev||''
-      });
-      eqAdded++;
+    // buscar equipo por código
+    let eq=db.equipos.find(e=>e.id.toLowerCase()===name.toLowerCase()||name.toLowerCase().includes(e.id.toLowerCase()));
+    if(!eq){
+      const base=name.replace(/\s+\d{2}\.\d{2}\.\d{2,4}.*$/,'').trim();
+      eq=db.equipos.find(e=>e.id.toLowerCase()===base.toLowerCase());
     }
-  }
+    if(!eq){noMatch.push(name);continue;}
 
-  // Fusionar certificados — convertir ArrayBuffer/base64 al formato nuevo (dataURL)
-  for (const c of data.certs) {
-    const equipoId = c.equipoId;
-    // normalizar archivos
-    const archivosViejos = (c.archivos && c.archivos.length)
-      ? c.archivos
-      : [{ name: c.nombre||'cert.pdf', data: c.data||'' }];
+    // recolectar PDFs de la carpeta (hasta 2 niveles)
+    const pdfs=[];
+    await collectPDFs(handle,pdfs,0);
+    if(!pdfs.length) continue;
 
-    const archivosNuevos = archivosViejos.map(a => {
-      let dataURL = '';
-      if (a.data) {
-        // puede ser base64 puro o dataURL ya
-        if (typeof a.data === 'string') {
-          dataURL = a.data.startsWith('data:') ? a.data : 'data:application/pdf;base64,'+a.data;
-        }
+    toast('Subiendo PDFs de '+eq.id+'...','warn');
+    const archivos=[];
+    for(const pdf of pdfs){
+      try{
+        const ab=await pdf.file.arrayBuffer();
+        const res=await uploadPDF(ab, pdf.name);
+        archivos.push(res);
+      }catch(e){
+        toast('Error: '+pdf.name+' — '+e.message,'err');
       }
-      return { name: a.name||'cert.pdf', data: dataURL };
-    });
+    }
+    if(!archivos.length) continue;
 
+    // agregar cert a la DB
     db.certs.push({
-      id:          uid(),
-      equipoId,
-      archivos:    archivosNuevos,
-      nombre:      archivosNuevos[0].name,
-      emision:     c.emision||'',
-      vencimiento: c.vencimiento||'',
-      empresa:     c.empresa||'',
-      ts:          c.fecha ? new Date(c.fecha).getTime() : Date.now(),
+      id:Date.now().toString(36)+Math.random().toString(36).slice(2),
+      equipoId:eq.id,
+      archivos,
+      nombre:archivos[0].name,
+      emision:'',vencimiento:'',empresa:'',
+      ts:Date.now(),
     });
-    certAdded++;
+    importados++;
+    // guardar DB cada 5 equipos para no perder progreso
+    if(importados%5===0) await saveDB();
   }
 
   await saveDB();
-  toast(eqAdded+' equipos y '+certAdded+' certificados importados ✓','ok');
+  let msg=importados+' equipos importados ✓';
+  if(noMatch.length) msg+=' · '+noMatch.length+' sin match: '+noMatch.slice(0,3).join(', ')+(noMatch.length>3?'...':'');
+  toast(msg,'ok');
 }
 
-// ═══════════════════════════════════════════
+async function collectPDFs(dirHandle,result,depth){
+  for await(const [name,handle] of dirHandle.entries()){
+    if(handle.kind==='file'&&name.toLowerCase().endsWith('.pdf')){
+      result.push({name,file:await handle.getFile()});
+    } else if(handle.kind==='directory'&&depth<2){
+      await collectPDFs(handle,result,depth+1);
+    }
+  }
+}
+
+// ═══════════════════════════════════
+//  IMPORTAR .certlab (DB vieja)
+// ═══════════════════════════════════
+async function importCertlab(input){
+  const file=input.files[0]; if(!file) return; input.value='';
+  let data;
+  try{data=JSON.parse(await file.text());}catch{toast('Archivo inválido','err');return;}
+  if(!data.equipos||!data.certs){toast('Formato no reconocido','err');return;}
+  const ok=confirm('Importar '+data.equipos.length+' equipos y '+data.certs.length+' certs?\nLos PDFs se subirán al repo. Puede tardar varios minutos.');
+  if(!ok) return;
+
+  // fusionar equipos
+  let eqA=0;
+  for(const eq of data.equipos){
+    const codigo=eq.codigo||eq.id; if(!codigo) continue;
+    if(!db.equipos.find(e=>e.id===codigo)){
+      db.equipos.push({id:codigo,nombre:eq.nombre||'',piso:eq.piso||'Sin asignar',tipo:eq.tipo||'OTRO',notas:eq.notas||'',relev:eq.relev||''});
+      eqA++;
+    }
+  }
+
+  // fusionar certs — subir PDFs al repo
+  let certA=0, pdfA=0;
+  for(const c of data.certs){
+    const archs=(c.archivos&&c.archivos.length)?c.archivos:[{name:c.nombre||'cert.pdf',data:c.data}];
+    const archivosRepo=[];
+    for(const a of archs){
+      if(!a.data) continue;
+      try{
+        // convertir base64 a ArrayBuffer
+        const b64=typeof a.data==='string'?(a.data.includes(',')? a.data.split(',')[1]:a.data):'';
+        if(!b64) continue;
+        const bin=atob(b64);
+        const bytes=new Uint8Array(bin.length);
+        for(let i=0;i<bin.length;i++) bytes[i]=bin.charCodeAt(i);
+        toast('Subiendo '+a.name+'...','warn');
+        const res=await uploadPDF(bytes.buffer, a.name);
+        archivosRepo.push(res); pdfA++;
+      }catch(e){
+        toast('Error subiendo '+a.name+': '+e.message,'err');
+      }
+    }
+    if(archivosRepo.length){
+      db.certs.push({
+        id:Date.now().toString(36)+Math.random().toString(36).slice(2),
+        equipoId:c.equipoId||c.codigo,
+        archivos:archivosRepo,nombre:archivosRepo[0].name,
+        emision:c.emision||'',vencimiento:c.vencimiento||'',
+        empresa:c.empresa||'',ts:c.fecha?new Date(c.fecha).getTime():Date.now(),
+      });
+      certA++;
+    }
+  }
+
+  await saveDB();
+  toast(eqA+' equipos, '+certA+' certs, '+pdfA+' PDFs importados ✓','ok');
+}
+
+// ═══════════════════════════════════
 //  EXPORT CSV
-// ═══════════════════════════════════════════
-function exportCSV() {
-  const rows = [['Código','Nombre','Piso','Tipo','Estado','Vencimiento','Empresa','Relevamiento','Notas']];
-  (db.equipos||[]).forEach(e => {
-    const st=certStatus(e.id), cert=activeCert(e.id);
-    rows.push([e.id,e.nombre||'',e.piso,e.tipo||'',st.label,cert?cert.vencimiento||'':'',cert?cert.empresa||'':'',e.relev||'pendiente',e.notas||'']);
+// ═══════════════════════════════════
+function exportCSV(){
+  const rows=[['Código','Nombre','Piso','Tipo','Estado','Vencimiento','Empresa','Relevamiento','Notas','URL PDF']];
+  (db.equipos||[]).forEach(e=>{
+    const st=certStatus(e.id),cert=activeCert(e.id);
+    const url=cert&&cert.archivos&&cert.archivos[0]?cert.archivos[0].url:'';
+    rows.push([e.id,e.nombre||'',e.piso,e.tipo||'',st.label,cert?cert.vencimiento||'':'',cert?cert.empresa||'':'',e.relev||'pendiente',e.notas||'',url]);
   });
-  const csv = rows.map(r=>r.map(c=>'"'+String(c).replace(/"/g,'""')+'"').join(',')).join('\n');
+  const csv=rows.map(r=>r.map(c=>'"'+String(c).replace(/"/g,'""')+'"').join(',')).join('\n');
   const a=document.createElement('a');
   a.href=URL.createObjectURL(new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8;'}));
-  a.download='CertLab_'+new Date().toISOString().slice(0,10)+'.csv'; a.click();
+  a.download='CertLab_'+new Date().toISOString().slice(0,10)+'.csv';a.click();
   toast('CSV exportado ✓','ok');
 }
 
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════
 //  MODALES
-// ═══════════════════════════════════════════
-function openModal(id)  { document.getElementById(id).classList.add('open'); }
-function closeModal(id) { document.getElementById(id).classList.remove('open'); }
-document.querySelectorAll('.overlay').forEach(ov => {
-  ov.addEventListener('click', e => {
-    if (e.target===ov) { if(ov.id==='modalPDF') closePDFModal(); else closeModal(ov.id); }
-  });
+// ═══════════════════════════════════
+function openModal(id){document.getElementById(id).classList.add('open');}
+function closeModal(id){document.getElementById(id).classList.remove('open');}
+document.querySelectorAll('.overlay').forEach(ov=>{
+  ov.addEventListener('click',e=>{ if(e.target===ov) closeModal(ov.id); });
 });
 
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════
 //  TOAST
-// ═══════════════════════════════════════════
-let toastTimer;
-function toast(msg, type='ok') {
+// ═══════════════════════════════════
+let tt;
+function toast(msg,type='ok'){
   const el=document.getElementById('toast');
-  el.textContent=msg; el.className='show '+type;
-  clearTimeout(toastTimer);
-  toastTimer=setTimeout(()=>{ el.className=''; },3000);
+  el.textContent=msg;el.className='show '+type;
+  clearTimeout(tt);tt=setTimeout(()=>{el.className='';},3500);
 }
 
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════
 //  INIT
-// ═══════════════════════════════════════════
-if (!getToken()) {
-  openModal('modalToken');
-} else {
-  loadDB();
-}
+// ═══════════════════════════════════
+if(!getToken()) openModal('modalToken');
+else loadDB();
 </script>
 </body>
 </html>
