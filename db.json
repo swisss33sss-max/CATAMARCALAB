@@ -2644,6 +2644,256 @@
       "vencimiento": "",
       "empresa": "",
       "ts": 1791383444286
+    },
+    {
+      "id": "muy7ghc3u1ur94v723",
+      "equipoId": "CEN-00053602",
+      "archivos": [
+        {
+          "path": "pdfs/1791383452896_CEN-00053602.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383452896_CEN-00053602.pdf",
+          "name": "CEN-00053602.pdf"
+        },
+        {
+          "path": "pdfs/1791383454567_MP_CEN-00053602.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383454567_MP_CEN-00053602.pdf",
+          "name": "MP CEN-00053602.pdf"
+        }
+      ],
+      "nombre": "CEN-00053602.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383456451
+    },
+    {
+      "id": "muy7gqfdtj5k9oby16r",
+      "equipoId": "CEN-24083",
+      "archivos": [
+        {
+          "path": "pdfs/1791383456479_2025-SE_CEN-24083.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383456479_2025-SE_CEN-24083.pdf",
+          "name": "2025-SE CEN-24083.pdf"
+        },
+        {
+          "path": "pdfs/1791383458028_CEN-24083.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383458028_CEN-24083.pdf",
+          "name": "CEN-24083.pdf"
+        },
+        {
+          "path": "pdfs/1791383460233_2026-SE-CEN-24083.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383460233_2026-SE-CEN-24083.pdf",
+          "name": "2026-SE-CEN-24083.pdf"
+        },
+        {
+          "path": "pdfs/1791383461948_2026-MP-CEN-24083.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383461948_2026-MP-CEN-24083.pdf",
+          "name": "2026-MP-CEN-24083.pdf"
+        },
+        {
+          "path": "pdfs/1791383463937_2025-MP_CEN-24083.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383463937_2025-MP_CEN-24083.pdf",
+          "name": "2025-MP CEN-24083.pdf"
+        },
+        {
+          "path": "pdfs/1791383466337_2022-MP_Centr_fuga_CEN-24083.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383466337_2022-MP_Centr_fuga_CEN-24083.pdf",
+          "name": "2022-MP Centrífuga CEN-24083.pdf"
+        }
+      ],
+      "nombre": "2025-SE CEN-24083.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383468233
+    },
+    {
+      "id": "muy7hi8nd9r4q3qpelt",
+      "equipoId": "CEN-24084",
+      "archivos": [
+        {
+          "path": "pdfs/1791383468284_2021-MP_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383468284_2021-MP_CEN-24084.pdf",
+          "name": "2021-MP CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383470193_2022-SE_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383470193_2022-SE_CEN-24084.pdf",
+          "name": "2022-SE CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383472044_2024-SE_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383472044_2024-SE_CEN-24084.pdf",
+          "name": "2024-SE CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383473633_2023-MP_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383473633_2023-MP_CEN-24084.pdf",
+          "name": "2023-MP CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383475585_2022-MP_CEN-24084_9-22.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383475585_2022-MP_CEN-24084_9-22.pdf",
+          "name": "2022-MP CEN-24084 9-22.pdf"
+        },
+        {
+          "path": "pdfs/1791383477153_2019-SE_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383477153_2019-SE_CEN-24084.pdf",
+          "name": "2019-SE CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383479139_2019-MP_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383479139_2019-MP_CEN-24084.pdf",
+          "name": "2019-MP CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383480860_2021-SE_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383480860_2021-SE_CEN-24084.pdf",
+          "name": "2021-SE CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383483113_2020-PM_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383483113_2020-PM_CEN-24084.pdf",
+          "name": "2020-PM CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383484822_2025-SE_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383484822_2025-SE_CEN-24084.pdf",
+          "name": "2025-SE CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383486330_2024-MP_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383486330_2024-MP_CEN-24084.pdf",
+          "name": "2024-MP CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383488096_2023-SE_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383488096_2023-SE_CEN-24084.pdf",
+          "name": "2023-SE CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383489732_2022-MP_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383489732_2022-MP_CEN-24084.pdf",
+          "name": "2022-MP CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383491401_2022-SE_CEN-24084_9-22.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383491401_2022-SE_CEN-24084_9-22.pdf",
+          "name": "2022-SE CEN-24084 9-22.pdf"
+        },
+        {
+          "path": "pdfs/1791383493231_2026-MP-CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383493231_2026-MP-CEN-24084.pdf",
+          "name": "2026-MP-CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383494970_2026-SE_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383494970_2026-SE_CEN-24084.pdf",
+          "name": "2026-SE CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383496504_2025-MP_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383496504_2025-MP_CEN-24084.pdf",
+          "name": "2025-MP CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383499058_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383499058_CEN-24084.pdf",
+          "name": "CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383500651_2026-MP_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383500651_2026-MP_CEN-24084.pdf",
+          "name": "2026-MP CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383502411_2020-SE_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383502411_2020-SE_CEN-24084.pdf",
+          "name": "2020-SE CEN-24084.pdf"
+        }
+      ],
+      "nombre": "2021-MP CEN-24084.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383504279
+    },
+    {
+      "id": "muy7htivo3ee5fuepi",
+      "equipoId": "CEN-25089",
+      "archivos": [
+        {
+          "path": "pdfs/1791383504314_CEN-25089.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383504314_CEN-25089.pdf",
+          "name": "CEN-25089.pdf"
+        },
+        {
+          "path": "pdfs/1791383506042_2025-SE_CEN-25089.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383506042_2025-SE_CEN-25089.pdf",
+          "name": "2025-SE CEN-25089.pdf"
+        },
+        {
+          "path": "pdfs/1791383509028_2026-SE_CEN-25089.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383509028_2026-SE_CEN-25089.pdf",
+          "name": "2026-SE CEN-25089.pdf"
+        },
+        {
+          "path": "pdfs/1791383511189_2023-MP_CEN-25089.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383511189_2023-MP_CEN-25089.pdf",
+          "name": "2023-MP CEN-25089.pdf"
+        },
+        {
+          "path": "pdfs/1791383512982_2025-MPCEN-25089.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383512982_2025-MPCEN-25089.pdf",
+          "name": "2025-MPCEN-25089.pdf"
+        },
+        {
+          "path": "pdfs/1791383515054_2026-MPCEN-25089.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383515054_2026-MPCEN-25089.pdf",
+          "name": "2026-MPCEN-25089.pdf"
+        },
+        {
+          "path": "pdfs/1791383517118_2022-MP_CEN-25089.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383517118_2022-MP_CEN-25089.pdf",
+          "name": "2022-MP CEN-25089.pdf"
+        }
+      ],
+      "nombre": "CEN-25089.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383518903
+    },
+    {
+      "id": "muy7hzxqp1zlfzenblo",
+      "equipoId": "CEN-28009",
+      "archivos": [
+        {
+          "path": "pdfs/1791383518921_2026-SE_CENTRIF-28009.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383518921_2026-SE_CENTRIF-28009.pdf",
+          "name": "2026-SE CENTRIF-28009.pdf"
+        },
+        {
+          "path": "pdfs/1791383520590_2025-MP_CEN-28009.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383520590_2025-MP_CEN-28009.pdf",
+          "name": "2025-MP CEN-28009.pdf"
+        },
+        {
+          "path": "pdfs/1791383522299_2025-SE_CENTRIF-28009.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383522299_2025-SE_CENTRIF-28009.pdf",
+          "name": "2025-SE CENTRIF-28009.pdf"
+        },
+        {
+          "path": "pdfs/1791383524158_2026-MP_CEN-28009.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383524158_2026-MP_CEN-28009.pdf",
+          "name": "2026-MP CEN-28009.pdf"
+        }
+      ],
+      "nombre": "2026-SE CENTRIF-28009.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791383527214
     }
   ],
   "version": 1
