@@ -206,6 +206,10 @@ input[type=file]{display:none}
       </select>
       <button class="btn-tool green" id="btnConCert" onclick="toggleConCert()">● Con certificado</button>
       <button class="btn-tool blue" onclick="exportCSV()">📥 CSV</button>
+      <label class="btn-tool purple" style="cursor:pointer" title="Importar DB exportada desde la app anterior">
+        📦 Importar .certlab
+        <input type="file" accept=".certlab" onchange="importCertlab(this)">
+      </label>
     </div>
     <div class="section-title" id="sectionTitle">🏢 Todos los pisos</div>
     <div class="equipo-grid" id="equipoGrid">
@@ -1008,6 +1012,75 @@ function downloadQR() {
   const canvas = document.querySelector('#qrcode canvas');
   if (!canvas) { toast('QR no disponible','err'); return; }
   const a=document.createElement('a'); a.href=canvas.toDataURL('image/png'); a.download='qr-equipo.png'; a.click();
+}
+
+// ═══════════════════════════════════════════
+//  IMPORTAR .certlab (DB vieja)
+// ═══════════════════════════════════════════
+async function importCertlab(input) {
+  const file = input.files[0]; if (!file) return; input.value='';
+  let data;
+  try { data = JSON.parse(await file.text()); }
+  catch { toast('Archivo inválido','err'); return; }
+  if (!data.equipos || !data.certs) { toast('Formato no reconocido','err'); return; }
+
+  const ok = confirm('Importar '+data.equipos.length+' equipos y '+data.certs.length+' certificados?\n\nSe FUSIONA con los datos actuales — no se borra nada.');
+  if (!ok) return;
+
+  let eqAdded=0, certAdded=0;
+
+  // Fusionar equipos (por código, no duplicar)
+  for (const eq of data.equipos) {
+    const codigo = eq.codigo || eq.id;
+    if (!codigo) continue;
+    const ex = db.equipos.find(e => e.id === codigo);
+    if (!ex) {
+      db.equipos.push({
+        id:     codigo,
+        nombre: eq.nombre||'',
+        piso:   eq.piso||'Sin asignar',
+        tipo:   eq.tipo||'OTRO',
+        notas:  eq.notas||'',
+        relev:  eq.relev||''
+      });
+      eqAdded++;
+    }
+  }
+
+  // Fusionar certificados — convertir ArrayBuffer/base64 al formato nuevo (dataURL)
+  for (const c of data.certs) {
+    const equipoId = c.equipoId;
+    // normalizar archivos
+    const archivosViejos = (c.archivos && c.archivos.length)
+      ? c.archivos
+      : [{ name: c.nombre||'cert.pdf', data: c.data||'' }];
+
+    const archivosNuevos = archivosViejos.map(a => {
+      let dataURL = '';
+      if (a.data) {
+        // puede ser base64 puro o dataURL ya
+        if (typeof a.data === 'string') {
+          dataURL = a.data.startsWith('data:') ? a.data : 'data:application/pdf;base64,'+a.data;
+        }
+      }
+      return { name: a.name||'cert.pdf', data: dataURL };
+    });
+
+    db.certs.push({
+      id:          uid(),
+      equipoId,
+      archivos:    archivosNuevos,
+      nombre:      archivosNuevos[0].name,
+      emision:     c.emision||'',
+      vencimiento: c.vencimiento||'',
+      empresa:     c.empresa||'',
+      ts:          c.fecha ? new Date(c.fecha).getTime() : Date.now(),
+    });
+    certAdded++;
+  }
+
+  await saveDB();
+  toast(eqAdded+' equipos y '+certAdded+' certificados importados ✓','ok');
 }
 
 // ═══════════════════════════════════════════
