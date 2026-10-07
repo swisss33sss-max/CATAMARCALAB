@@ -921,7 +921,9 @@ function selectAdj(idx, archs){
   document.querySelectorAll('.adj-btn').forEach((b,i)=>b.classList.toggle('on',i===idx));
   const a=archs[idx];
   document.getElementById('pdfTitle').textContent=a.name;
-  document.getElementById('pdfFrame').src=a.url;
+  // Google Docs Viewer para mostrar PDFs de GitHub raw sin descarga
+  const viewerUrl='https://docs.google.com/viewer?url='+encodeURIComponent(a.url)+'&embedded=true';
+  document.getElementById('pdfFrame').src=viewerUrl;
   document.getElementById('pdfDownloadBtn').href=a.url;
   document.getElementById('pdfDownloadBtn').download=a.name;
 }
