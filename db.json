@@ -49,14 +49,6 @@
       "relev": ""
     },
     {
-      "id": "AGITADO-27594",
-      "nombre": "Agitador",
-      "piso": "2 Piso",
-      "tipo": "AGITADO",
-      "notas": "",
-      "relev": ""
-    },
-    {
       "id": "AGITADO-8AS0004975",
       "nombre": "Agitador",
       "piso": "Sin asignar",
@@ -2298,27 +2290,6 @@
       "vencimiento": "",
       "empresa": "",
       "ts": 1791383307081
-    },
-    {
-      "id": "muy7dcf2kiteo0p39i",
-      "equipoId": "AGITADO-27594",
-      "archivos": [
-        {
-          "path": "pdfs/1791383307101_AGITADO-27594.pdf",
-          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383307101_AGITADO-27594.pdf",
-          "name": "AGITADO-27594.pdf"
-        },
-        {
-          "path": "pdfs/1791383308630_2026-SE-AGITADO-27594.pdf",
-          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383308630_2026-SE-AGITADO-27594.pdf",
-          "name": "2026-SE-AGITADO-27594.pdf"
-        }
-      ],
-      "nombre": "AGITADO-27594.pdf",
-      "emision": "",
-      "vencimiento": "",
-      "empresa": "",
-      "ts": 1791383310110
     },
     {
       "id": "muy7dnfid9xy9t5n51j",
