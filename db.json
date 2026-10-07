@@ -434,7 +434,7 @@
     },
     {
       "id": "Arch d Aud",
-      "nombre": "Archivo Auditoría",
+      "nombre": "Archivo AuditorÃ­a",
       "piso": "Sin asignar",
       "tipo": "OTRO",
       "notas": "",
@@ -474,25 +474,25 @@
     },
     {
       "id": "BAN-26355",
-      "nombre": "Baño termostático",
+      "nombre": "BaÃ±o termostÃ¡tico",
       "piso": "2 Piso",
-      "tipo": "BAÑO",
+      "tipo": "BAÃO",
       "notas": "",
       "relev": ""
     },
     {
       "id": "BANO-27143",
-      "nombre": "Baño termostático",
+      "nombre": "BaÃ±o termostÃ¡tico",
       "piso": "1 piso",
-      "tipo": "BAÑO",
+      "tipo": "BAÃO",
       "notas": "",
       "relev": ""
     },
     {
       "id": "BANO-28544",
-      "nombre": "Baño termostático",
+      "nombre": "BaÃ±o termostÃ¡tico",
       "piso": "3 Piso",
-      "tipo": "BAÑO",
+      "tipo": "BAÃO",
       "notas": "",
       "relev": ""
     },
@@ -586,7 +586,7 @@
     },
     {
       "id": "CENTRIF-28008",
-      "nombre": "Centrífuga",
+      "nombre": "CentrÃ­fuga",
       "piso": "1 piso",
       "tipo": "CENTRIF",
       "notas": "",
@@ -594,7 +594,7 @@
     },
     {
       "id": "CENTRIF-30766",
-      "nombre": "Centrífuga",
+      "nombre": "CentrÃ­fuga",
       "piso": "3 Piso",
       "tipo": "CENTRIF",
       "notas": "",
@@ -778,7 +778,7 @@
     },
     {
       "id": "CENTRIF-28009",
-      "nombre": "Centrífuga",
+      "nombre": "CentrÃ­fuga",
       "piso": "2 Piso",
       "tipo": "CENTRIF",
       "notas": "",
