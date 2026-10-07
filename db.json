@@ -42,8 +42,8 @@
     },
     {
       "id": "AGI-VB23CBC0003127",
-      "nombre": "Agitador Vortex",
-      "piso": "3 Piso",
+      "nombre": "Agitador",
+      "piso": "Sin asignar",
       "tipo": "AGITADO",
       "notas": "",
       "relev": ""
@@ -51,7 +51,7 @@
     {
       "id": "AGITADO-27594",
       "nombre": "Agitador",
-      "piso": "2 Piso",
+      "piso": "Sin asignar",
       "tipo": "AGITADO",
       "notas": "",
       "relev": ""
@@ -434,7 +434,7 @@
     },
     {
       "id": "Arch d Aud",
-      "nombre": "Archivo AuditorÃ­a",
+      "nombre": "Archivo de Auditoría",
       "piso": "Sin asignar",
       "tipo": "OTRO",
       "notas": "",
@@ -474,40 +474,40 @@
     },
     {
       "id": "BAN-26355",
-      "nombre": "BaÃ±o termostÃ¡tico",
-      "piso": "2 Piso",
-      "tipo": "BAÃO",
+      "nombre": "Baño termostático",
+      "piso": "Sin asignar",
+      "tipo": "BAÑO",
       "notas": "",
       "relev": ""
     },
     {
       "id": "BANO-27143",
-      "nombre": "BaÃ±o termostÃ¡tico",
-      "piso": "1 piso",
-      "tipo": "BAÃO",
+      "nombre": "Baño termostático",
+      "piso": "Sin asignar",
+      "tipo": "BAÑO",
       "notas": "",
       "relev": ""
     },
     {
       "id": "BANO-28544",
-      "nombre": "BaÃ±o termostÃ¡tico",
-      "piso": "3 Piso",
-      "tipo": "BAÃO",
+      "nombre": "Baño termostático",
+      "piso": "Sin asignar",
+      "tipo": "BAÑO",
       "notas": "",
       "relev": ""
     },
     {
       "id": "CAB-201386154 20.08.25",
-      "nombre": "Cabina flujo laminar",
-      "piso": "Sin asignar",
+      "nombre": "Cabina de flujo laminar",
+      "piso": "3 Piso",
       "tipo": "CAB",
       "notas": "",
       "relev": ""
     },
     {
       "id": "CABINA-74 20.08.25",
-      "nombre": "Cabina flujo laminar",
-      "piso": "Sin asignar",
+      "nombre": "Cabina de flujo laminar",
+      "piso": "3 Piso",
       "tipo": "CAB",
       "notas": "",
       "relev": ""
@@ -523,7 +523,7 @@
     {
       "id": "CEN-24083",
       "nombre": "Centrifugador",
-      "piso": "1 piso",
+      "piso": "Sin asignar",
       "tipo": "CEN",
       "notas": "",
       "relev": ""
@@ -531,7 +531,7 @@
     {
       "id": "CEN-24084",
       "nombre": "Centrifugador",
-      "piso": "2 Piso",
+      "piso": "Sin asignar",
       "tipo": "CEN",
       "notas": "",
       "relev": ""
@@ -539,7 +539,7 @@
     {
       "id": "CEN-25089",
       "nombre": "Centrifugador",
-      "piso": "2 Piso",
+      "piso": "Sin asignar",
       "tipo": "CEN",
       "notas": "",
       "relev": ""
@@ -555,7 +555,7 @@
     {
       "id": "CEN-50212022",
       "nombre": "Centrifugador",
-      "piso": "1 piso",
+      "piso": "Sin asignar",
       "tipo": "CEN",
       "notas": "",
       "relev": ""
@@ -579,22 +579,22 @@
     {
       "id": "CEN-MON-LABCAT",
       "nombre": "Centrifugador Monitor",
-      "piso": "Sin asignar",
+      "piso": "2 Piso",
       "tipo": "CEN",
       "notas": "",
       "relev": ""
     },
     {
       "id": "CENTRIF-28008",
-      "nombre": "CentrÃ­fuga",
-      "piso": "1 piso",
+      "nombre": "Centrífuga",
+      "piso": "Sin asignar",
       "tipo": "CENTRIF",
       "notas": "",
       "relev": ""
     },
     {
       "id": "CENTRIF-30766",
-      "nombre": "CentrÃ­fuga",
+      "nombre": "Centrífuga",
       "piso": "3 Piso",
       "tipo": "CENTRIF",
       "notas": "",
@@ -619,7 +619,7 @@
     {
       "id": "EST-AGU-0071491",
       "nombre": "Estufa",
-      "piso": "Sin asignar",
+      "piso": "2 Piso",
       "tipo": "ESTUFA",
       "notas": "",
       "relev": ""
@@ -667,7 +667,7 @@
     {
       "id": "INC-27500",
       "nombre": "Incubadora",
-      "piso": "Sin asignar",
+      "piso": "1 piso",
       "tipo": "INC",
       "notas": "",
       "relev": ""
@@ -699,7 +699,7 @@
     {
       "id": "MIC-7G00807",
       "nombre": "Microscopio",
-      "piso": "2 Piso",
+      "piso": "Sin asignar",
       "tipo": "MIC",
       "notas": "",
       "relev": ""
@@ -739,7 +739,7 @@
     {
       "id": "08020006",
       "nombre": "Equipo",
-      "piso": "2 Piso",
+      "piso": "Sin asignar",
       "tipo": "OTRO",
       "notas": "",
       "relev": ""
@@ -747,7 +747,7 @@
     {
       "id": "19771",
       "nombre": "Equipo",
-      "piso": "2 Piso",
+      "piso": "Sin asignar",
       "tipo": "OTRO",
       "notas": "",
       "relev": ""
@@ -755,7 +755,7 @@
     {
       "id": "24622",
       "nombre": "Equipo",
-      "piso": "2 Piso",
+      "piso": "Sin asignar",
       "tipo": "OTRO",
       "notas": "",
       "relev": ""
@@ -763,7 +763,7 @@
     {
       "id": "34150",
       "nombre": "Equipo",
-      "piso": "2 Piso",
+      "piso": "Sin asignar",
       "tipo": "OTRO",
       "notas": "",
       "relev": ""
@@ -771,15 +771,15 @@
     {
       "id": "CEN-00053602",
       "nombre": "Centrifugador",
-      "piso": "2 Piso",
+      "piso": "Sin asignar",
       "tipo": "CEN",
       "notas": "",
       "relev": ""
     },
     {
       "id": "CENTRIF-28009",
-      "nombre": "CentrÃ­fuga",
-      "piso": "2 Piso",
+      "nombre": "Centrífuga",
+      "piso": "Sin asignar",
       "tipo": "CENTRIF",
       "notas": "",
       "relev": ""
@@ -787,7 +787,7 @@
     {
       "id": "EZ-37114186",
       "nombre": "Equipo",
-      "piso": "2 Piso",
+      "piso": "Sin asignar",
       "tipo": "OTRO",
       "notas": "",
       "relev": ""
@@ -795,7 +795,7 @@
   ],
   "certs": [
     {
-      "id": "muy6lv5013wzuzm9ikhd",
+      "id": "muy6n6hpb3yc76mn1yu",
       "equipoId": 106,
       "archivos": [
         {
@@ -810,7 +810,7 @@
       "ts": 1791310807966
     },
     {
-      "id": "muy6lv50khtp9bs8uz",
+      "id": "muy6n6hp6x2oyuiu6m",
       "equipoId": 159,
       "archivos": [
         {
@@ -825,7 +825,7 @@
       "ts": 1791310808138
     },
     {
-      "id": "muy6lv502v83qjin9p",
+      "id": "muy6n6hpieck2fuhddd",
       "equipoId": 160,
       "archivos": [
         {
@@ -840,7 +840,7 @@
       "ts": 1791310808148
     },
     {
-      "id": "muy6lv50syuu5znrw4",
+      "id": "muy6n6hpvaxpoffc5h",
       "equipoId": 161,
       "archivos": [
         {
@@ -855,7 +855,7 @@
       "ts": 1791310808158
     },
     {
-      "id": "muy6lv50z28ujyhxtc",
+      "id": "muy6n6hpw060wwspkq",
       "equipoId": 162,
       "archivos": [
         {
@@ -870,7 +870,7 @@
       "ts": 1791310808193
     },
     {
-      "id": "muy6lv509dvo07o1k6l",
+      "id": "muy6n6hp16y1ar2m8rf",
       "equipoId": 163,
       "archivos": [
         {
@@ -885,7 +885,7 @@
       "ts": 1791310808241
     },
     {
-      "id": "muy6lv50t2oyvvf1kw",
+      "id": "muy6n6hpf21eqfbpew",
       "equipoId": 165,
       "archivos": [
         {
@@ -900,7 +900,7 @@
       "ts": 1791310808256
     },
     {
-      "id": "muy6lv502nof4smxr9d",
+      "id": "muy6n6hpzy10vpyj12",
       "equipoId": 166,
       "archivos": [
         {
@@ -915,7 +915,7 @@
       "ts": 1791310808280
     },
     {
-      "id": "muy6lv50ssoovpb6haa",
+      "id": "muy6n6hphbe2rcfs6zw",
       "equipoId": 167,
       "archivos": [
         {
@@ -930,7 +930,7 @@
       "ts": 1791310808298
     },
     {
-      "id": "muy6lv50b03z27m29dk",
+      "id": "muy6n6hpo6c935wh84d",
       "equipoId": 168,
       "archivos": [
         {
@@ -945,7 +945,7 @@
       "ts": 1791310808313
     },
     {
-      "id": "muy6lv50bxdj834gve9",
+      "id": "muy6n6hpa8bhufosr3a",
       "equipoId": 169,
       "archivos": [
         {
@@ -960,7 +960,7 @@
       "ts": 1791310808325
     },
     {
-      "id": "muy6lv50b2n97i8ynau",
+      "id": "muy6n6hpaxv250lb0p",
       "equipoId": 170,
       "archivos": [
         {
@@ -975,7 +975,7 @@
       "ts": 1791310808341
     },
     {
-      "id": "muy6lv50vqavk5v9wsc",
+      "id": "muy6n6hpbzisb4kf6eg",
       "equipoId": 172,
       "archivos": [
         {
@@ -990,7 +990,7 @@
       "ts": 1791310808523
     },
     {
-      "id": "muy6lv50248shwxjm1x",
+      "id": "muy6n6hp2etmn9328d7",
       "equipoId": 173,
       "archivos": [
         {
@@ -1005,7 +1005,7 @@
       "ts": 1791310808544
     },
     {
-      "id": "muy6lv5023fvbevcbyr",
+      "id": "muy6n6hp5rhcguo6lxy",
       "equipoId": 174,
       "archivos": [
         {
@@ -1020,7 +1020,7 @@
       "ts": 1791310808566
     },
     {
-      "id": "muy6lv50qtey7cil0pn",
+      "id": "muy6n6hp8sxsgolwtl7",
       "equipoId": 176,
       "archivos": [
         {
@@ -1035,7 +1035,7 @@
       "ts": 1791310808675
     },
     {
-      "id": "muy6lv50yymg2k9oyqg",
+      "id": "muy6n6hp65bkrxdp7lg",
       "equipoId": 177,
       "archivos": [
         {
@@ -1050,7 +1050,7 @@
       "ts": 1791310808761
     },
     {
-      "id": "muy6lv5058nbnagmekv",
+      "id": "muy6n6hp15rclemt4bs",
       "equipoId": 178,
       "archivos": [
         {
@@ -1065,7 +1065,7 @@
       "ts": 1791310808837
     },
     {
-      "id": "muy6lv50n0gyrj9a6eb",
+      "id": "muy6n6hp61m50a4nmil",
       "equipoId": 179,
       "archivos": [
         {
@@ -1080,7 +1080,7 @@
       "ts": 1791310808908
     },
     {
-      "id": "muy6lv500mp4xcar57k",
+      "id": "muy6n6hp5f32ce2qad6",
       "equipoId": 180,
       "archivos": [
         {
@@ -1095,7 +1095,7 @@
       "ts": 1791310808981
     },
     {
-      "id": "muy6lv50ksc5qykmx2",
+      "id": "muy6n6hpu29kpew1ko8",
       "equipoId": 181,
       "archivos": [
         {
@@ -1110,7 +1110,7 @@
       "ts": 1791310809144
     },
     {
-      "id": "muy6lv50shg4xjb3wk8",
+      "id": "muy6n6hpi4h79xyu3kp",
       "equipoId": 185,
       "archivos": [
         {
@@ -1125,7 +1125,7 @@
       "ts": 1791310809161
     },
     {
-      "id": "muy6lv50c914ovgzzr",
+      "id": "muy6n6hpzjl88p6tnw9",
       "equipoId": 186,
       "archivos": [
         {
@@ -1140,7 +1140,7 @@
       "ts": 1791310809176
     },
     {
-      "id": "muy6lv50l5y0vsnhwr",
+      "id": "muy6n6hptl7tu7zpx4b",
       "equipoId": 187,
       "archivos": [
         {
@@ -1155,7 +1155,7 @@
       "ts": 1791310809194
     },
     {
-      "id": "muy6lv50e35sr2c7iwl",
+      "id": "muy6n6hpypr7m6x9gsr",
       "equipoId": 188,
       "archivos": [
         {
@@ -1170,7 +1170,7 @@
       "ts": 1791310809201
     },
     {
-      "id": "muy6lv50x3nk3x00ky",
+      "id": "muy6n6hp619a0f86qu",
       "equipoId": 189,
       "archivos": [
         {
@@ -1185,7 +1185,7 @@
       "ts": 1791310809215
     },
     {
-      "id": "muy6lv504p3z8ihfgq8",
+      "id": "muy6n6hp9ie31z5vhs",
       "equipoId": 190,
       "archivos": [
         {
@@ -1200,7 +1200,7 @@
       "ts": 1791310809227
     },
     {
-      "id": "muy6lv50ax7wfn9cpm5",
+      "id": "muy6n6hped1049kk7jo",
       "equipoId": 191,
       "archivos": [
         {
@@ -1215,7 +1215,7 @@
       "ts": 1791310809514
     },
     {
-      "id": "muy6lv50vep331kh9ad",
+      "id": "muy6n6hp0wobms3hj5i",
       "equipoId": 106,
       "archivos": [
         {
@@ -1230,7 +1230,7 @@
       "ts": 1791311143586
     },
     {
-      "id": "muy6lv50b6or43bgalo",
+      "id": "muy6n6hpupmjp1fzcp",
       "equipoId": 159,
       "archivos": [
         {
@@ -1249,7 +1249,7 @@
       "ts": 1791311926005
     },
     {
-      "id": "muy6lv50r3jb85vhdal",
+      "id": "muy6n6hpo3mot32h5s",
       "equipoId": 160,
       "archivos": [
         {
@@ -1268,7 +1268,7 @@
       "ts": 1791311941588
     },
     {
-      "id": "muy6lv50z15zv84s",
+      "id": "muy6n6hpiylpr6soo3a",
       "equipoId": 161,
       "archivos": [
         {
@@ -1287,7 +1287,7 @@
       "ts": 1791311956037
     },
     {
-      "id": "muy6lv5009vo5djbz6pd",
+      "id": "muy6n6hp2rjdlhvqog",
       "equipoId": 165,
       "archivos": [
         {
@@ -1306,7 +1306,7 @@
       "ts": 1791312037910
     },
     {
-      "id": "muy6lv5042c4i1or28n",
+      "id": "muy6n6hpfamlclgv19",
       "equipoId": 166,
       "archivos": [
         {
@@ -1325,7 +1325,7 @@
       "ts": 1791312053430
     },
     {
-      "id": "muy6lv50j8w73jmtlem",
+      "id": "muy6n6hpue1c73c92u",
       "equipoId": 167,
       "archivos": [
         {
@@ -1344,7 +1344,7 @@
       "ts": 1791312243822
     },
     {
-      "id": "muy6lv50fpth4pm83yd",
+      "id": "muy6n6hpblfes3szzhp",
       "equipoId": 168,
       "archivos": [
         {
@@ -1363,7 +1363,7 @@
       "ts": 1791312491552
     },
     {
-      "id": "muy6lv50j0luwqwkae",
+      "id": "muy6n6hpamcx0ioleq",
       "equipoId": 169,
       "archivos": [
         {
@@ -1382,7 +1382,7 @@
       "ts": 1791312508688
     },
     {
-      "id": "muy6lv50r0cobrqyfgl",
+      "id": "muy6n6hpx5sj1x292l",
       "equipoId": 170,
       "archivos": [
         {
@@ -1401,7 +1401,7 @@
       "ts": 1791312522098
     },
     {
-      "id": "muy6lv5080m6jd63fzd",
+      "id": "muy6n6hp55g8kl88lg",
       "equipoId": 173,
       "archivos": [
         {
@@ -1420,7 +1420,7 @@
       "ts": 1791312572660
     },
     {
-      "id": "muy6lv50esq1p9sfbt",
+      "id": "muy6n6hphsq1efjxehv",
       "equipoId": 174,
       "archivos": [
         {
@@ -1439,7 +1439,7 @@
       "ts": 1791312591948
     },
     {
-      "id": "muy6lv500iffzezni8o",
+      "id": "muy6n6hpwq0zqtj38uo",
       "equipoId": 185,
       "archivos": [
         {
@@ -1454,7 +1454,7 @@
       "ts": 1791312644445
     },
     {
-      "id": "muy6lv50kz5lde4v7c",
+      "id": "muy6n6hplny618sfocm",
       "equipoId": 183,
       "archivos": [
         {
