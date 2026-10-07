@@ -1467,6 +1467,733 @@
       "vencimiento": "",
       "empresa": "",
       "ts": 1791313808708
+    },
+    {
+      "id": "muy795ot1vp1bjdv3ub",
+      "equipoId": 106,
+      "archivos": [
+        {
+          "path": "pdfs/1791383113258_2026-SE-AGITADO-27594.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383113258_2026-SE-AGITADO-27594.pdf",
+          "name": "2026-SE-AGITADO-27594.pdf"
+        }
+      ],
+      "nombre": "2026-SE-AGITADO-27594.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310807966
+    },
+    {
+      "id": "muy796voyjh2ra00dd",
+      "equipoId": 159,
+      "archivos": [
+        {
+          "path": "pdfs/1791383114766_2026-SE_BAN-26355.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383114766_2026-SE_BAN-26355.pdf",
+          "name": "2026-SE BAN-26355.pdf"
+        }
+      ],
+      "nombre": "2026-SE BAN-26355.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808138
+    },
+    {
+      "id": "muy7984w2ea7supwkgm",
+      "equipoId": 160,
+      "archivos": [
+        {
+          "path": "pdfs/1791383116309_2026-SE_BANO-27143.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383116309_2026-SE_BANO-27143.pdf",
+          "name": "2026-SE BANO-27143.pdf"
+        }
+      ],
+      "nombre": "2026-SE BANO-27143.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808148
+    },
+    {
+      "id": "muy799fyaw0wsfw0yod",
+      "equipoId": 161,
+      "archivos": [
+        {
+          "path": "pdfs/1791383117937_2026-SE-BANO-28544.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383117937_2026-SE-BANO-28544.pdf",
+          "name": "2026-SE-BANO-28544.pdf"
+        }
+      ],
+      "nombre": "2026-SE-BANO-28544.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808158
+    },
+    {
+      "id": "muy79bpcmlei56zzzdf",
+      "equipoId": 162,
+      "archivos": [
+        {
+          "path": "pdfs/1791383119661_SWISS_MEDICAL_GROUP_-_LAB_201386154__20_AGO_25_-_10923C.PDF",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383119661_SWISS_MEDICAL_GROUP_-_LAB_201386154__20_AGO_25_-_10923C.PDF",
+          "name": "SWISS MEDICAL GROUP - LAB#201386154) 20 AGO 25 - 10923C.PDF"
+        }
+      ],
+      "nombre": "SWISS MEDICAL GROUP - LAB#201386154) 20 AGO 25 - 10923C.PDF",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808193
+    },
+    {
+      "id": "muy79dxzjq7kmfs28gp",
+      "equipoId": 163,
+      "archivos": [
+        {
+          "path": "pdfs/1791383122579_SWISS_MEDICAL_GROUP_-_LAB_74__20_AGO_25_-_10921C.PDF",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383122579_SWISS_MEDICAL_GROUP_-_LAB_74__20_AGO_25_-_10921C.PDF",
+          "name": "SWISS MEDICAL GROUP - LAB#74) 20 AGO 25 - 10921C.PDF"
+        }
+      ],
+      "nombre": "SWISS MEDICAL GROUP - LAB#74) 20 AGO 25 - 10921C.PDF",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808241
+    },
+    {
+      "id": "muy79f5d1g02f091a25",
+      "equipoId": 165,
+      "archivos": [
+        {
+          "path": "pdfs/1791383125464_2026-SE-CEN-24083.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383125464_2026-SE-CEN-24083.pdf",
+          "name": "2026-SE-CEN-24083.pdf"
+        }
+      ],
+      "nombre": "2026-SE-CEN-24083.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808256
+    },
+    {
+      "id": "muy79go93fr8jofk1al",
+      "equipoId": 166,
+      "archivos": [
+        {
+          "path": "pdfs/1791383127026_2026-SE_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383127026_2026-SE_CEN-24084.pdf",
+          "name": "2026-SE CEN-24084.pdf"
+        }
+      ],
+      "nombre": "2026-SE CEN-24084.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808280
+    },
+    {
+      "id": "muy79i5d3bup8bhwtq2",
+      "equipoId": 167,
+      "archivos": [
+        {
+          "path": "pdfs/1791383129001_2026-SE_CEN-25089.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383129001_2026-SE_CEN-25089.pdf",
+          "name": "2026-SE CEN-25089.pdf"
+        }
+      ],
+      "nombre": "2026-SE CEN-25089.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808298
+    },
+    {
+      "id": "muy79jg2r8bfizhoax",
+      "equipoId": 168,
+      "archivos": [
+        {
+          "path": "pdfs/1791383130914_2026-SE_CENTRIF-28009.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383130914_2026-SE_CENTRIF-28009.pdf",
+          "name": "2026-SE CENTRIF-28009.pdf"
+        }
+      ],
+      "nombre": "2026-SE CENTRIF-28009.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808313
+    },
+    {
+      "id": "muy79kquy9visqw0qpj",
+      "equipoId": 169,
+      "archivos": [
+        {
+          "path": "pdfs/1791383132595_2026-SE-CEN-50212022.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383132595_2026-SE-CEN-50212022.pdf",
+          "name": "2026-SE-CEN-50212022.pdf"
+        }
+      ],
+      "nombre": "2026-SE-CEN-50212022.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808325
+    },
+    {
+      "id": "muy79m8lci6qfyrmi45",
+      "equipoId": 170,
+      "archivos": [
+        {
+          "path": "pdfs/1791383134278_2026-SE_CEN-00053602.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383134278_2026-SE_CEN-00053602.pdf",
+          "name": "2026-SE CEN-00053602.pdf"
+        }
+      ],
+      "nombre": "2026-SE CEN-00053602.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808341
+    },
+    {
+      "id": "muy79nw6fo2t6jbnocc",
+      "equipoId": 172,
+      "archivos": [
+        {
+          "path": "pdfs/1791383136215_WH23670.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383136215_WH23670.pdf",
+          "name": "WH23670.pdf"
+        }
+      ],
+      "nombre": "WH23670.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808523
+    },
+    {
+      "id": "muy79pe54j6v3k79cxl",
+      "equipoId": 173,
+      "archivos": [
+        {
+          "path": "pdfs/1791383138359_2026_SE_CENTRIF-28008.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383138359_2026_SE_CENTRIF-28008.pdf",
+          "name": "2026 SE CENTRIF-28008.pdf"
+        }
+      ],
+      "nombre": "2026 SE CENTRIF-28008.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808544
+    },
+    {
+      "id": "muy79r29xhy94usfz7",
+      "equipoId": 174,
+      "archivos": [
+        {
+          "path": "pdfs/1791383140302_2026-SE_CENTRIF-30766.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383140302_2026-SE_CENTRIF-30766.pdf",
+          "name": "2026-SE CENTRIF-30766.pdf"
+        }
+      ],
+      "nombre": "2026-SE CENTRIF-30766.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808566
+    },
+    {
+      "id": "muy79t520yop9lsbjmpi",
+      "equipoId": 176,
+      "archivos": [
+        {
+          "path": "pdfs/1791383142469_Capacitacion.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383142469_Capacitacion.pdf",
+          "name": "Capacitacion.pdf"
+        }
+      ],
+      "nombre": "Capacitacion.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808675
+    },
+    {
+      "id": "muy79v82f7gkhnn61od",
+      "equipoId": 177,
+      "archivos": [
+        {
+          "path": "pdfs/1791383145162_Capacitacion.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383145162_Capacitacion.pdf",
+          "name": "Capacitacion.pdf"
+        }
+      ],
+      "nombre": "Capacitacion.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808761
+    },
+    {
+      "id": "muy79wsr83h3ou5s6zl",
+      "equipoId": 178,
+      "archivos": [
+        {
+          "path": "pdfs/1791383147862_Capacitacion.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383147862_Capacitacion.pdf",
+          "name": "Capacitacion.pdf"
+        }
+      ],
+      "nombre": "Capacitacion.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808837
+    },
+    {
+      "id": "muy79yprgwjtvukasxw",
+      "equipoId": 179,
+      "archivos": [
+        {
+          "path": "pdfs/1791383149903_Capacitacion.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383149903_Capacitacion.pdf",
+          "name": "Capacitacion.pdf"
+        }
+      ],
+      "nombre": "Capacitacion.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808908
+    },
+    {
+      "id": "muy7a0jp0wgd43735qsq",
+      "equipoId": 180,
+      "archivos": [
+        {
+          "path": "pdfs/1791383152387_Capacitacion.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383152387_Capacitacion.pdf",
+          "name": "Capacitacion.pdf"
+        }
+      ],
+      "nombre": "Capacitacion.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310808981
+    },
+    {
+      "id": "muy7a2e6rk6ptbm2tah",
+      "equipoId": 181,
+      "archivos": [
+        {
+          "path": "pdfs/1791383154760_Capacitacion.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383154760_Capacitacion.pdf",
+          "name": "Capacitacion.pdf"
+        }
+      ],
+      "nombre": "Capacitacion.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310809144
+    },
+    {
+      "id": "muy7a3z1c8urcerr91d",
+      "equipoId": 185,
+      "archivos": [
+        {
+          "path": "pdfs/1791383157152_2026_-_MIC1F09479.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383157152_2026_-_MIC1F09479.pdf",
+          "name": "2026 - MIC1F09479.pdf"
+        }
+      ],
+      "nombre": "2026 - MIC1F09479.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310809161
+    },
+    {
+      "id": "muy7a5j384fa26z817i",
+      "equipoId": 186,
+      "archivos": [
+        {
+          "path": "pdfs/1791383159199_2026-MP_Microscopio_Optimus_207840.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383159199_2026-MP_Microscopio_Optimus_207840.pdf",
+          "name": "2026-MP Microscopio Optimus#207840.pdf"
+        }
+      ],
+      "nombre": "2026-MP Microscopio Optimus#207840.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310809176
+    },
+    {
+      "id": "muy7a6t0oop78l8ap4",
+      "equipoId": 187,
+      "archivos": [
+        {
+          "path": "pdfs/1791383161215_2026-SE____7G00807.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383161215_2026-SE____7G00807.pdf",
+          "name": "2026-SE   #7G00807.pdf"
+        }
+      ],
+      "nombre": "2026-SE   #7G00807.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310809194
+    },
+    {
+      "id": "muy7a8hiiafgmtls6s9",
+      "equipoId": 188,
+      "archivos": [
+        {
+          "path": "pdfs/1791383162870_2026-MP_Microscopio_Optimus_86228.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383162870_2026-MP_Microscopio_Optimus_86228.pdf",
+          "name": "2026-MP Microscopio Optimus#86228.pdf"
+        }
+      ],
+      "nombre": "2026-MP Microscopio Optimus#86228.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310809201
+    },
+    {
+      "id": "muy7a9u1tk4uli7txo",
+      "equipoId": 189,
+      "archivos": [
+        {
+          "path": "pdfs/1791383165047_2026-MP_Microscopio__20B0571.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383165047_2026-MP_Microscopio__20B0571.pdf",
+          "name": "2026-MP Microscopio #20B0571.pdf"
+        }
+      ],
+      "nombre": "2026-MP Microscopio #20B0571.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310809215
+    },
+    {
+      "id": "muy7abtd9enjwd4zhs",
+      "equipoId": 190,
+      "archivos": [
+        {
+          "path": "pdfs/1791383166794_2026-MP_Microscopio_Optimus_3134033303.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383166794_2026-MP_Microscopio_Optimus_3134033303.pdf",
+          "name": "2026-MP Microscopio Optimus#3134033303.pdf"
+        }
+      ],
+      "nombre": "2026-MP Microscopio Optimus#3134033303.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310809227
+    },
+    {
+      "id": "muy7adt5btetfzjguah",
+      "equipoId": 191,
+      "archivos": [
+        {
+          "path": "pdfs/1791383169364_Capacitacion.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383169364_Capacitacion.pdf",
+          "name": "Capacitacion.pdf"
+        }
+      ],
+      "nombre": "Capacitacion.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791310809514
+    },
+    {
+      "id": "muy7af1cinvfco4lgd",
+      "equipoId": 106,
+      "archivos": [
+        {
+          "path": "pdfs/1791383171945_2026-SE-AGITADO-27594.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383171945_2026-SE-AGITADO-27594.pdf",
+          "name": "2026-SE-AGITADO-27594.pdf"
+        }
+      ],
+      "nombre": "2026-SE-AGITADO-27594.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791311143586
+    },
+    {
+      "id": "muy7aho03rfno5z9x6b",
+      "equipoId": 159,
+      "archivos": [
+        {
+          "path": "pdfs/1791383173538_2026-MP_BAN-26355.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383173538_2026-MP_BAN-26355.pdf",
+          "name": "2026-MP BAN-26355.pdf"
+        },
+        {
+          "path": "pdfs/1791383175321_2026-SE_BAN-26355.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383175321_2026-SE_BAN-26355.pdf",
+          "name": "2026-SE BAN-26355.pdf"
+        }
+      ],
+      "nombre": "2026-MP BAN-26355.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791311926005
+    },
+    {
+      "id": "muy7ako71x0m49u1d6b",
+      "equipoId": 160,
+      "archivos": [
+        {
+          "path": "pdfs/1791383176945_2026-SE_BANO-27143.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383176945_2026-SE_BANO-27143.pdf",
+          "name": "2026-SE BANO-27143.pdf"
+        },
+        {
+          "path": "pdfs/1791383178588_2026-MP_BA_O-27143.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383178588_2026-MP_BA_O-27143.pdf",
+          "name": "2026-MP BAÑO-27143.pdf"
+        }
+      ],
+      "nombre": "2026-SE BANO-27143.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791311941588
+    },
+    {
+      "id": "muy7ancq9i2v9z354h6",
+      "equipoId": 161,
+      "archivos": [
+        {
+          "path": "pdfs/1791383180840_2026-MP_BANO-28544.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383180840_2026-MP_BANO-28544.pdf",
+          "name": "2026-MP BANO-28544.pdf"
+        },
+        {
+          "path": "pdfs/1791383182689_2026-SE-BANO-28544.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383182689_2026-SE-BANO-28544.pdf",
+          "name": "2026-SE-BANO-28544.pdf"
+        }
+      ],
+      "nombre": "2026-MP BANO-28544.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791311956037
+    },
+    {
+      "id": "muy7aptqi5c1cbd3q5k",
+      "equipoId": 165,
+      "archivos": [
+        {
+          "path": "pdfs/1791383184315_2026-SE-CEN-24083.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383184315_2026-SE-CEN-24083.pdf",
+          "name": "2026-SE-CEN-24083.pdf"
+        },
+        {
+          "path": "pdfs/1791383185759_2026-MP-CEN-24083.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383185759_2026-MP-CEN-24083.pdf",
+          "name": "2026-MP-CEN-24083.pdf"
+        }
+      ],
+      "nombre": "2026-SE-CEN-24083.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791312037910
+    },
+    {
+      "id": "muy7asqxztzvfy9khe",
+      "equipoId": 166,
+      "archivos": [
+        {
+          "path": "pdfs/1791383187519_2026-SE_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383187519_2026-SE_CEN-24084.pdf",
+          "name": "2026-SE CEN-24084.pdf"
+        },
+        {
+          "path": "pdfs/1791383189407_2026-MP_CEN-24084.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383189407_2026-MP_CEN-24084.pdf",
+          "name": "2026-MP CEN-24084.pdf"
+        }
+      ],
+      "nombre": "2026-SE CEN-24084.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791312053430
+    },
+    {
+      "id": "muy7avj5qrzxusplj5n",
+      "equipoId": 167,
+      "archivos": [
+        {
+          "path": "pdfs/1791383191306_2026-SE_CEN-25089.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383191306_2026-SE_CEN-25089.pdf",
+          "name": "2026-SE CEN-25089.pdf"
+        },
+        {
+          "path": "pdfs/1791383192893_2026-MPCEN-25089.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383192893_2026-MPCEN-25089.pdf",
+          "name": "2026-MPCEN-25089.pdf"
+        }
+      ],
+      "nombre": "2026-SE CEN-25089.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791312243822
+    },
+    {
+      "id": "muy7ayan5fuhws0pvmw",
+      "equipoId": 168,
+      "archivos": [
+        {
+          "path": "pdfs/1791383194914_2026-SE_CENTRIF-28009.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383194914_2026-SE_CENTRIF-28009.pdf",
+          "name": "2026-SE CENTRIF-28009.pdf"
+        },
+        {
+          "path": "pdfs/1791383196675_2026-MP_CEN-28009.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383196675_2026-MP_CEN-28009.pdf",
+          "name": "2026-MP CEN-28009.pdf"
+        }
+      ],
+      "nombre": "2026-SE CENTRIF-28009.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791312491552
+    },
+    {
+      "id": "muy7b10unf5d2uimmc",
+      "equipoId": 169,
+      "archivos": [
+        {
+          "path": "pdfs/1791383198496_2026-SE-CEN-50212022.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383198496_2026-SE-CEN-50212022.pdf",
+          "name": "2026-SE-CEN-50212022.pdf"
+        },
+        {
+          "path": "pdfs/1791383200129_2026-MP-CEN-50212022.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383200129_2026-MP-CEN-50212022.pdf",
+          "name": "2026-MP-CEN-50212022.pdf"
+        }
+      ],
+      "nombre": "2026-SE-CEN-50212022.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791312508688
+    },
+    {
+      "id": "muy7b4fkmltry9jcc5c",
+      "equipoId": 170,
+      "archivos": [
+        {
+          "path": "pdfs/1791383202031_2026-SE_CEN-00053602.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383202031_2026-SE_CEN-00053602.pdf",
+          "name": "2026-SE CEN-00053602.pdf"
+        },
+        {
+          "path": "pdfs/1791383204262_2026-MP_CEN-00053602.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383204262_2026-MP_CEN-00053602.pdf",
+          "name": "2026-MP CEN-00053602.pdf"
+        }
+      ],
+      "nombre": "2026-SE CEN-00053602.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791312522098
+    },
+    {
+      "id": "muy7b7rr3j22dwwjb8l",
+      "equipoId": 173,
+      "archivos": [
+        {
+          "path": "pdfs/1791383206449_2026_SE_CENTRIF-28008.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383206449_2026_SE_CENTRIF-28008.pdf",
+          "name": "2026 SE CENTRIF-28008.pdf"
+        },
+        {
+          "path": "pdfs/1791383208969_2026_MP_CENTRIF-28008.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383208969_2026_MP_CENTRIF-28008.pdf",
+          "name": "2026 MP CENTRIF-28008.pdf"
+        }
+      ],
+      "nombre": "2026 SE CENTRIF-28008.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791312572660
+    },
+    {
+      "id": "muy7bap1vo139rz11e",
+      "equipoId": 174,
+      "archivos": [
+        {
+          "path": "pdfs/1791383210777_2026-MP_CENTRIF-30766.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383210777_2026-MP_CENTRIF-30766.pdf",
+          "name": "2026-MP CENTRIF-30766.pdf"
+        },
+        {
+          "path": "pdfs/1791383212573_2026-SE_CENTRIF-30766.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383212573_2026-SE_CENTRIF-30766.pdf",
+          "name": "2026-SE CENTRIF-30766.pdf"
+        }
+      ],
+      "nombre": "2026-MP CENTRIF-30766.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791312591948
+    },
+    {
+      "id": "muy7bcb73con62egu8u",
+      "equipoId": 185,
+      "archivos": [
+        {
+          "path": "pdfs/1791383214568_2026_-_MIC1F09479.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383214568_2026_-_MIC1F09479.pdf",
+          "name": "2026 - MIC1F09479.pdf"
+        }
+      ],
+      "nombre": "2026 - MIC1F09479.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791312644445
+    },
+    {
+      "id": "muy7be1v4e91zf82jbh",
+      "equipoId": 183,
+      "archivos": [
+        {
+          "path": "pdfs/1791383216668_2025_-_INC-27500.pdf",
+          "url": "https://raw.githubusercontent.com/swisss33sss-max/CATAMARCALAB/main/pdfs/1791383216668_2025_-_INC-27500.pdf",
+          "name": "2025 - INC-27500.pdf"
+        }
+      ],
+      "nombre": "2025 - INC-27500.pdf",
+      "emision": "",
+      "vencimiento": "",
+      "empresa": "",
+      "ts": 1791313808708
     }
   ],
   "version": 1
