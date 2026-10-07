@@ -43,7 +43,7 @@
     {
       "id": "AGI-VB23CBC0003127",
       "nombre": "Agitador",
-      "piso": "Sin asignar",
+      "piso": "3 Piso",
       "tipo": "AGITADO",
       "notas": "",
       "relev": ""
@@ -51,7 +51,7 @@
     {
       "id": "AGITADO-27594",
       "nombre": "Agitador",
-      "piso": "Sin asignar",
+      "piso": "2 Piso",
       "tipo": "AGITADO",
       "notas": "",
       "relev": ""
@@ -475,7 +475,7 @@
     {
       "id": "BAN-26355",
       "nombre": "Baño termostático",
-      "piso": "Sin asignar",
+      "piso": "2 Piso",
       "tipo": "BAÑO",
       "notas": "",
       "relev": ""
@@ -483,7 +483,7 @@
     {
       "id": "BANO-27143",
       "nombre": "Baño termostático",
-      "piso": "Sin asignar",
+      "piso": "1 piso",
       "tipo": "BAÑO",
       "notas": "",
       "relev": ""
@@ -491,7 +491,7 @@
     {
       "id": "BANO-28544",
       "nombre": "Baño termostático",
-      "piso": "Sin asignar",
+      "piso": "3 Piso",
       "tipo": "BAÑO",
       "notas": "",
       "relev": ""
@@ -523,7 +523,7 @@
     {
       "id": "CEN-24083",
       "nombre": "Centrifugador",
-      "piso": "Sin asignar",
+      "piso": "1 piso",
       "tipo": "CEN",
       "notas": "",
       "relev": ""
@@ -531,7 +531,7 @@
     {
       "id": "CEN-24084",
       "nombre": "Centrifugador",
-      "piso": "Sin asignar",
+      "piso": "2 Piso",
       "tipo": "CEN",
       "notas": "",
       "relev": ""
@@ -539,7 +539,7 @@
     {
       "id": "CEN-25089",
       "nombre": "Centrifugador",
-      "piso": "Sin asignar",
+      "piso": "2 Piso",
       "tipo": "CEN",
       "notas": "",
       "relev": ""
@@ -555,7 +555,7 @@
     {
       "id": "CEN-50212022",
       "nombre": "Centrifugador",
-      "piso": "Sin asignar",
+      "piso": "1 piso",
       "tipo": "CEN",
       "notas": "",
       "relev": ""
@@ -587,7 +587,7 @@
     {
       "id": "CENTRIF-28008",
       "nombre": "Centrífuga",
-      "piso": "Sin asignar",
+      "piso": "1 piso",
       "tipo": "CENTRIF",
       "notas": "",
       "relev": ""
@@ -699,7 +699,7 @@
     {
       "id": "MIC-7G00807",
       "nombre": "Microscopio",
-      "piso": "Sin asignar",
+      "piso": "2 Piso",
       "tipo": "MIC",
       "notas": "",
       "relev": ""
@@ -739,7 +739,7 @@
     {
       "id": "08020006",
       "nombre": "Equipo",
-      "piso": "Sin asignar",
+      "piso": "2 Piso",
       "tipo": "OTRO",
       "notas": "",
       "relev": ""
@@ -747,7 +747,7 @@
     {
       "id": "19771",
       "nombre": "Equipo",
-      "piso": "Sin asignar",
+      "piso": "2 Piso",
       "tipo": "OTRO",
       "notas": "",
       "relev": ""
@@ -755,7 +755,7 @@
     {
       "id": "24622",
       "nombre": "Equipo",
-      "piso": "Sin asignar",
+      "piso": "2 Piso",
       "tipo": "OTRO",
       "notas": "",
       "relev": ""
@@ -763,7 +763,7 @@
     {
       "id": "34150",
       "nombre": "Equipo",
-      "piso": "Sin asignar",
+      "piso": "2 Piso",
       "tipo": "OTRO",
       "notas": "",
       "relev": ""
@@ -771,7 +771,7 @@
     {
       "id": "CEN-00053602",
       "nombre": "Centrifugador",
-      "piso": "Sin asignar",
+      "piso": "2 Piso",
       "tipo": "CEN",
       "notas": "",
       "relev": ""
@@ -779,7 +779,7 @@
     {
       "id": "CENTRIF-28009",
       "nombre": "Centrífuga",
-      "piso": "Sin asignar",
+      "piso": "2 Piso",
       "tipo": "CENTRIF",
       "notas": "",
       "relev": ""
@@ -787,7 +787,7 @@
     {
       "id": "EZ-37114186",
       "nombre": "Equipo",
-      "piso": "Sin asignar",
+      "piso": "2 Piso",
       "tipo": "OTRO",
       "notas": "",
       "relev": ""
