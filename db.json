@@ -1,1 +1,798 @@
-{"equipos":[],"certs":[],"version":1}
+{
+  "equipos": [
+    {
+      "id": "4571",
+      "nombre": "Equipo",
+      "piso": "Sin asignar",
+      "tipo": "OTRO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "794BR11779",
+      "nombre": "Equipo",
+      "piso": "Sin asignar",
+      "tipo": "OTRO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "794BR12420",
+      "nombre": "Equipo",
+      "piso": "Sin asignar",
+      "tipo": "OTRO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "AGI-12961330",
+      "nombre": "Agitador",
+      "piso": "Sin asignar",
+      "tipo": "AGITADO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "AGI-200102448",
+      "nombre": "Agitador",
+      "piso": "Sin asignar",
+      "tipo": "AGITADO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "AGI-VB23CBC0003127",
+      "nombre": "Agitador Vortex",
+      "piso": "3 Piso",
+      "tipo": "AGITADO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "AGITADO-27594",
+      "nombre": "Agitador",
+      "piso": "2 Piso",
+      "tipo": "AGITADO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "AGITADO-8AS0004975",
+      "nombre": "Agitador",
+      "piso": "Sin asignar",
+      "tipo": "AGITADO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "AGITADO-SC256AW0000912",
+      "nombre": "Agitador",
+      "piso": "Sin asignar",
+      "tipo": "AGITADO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "AGITADO-VB255BG0003558",
+      "nombre": "Agitador",
+      "piso": "Sin asignar",
+      "tipo": "AGITADO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "AGITADO-VB255VG003558",
+      "nombre": "Agitador",
+      "piso": "Sin asignar",
+      "tipo": "AGITADO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-2965439",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-36205289",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-393163",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-395235",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-4946A14729",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-7127",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-C1600476",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-C1600957",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-ISR53213",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-ISR53215",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-0000Q0614",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-022101490",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-0807",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-10614",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-12500108",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-1445",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-15W6-03",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-25078501",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-251250",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-2842-18",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-36102139",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-421016",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-450209P",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-52421",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-54270",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-5438",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-5649A45430",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-578",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-5938",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-C107042089",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-CJ07042089",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-HQ00382",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-HQ00386",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-HQ00387",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-HS00177",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-ISR53823",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-ISR62129",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-Q0614",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-SU0500522",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-SU0802495",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-SV0500256",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-SV0901885",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ANA-LAB-VN06057",
+      "nombre": "Analizador",
+      "piso": "Sin asignar",
+      "tipo": "ANA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "Arch d Aud",
+      "nombre": "Archivo Auditoría",
+      "piso": "Sin asignar",
+      "tipo": "OTRO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "AUT-336",
+      "nombre": "Autoclave",
+      "piso": "Sin asignar",
+      "tipo": "AUT",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "AUT-C801336",
+      "nombre": "Autoclave",
+      "piso": "Sin asignar",
+      "tipo": "AUT",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "AUTO-12965104",
+      "nombre": "Autoclave",
+      "piso": "Sin asignar",
+      "tipo": "AUT",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "BALANZA-733793",
+      "nombre": "Balanza",
+      "piso": "Sin asignar",
+      "tipo": "BALANZA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "BAN-26355",
+      "nombre": "Baño termostático",
+      "piso": "2 Piso",
+      "tipo": "BAÑO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "BANO-27143",
+      "nombre": "Baño termostático",
+      "piso": "1 piso",
+      "tipo": "BAÑO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "BANO-28544",
+      "nombre": "Baño termostático",
+      "piso": "3 Piso",
+      "tipo": "BAÑO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CAB-201386154 20.08.25",
+      "nombre": "Cabina flujo laminar",
+      "piso": "Sin asignar",
+      "tipo": "CAB",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CABINA-74 20.08.25",
+      "nombre": "Cabina flujo laminar",
+      "piso": "Sin asignar",
+      "tipo": "CAB",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CALENTA-170605019",
+      "nombre": "Calentador",
+      "piso": "Sin asignar",
+      "tipo": "OTRO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CEN-24083",
+      "nombre": "Centrifugador",
+      "piso": "1 piso",
+      "tipo": "CEN",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CEN-24084",
+      "nombre": "Centrifugador",
+      "piso": "2 Piso",
+      "tipo": "CEN",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CEN-25089",
+      "nombre": "Centrifugador",
+      "piso": "2 Piso",
+      "tipo": "CEN",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CEN-28009",
+      "nombre": "Centrifugador",
+      "piso": "Sin asignar",
+      "tipo": "CEN",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CEN-50212022",
+      "nombre": "Centrifugador",
+      "piso": "1 piso",
+      "tipo": "CEN",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CEN-53602",
+      "nombre": "Centrifugador",
+      "piso": "Sin asignar",
+      "tipo": "CEN",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CEN-61974610",
+      "nombre": "Centrifugador",
+      "piso": "Sin asignar",
+      "tipo": "CEN",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CEN-MON-LABCAT",
+      "nombre": "Centrifugador Monitor",
+      "piso": "Sin asignar",
+      "tipo": "CEN",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CENTRIF-28008",
+      "nombre": "Centrífuga",
+      "piso": "1 piso",
+      "tipo": "CENTRIF",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CENTRIF-30766",
+      "nombre": "Centrífuga",
+      "piso": "3 Piso",
+      "tipo": "CENTRIF",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "DIS-FLC00015370",
+      "nombre": "Dispensador",
+      "piso": "Sin asignar",
+      "tipo": "OTRO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "EST-01543",
+      "nombre": "Estufa",
+      "piso": "Sin asignar",
+      "tipo": "ESTUFA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "EST-AGU-0071491",
+      "nombre": "Estufa",
+      "piso": "Sin asignar",
+      "tipo": "ESTUFA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "EST-AGU-MIC0001562",
+      "nombre": "Estufa",
+      "piso": "Sin asignar",
+      "tipo": "ESTUFA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "EST-AGU-MP00005085",
+      "nombre": "Estufa",
+      "piso": "Sin asignar",
+      "tipo": "ESTUFA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "EST-MP00003507",
+      "nombre": "Estufa",
+      "piso": "Sin asignar",
+      "tipo": "ESTUFA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "EST-MR120H2732252 1",
+      "nombre": "Estufa",
+      "piso": "Sin asignar",
+      "tipo": "ESTUFA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "ESTUFA-32533",
+      "nombre": "Estufa",
+      "piso": "Sin asignar",
+      "tipo": "ESTUFA",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "INC-27500",
+      "nombre": "Incubadora",
+      "piso": "Sin asignar",
+      "tipo": "INC",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "Lector-640003359P",
+      "nombre": "Lector",
+      "piso": "Sin asignar",
+      "tipo": "OTRO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "MIC-1F09479",
+      "nombre": "Microscopio",
+      "piso": "Sin asignar",
+      "tipo": "MIC",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "MIC-207840",
+      "nombre": "Microscopio",
+      "piso": "Sin asignar",
+      "tipo": "MIC",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "MIC-7G00807",
+      "nombre": "Microscopio",
+      "piso": "2 Piso",
+      "tipo": "MIC",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "MICROSC-086228",
+      "nombre": "Microscopio",
+      "piso": "Sin asignar",
+      "tipo": "MIC",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "MICROSC-20B0571",
+      "nombre": "Microscopio",
+      "piso": "Sin asignar",
+      "tipo": "MIC",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "MICROSC-3134033303",
+      "nombre": "Microscopio",
+      "piso": "Sin asignar",
+      "tipo": "MIC",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "OTRO EQUIPOS DESMONTADOS",
+      "nombre": "Equipos desmontados",
+      "piso": "Sin asignar",
+      "tipo": "OTRO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "08020006",
+      "nombre": "Equipo",
+      "piso": "2 Piso",
+      "tipo": "OTRO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "19771",
+      "nombre": "Equipo",
+      "piso": "2 Piso",
+      "tipo": "OTRO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "24622",
+      "nombre": "Equipo",
+      "piso": "2 Piso",
+      "tipo": "OTRO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "34150",
+      "nombre": "Equipo",
+      "piso": "2 Piso",
+      "tipo": "OTRO",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CEN-00053602",
+      "nombre": "Centrifugador",
+      "piso": "2 Piso",
+      "tipo": "CEN",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "CENTRIF-28009",
+      "nombre": "Centrífuga",
+      "piso": "2 Piso",
+      "tipo": "CENTRIF",
+      "notas": "",
+      "relev": ""
+    },
+    {
+      "id": "EZ-37114186",
+      "nombre": "Equipo",
+      "piso": "2 Piso",
+      "tipo": "OTRO",
+      "notas": "",
+      "relev": ""
+    }
+  ],
+  "certs": [],
+  "version": 1
+}
